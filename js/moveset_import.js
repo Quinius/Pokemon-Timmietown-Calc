@@ -7,7 +7,7 @@ function placeBsBtn() {
 		var name = document.getElementsByClassName("import-name-text")[0].value.trim() === "" ? "Custom Set" : document.getElementsByClassName("import-name-text")[0].value;
 		addSets(pokes, name);
 		//erase the import text area
-		document.getElementsByClassName("import-team-text")[0].value="";
+		document.getElementsByClassName("import-team-text")[0].value = "";
 	});
 }
 
@@ -92,18 +92,18 @@ function getTeraType(row) {
 
 function statToLegacyStat(stat) {
 	switch (stat) {
-	case 'hp':
-		return "hp";
-	case 'atk':
-		return "at";
-	case 'def':
-		return "df";
-	case 'spa':
-		return "sa";
-	case 'spd':
-		return "sd";
-	case 'spe':
-		return "sp";
+		case 'hp':
+			return "hp";
+		case 'atk':
+			return "at";
+		case 'def':
+			return "df";
+		case 'spa':
+			return "sa";
+		case 'spd':
+			return "sd";
+		case 'spe':
+			return "sp";
 	}
 }
 
@@ -123,25 +123,25 @@ function getStats(currentPoke, rows, offset) {
 		var j;
 
 		switch (currentRow[0]) {
-		case 'Level':
-			currentPoke.level = parseInt(currentRow[1].trim());
-			break;
-		case 'EVs':
-			for (j = 1; j < currentRow.length; j++) {
-				currentEV = currentRow[j].trim().split(" ");
-				currentEV[1] = statToLegacyStat(currentEV[1].toLowerCase());
-				evs[currentEV[1]] = parseInt(currentEV[0]);
-			}
-			currentPoke.evs = evs;
-			break;
-		case 'IVs':
-			for (j = 1; j < currentRow.length; j++) {
-				currentIV = currentRow[j].trim().split(" ");
-				currentIV[1] = statToLegacyStat(currentIV[1].toLowerCase());
-				ivs[currentIV[1]] = parseInt(currentIV[0]);
-			}
-			currentPoke.ivs = ivs;
-			break;
+			case 'Level':
+				currentPoke.level = parseInt(currentRow[1].trim());
+				break;
+			case 'EVs':
+				for (j = 1; j < currentRow.length; j++) {
+					currentEV = currentRow[j].trim().split(" ");
+					currentEV[1] = statToLegacyStat(currentEV[1].toLowerCase());
+					evs[currentEV[1]] = parseInt(currentEV[0]);
+				}
+				currentPoke.evs = evs;
+				break;
+			case 'IVs':
+				for (j = 1; j < currentRow.length; j++) {
+					currentIV = currentRow[j].trim().split(" ");
+					currentIV[1] = statToLegacyStat(currentIV[1].toLowerCase());
+					ivs[currentIV[1]] = parseInt(currentIV[0]);
+				}
+				currentPoke.ivs = ivs;
+				break;
 
 		}
 		currentAbility = rows[x] ? rows[x].trim().split(":") : '';
@@ -163,7 +163,7 @@ function getStats(currentPoke, rows, offset) {
 }
 
 function getItem(currentRow, j) {
-	for (;j < currentRow.length; j++) {
+	for (; j < currentRow.length; j++) {
 		var item = currentRow[j].trim();
 		if (calc.ITEMS[9].indexOf(item) != -1) {
 			return item;
@@ -267,7 +267,7 @@ function updateDex(customsets) {
 			SETDEX_GSC[pokemon][moveset] = customsets[pokemon][moveset];
 			if (!SETDEX_RBY[pokemon]) SETDEX_RBY[pokemon] = {};
 			SETDEX_RBY[pokemon][moveset] = customsets[pokemon][moveset];
-			var poke = {name: pokemon, nameProp: moveset};	
+			var poke = { name: pokemon, nameProp: moveset };
 			addBoxed(poke);
 		}
 	}
@@ -313,41 +313,41 @@ function addSets(pokes, name) {
 
 function checkExeptions(poke) {
 	switch (poke) {
-	case 'Aegislash':
-		poke = "Aegislash-Blade";
-		break;
-	case 'Basculin-Blue-Striped':
-		poke = "Basculin";
-		break;
-	case 'Gastrodon-East':
-		poke = "Gastrodon";
-		break;
-	case 'Mimikyu-Busted-Totem':
-		poke = "Mimikyu-Totem";
-		break;
-	case 'Mimikyu-Busted':
-		poke = "Mimikyu";
-		break;
-	case 'Pikachu-Belle':
-	case 'Pikachu-Cosplay':
-	case 'Pikachu-Libre':
-	case 'Pikachu-Original':
-	case 'Pikachu-Partner':
-	case 'Pikachu-PhD':
-	case 'Pikachu-Pop-Star':
-	case 'Pikachu-Rock-Star':
-		poke = "Pikachu";
-		break;
-	case 'Vivillon-Fancy':
-	case 'Vivillon-Pokeball':
-		poke = "Vivillon";
-		break;
-	case 'Florges-White':
-	case 'Florges-Blue':
-	case 'Florges-Orange':
-	case 'Florges-Yellow':
-		poke = "Florges";
-		break;
+		case 'Aegislash':
+			poke = "Aegislash-Blade";
+			break;
+		case 'Basculin-Blue-Striped':
+			poke = "Basculin";
+			break;
+		case 'Gastrodon-East':
+			poke = "Gastrodon";
+			break;
+		case 'Mimikyu-Busted-Totem':
+			poke = "Mimikyu-Totem";
+			break;
+		case 'Mimikyu-Busted':
+			poke = "Mimikyu";
+			break;
+		case 'Pikachu-Belle':
+		case 'Pikachu-Cosplay':
+		case 'Pikachu-Libre':
+		case 'Pikachu-Original':
+		case 'Pikachu-Partner':
+		case 'Pikachu-PhD':
+		case 'Pikachu-Pop-Star':
+		case 'Pikachu-Rock-Star':
+			poke = "Pikachu";
+			break;
+		case 'Vivillon-Fancy':
+		case 'Vivillon-Pokeball':
+			poke = "Vivillon";
+			break;
+		case 'Florges-White':
+		case 'Florges-Blue':
+		case 'Florges-Orange':
+		case 'Florges-Yellow':
+			poke = "Florges";
+			break;
 	}
 	return poke;
 
@@ -355,14 +355,14 @@ function checkExeptions(poke) {
 
 $("#clearSets").click(function () {
 	var yes = confirm("Do you really wish to delete all your mons?")
-	if (!yes){
+	if (!yes) {
 		return
 	}
 	localStorage.removeItem("customsets");
 	$(allPokemon("#importedSetsOptions")).hide();
 	loadDefaultLists();
-	for (let zone of document.getElementsByClassName("dropzone")){
-		zone.innerHTML="";
+	for (let zone of document.getElementsByClassName("dropzone")) {
+		zone.innerHTML = "";
 	}
 
 });
