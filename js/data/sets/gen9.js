@@ -1,539 +1,5 @@
 var SETDEX_SV = {
     "null": {},
-    "Trainers and their parties defined with Competetive Syntax.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 1
-        }
-    },
-    "Compatible with Pokemon Showdown exports.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 2
-        }
-    },
-    "A trainer specification starts with \"=== TRAINER_XXXX ===\"": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 3
-        }
-    },
-    "and includes everything until the next line that starts with \"===\"": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 4
-        }
-    },
-    "or the file ends.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 5
-        }
-    },
-    "A blank line is required between the trainer and their Pokemon": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 6
-        }
-    },
-    "and between their Pokemon.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 7
-        }
-    },
-    "TRAINER_XXXX is how the trainer is referred to within code.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 8
-        }
-    },
-    "Fields with description and/or example of usage": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Name",
-                "Pic",
-                "Class (if not specified, PkMn Trainer will be used)",
-                "Gender (Male/Female, affects random gender weights of party if not specified)",
-                "Music",
-                "Items (Some Item / Another Item / Third Item)"
-            ],
-            "index": 9
-        }
-    },
-    "Can also be specified with ITEM_SOME_ITEM": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Double Battle (Yes/No, defaults to No)",
-                "AI (Ai Flag / Another Flag / Third Flag / ..."
-            ],
-            "index": 10
-        }
-    },
-    "see \"constants/battle_ai.h\" for all flags)": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Mugshot (enable Mugshots during battle transition"
-            ],
-            "index": 11
-        }
-    },
-    "set to one of Purple, Green, Pink, Blue or Yellow)": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Starting Status (see include/constants/battle.h for values)"
-            ],
-            "index": 12
-        }
-    },
-    "Pokemon are then specified using the Showdown Export format.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 13
-        }
-    },
-    "If a field is not specified, it will use it's default value.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Species (Either as SPECIES_ABRA or Abra)"
-            ],
-            "index": 14
-        }
-    },
-    "This line also specifies Gender, Nickname and Held item.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 15
-        }
-    },
-    "Abra": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": "Eviolite",
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 16
-        },
-        "TRAINER EDWARD": {
-            "level": 15,
-            "ivs": {
-                "hp": 0,
-                "atk": 0,
-                "def": 0,
-                "spa": 0,
-                "spd": 0,
-                "spe": 0
-            },
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Hidden Power"
-            ],
-            "index": 531
-        },
-        "TRAINER JACLYN": {
-            "level": 16,
-            "ivs": {
-                "hp": 0,
-                "atk": 0,
-                "def": 0,
-                "spa": 0,
-                "spd": 0,
-                "spe": 0
-            },
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Hidden Power"
-            ],
-            "index": 549
-        }
-    },
-    "SPECIES_ABRA": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": "ITEM_CHOICE_SPECS",
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 17
-        }
-    },
-    "M": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 18
-        }
-    },
-    "Nickname length is limited to 10 characters using standard letters.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 19
-        }
-    },
-    "With narrow font it's increased to 12. Longer strings will be silently shortened.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Level (Number between 1 and 100, defaults to 100)",
-                "Ability (Ability Name or ABILITY_ABILITY_NAME)",
-                "IVs (0 HP / 1 Atk / 2 Def / 3 SpA / 4 SpD / 5 Spe, defaults to all 31)"
-            ],
-            "index": 20
-        }
-    },
-    "Order does not matter": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "EVs (252 HP / 128 Spe / 48 Def, defaults to all 0, is not capped at 512 total)"
-            ],
-            "index": 21
-        },
-        " /*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": "Nature (Rash or NATURE_RASH, defaults to Hardy)",
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Ball (Poke Ball or ITEM_POKE_BALL, defaults to Poke Ball)",
-                "Happiness (Number between 1 and 255)",
-                "Shiny (Yes/No, defaults to No)",
-                "Dynamax Level (Number between 0 and 10, default 10, also sets \"shouldDynamax\" to True)",
-                "Gigantamax (Yes/No, sets to Gigantamax factor)"
-            ],
-            "index": 22
-        }
-    },
-    "doesn't do anything to Pokemon without a Gigantamax form, also sets \"shouldDynamax\" to True": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [
-                "Tera Type (Set to a Type, either Fire or TYPE_FIRE, also sets \"shouldTerastal\" to True)"
-            ],
-            "index": 23
-        }
-    },
-    "dash": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 24
-        }
-    },
-    "Either \"- Tackle\" or \"- MOVE_TACKLE\" works. One move per line.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 25
-        }
-    },
-    "Moves have to be the last lines of a Pokemon.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 26
-        }
-    },
-    "If no moves are specified, the Pokemon will use the last 4 moves it learns": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 27
-        }
-    },
-    "through levelup at its level.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 28
-        }
-    },
-    "Default IVs and Level can be changed in the \"main\" function of tools/trainerproc/main.c": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 29
-        }
-    },
-    "This file is processed with a custom preprocessor.": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 30
-        }
-    },
-    "*/": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 31
-        },
-        " /*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 35
-        }
-    },
-    "/*": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 32
-        }
-    },
-    "Comments can be added as C comment blocks": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 33
-        }
-    },
-    "// cannot be used as comments": {
-        "/*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 34
-        }
-    },
-    "/*Comments can also be on a single line*/": {
-        " /*": {
-            "level": null,
-            "ivs": null,
-            "item": null,
-            "ability": null,
-            "nature": null,
-            "teraType": null,
-            "status": "Healthy",
-            "moves": [],
-            "index": 36
-        }
-    },
     "Skiddo": {
         "TIMMIE": {
             "level": 7,
@@ -548,7 +14,7 @@ var SETDEX_SV = {
                 "Bulk Up",
                 "Grassy Glide"
             ],
-            "index": 37
+            "index": 1
         }
     },
     "Elekid": {
@@ -565,7 +31,7 @@ var SETDEX_SV = {
                 "Charge Beam",
                 "Leer"
             ],
-            "index": 38
+            "index": 2
         }
     },
     "Turtwig": {
@@ -583,7 +49,7 @@ var SETDEX_SV = {
                 "Absorb",
                 "Leech Seed"
             ],
-            "index": 39
+            "index": 3
         }
     },
     "Toxel": {
@@ -600,7 +66,7 @@ var SETDEX_SV = {
                 "Acid",
                 "Growl"
             ],
-            "index": 40
+            "index": 4
         }
     },
     "Pumpkaboo": {
@@ -619,7 +85,7 @@ var SETDEX_SV = {
                 "Incinerate",
                 "Round"
             ],
-            "index": 41
+            "index": 5
         }
     },
     "Machop": {
@@ -636,7 +102,7 @@ var SETDEX_SV = {
                 "Bullet Punch",
                 "Facade"
             ],
-            "index": 42
+            "index": 6
         },
         "PER": {
             "level": 15,
@@ -651,7 +117,7 @@ var SETDEX_SV = {
                 "Low Kick",
                 "Knock Off"
             ],
-            "index": 69
+            "index": 33
         },
         "TRAINER TAKAO": {
             "level": 13,
@@ -669,7 +135,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 422
+            "index": 386
         },
         "TRAINER HITOSHI": {
             "level": 32,
@@ -687,7 +153,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 423
+            "index": 387
         },
         "TRAINER KOICHI": {
             "level": 24,
@@ -705,7 +171,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 426
+            "index": 390
         },
         "TRAINER NOB 1": {
             "level": 19,
@@ -723,7 +189,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 428
+            "index": 392
         },
         "TRAINER NOB 3": {
             "level": 29,
@@ -741,7 +207,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 430
+            "index": 394
         },
         "TRAINER NOB 4": {
             "level": 31,
@@ -759,7 +225,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 432
+            "index": 396
         },
         "TRAINER NOB 5": {
             "level": 33,
@@ -777,7 +243,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 435
+            "index": 399
         },
         "TRAINER DAISUKE": {
             "level": 19,
@@ -795,7 +261,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 441
+            "index": 405
         },
         "TRAINER BRAWLY 1": {
             "level": 16,
@@ -818,7 +284,7 @@ var SETDEX_SV = {
                 "Seismic Toss",
                 "Bulk Up"
             ],
-            "index": 600
+            "index": 564
         },
         "TRAINER HUEY": {
             "level": 12,
@@ -836,7 +302,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1006
+            "index": 970
         },
         "TRAINER DWAYNE": {
             "level": 11,
@@ -854,7 +320,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1011
+            "index": 975
         },
         "TRAINER LEONARD": {
             "level": 43,
@@ -872,7 +338,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1015
+            "index": 979
         },
         "TRAINER BRENDEN": {
             "level": 13,
@@ -890,7 +356,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1212
+            "index": 1176
         },
         "TRAINER BRICE": {
             "level": 17,
@@ -908,7 +374,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1294
+            "index": 1258
         },
         "TRAINER LENNY": {
             "level": 18,
@@ -926,7 +392,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1299
+            "index": 1263
         },
         " TRAINER MIKE 2": {
             "level": 16,
@@ -944,7 +410,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1312
+            "index": 1276
         },
         "TRAINER CORY 1": {
             "level": 24,
@@ -962,7 +428,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1525
+            "index": 1489
         },
         "TRAINER CORY 2": {
             "level": 30,
@@ -980,7 +446,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1782
+            "index": 1746
         },
         "TRAINER CORY 3": {
             "level": 32,
@@ -998,7 +464,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1785
+            "index": 1749
         },
         "TRAINER CORY 4": {
             "level": 34,
@@ -1016,7 +482,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1788
+            "index": 1752
         },
         "TRAINER SAWYER 3": {
             "level": 28,
@@ -1034,7 +500,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1840
+            "index": 1804
         },
         "TRAINER SAWYER 4": {
             "level": 30,
@@ -1052,7 +518,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1843
+            "index": 1807
         }
     },
     "Magikarp": {
@@ -1069,7 +535,7 @@ var SETDEX_SV = {
             "moves": [
                 "Hydro Pump"
             ],
-            "index": 43
+            "index": 7
         },
         "TRAINER ANDREW": {
             "level": 5,
@@ -1087,7 +553,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 735
+            "index": 699
         },
         " TRAINER ANDREW": {
             "level": 15,
@@ -1105,7 +571,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 737
+            "index": 701
         },
         "TRAINER CLAUDE": {
             "level": 16,
@@ -1123,7 +589,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 738
+            "index": 702
         },
         "TRAINER RONALD": {
             "level": 19,
@@ -1141,7 +607,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 766
+            "index": 730
         },
         "TRAINER ROGER": {
             "level": 15,
@@ -1159,7 +625,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1409
+            "index": 1373
         },
         " TRAINER ROGER": {
             "level": 25,
@@ -1177,7 +643,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1410
+            "index": 1374
         },
         "TRAINER CHRIS": {
             "level": 29,
@@ -1195,7 +661,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1457
+            "index": 1421
         }
     },
     "Milcery": {
@@ -1214,7 +680,7 @@ var SETDEX_SV = {
                 "Draining Kiss",
                 "Stored Power"
             ],
-            "index": 44
+            "index": 8
         }
     },
     "Applin": {
@@ -1230,7 +696,7 @@ var SETDEX_SV = {
                 "Pounce",
                 "Grassy Glide"
             ],
-            "index": 45
+            "index": 9
         }
     },
     "Kubfu": {
@@ -1248,7 +714,7 @@ var SETDEX_SV = {
                 "Iron Head",
                 "U-turn"
             ],
-            "index": 46
+            "index": 10
         }
     },
     "Rockruff": {
@@ -1263,7 +729,7 @@ var SETDEX_SV = {
             "moves": [
                 "Rock Slide"
             ],
-            "index": 47
+            "index": 11
         }
     },
     "Mareep": {
@@ -1282,7 +748,7 @@ var SETDEX_SV = {
                 "Shock Wave",
                 "Echoed Voice"
             ],
-            "index": 48
+            "index": 12
         },
         "TRAINER WATTSON 2": {
             "level": 36,
@@ -1305,7 +771,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Light Screen"
             ],
-            "index": 1625
+            "index": 1589
         }
     },
     "Foongus": {
@@ -1323,7 +789,7 @@ var SETDEX_SV = {
                 "Spore",
                 "Absorb"
             ],
-            "index": 49
+            "index": 13
         }
     },
     "Magby": {
@@ -1342,7 +808,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Will-O-Wisp"
             ],
-            "index": 50
+            "index": 14
         }
     },
     "Poltchageist": {
@@ -1360,7 +826,7 @@ var SETDEX_SV = {
                 "Hex",
                 "Absorb"
             ],
-            "index": 51
+            "index": 15
         }
     },
     "Pikachu": {
@@ -1377,7 +843,7 @@ var SETDEX_SV = {
                 "Quick Attack",
                 "Headbutt"
             ],
-            "index": 52
+            "index": 16
         },
         "TRAINER VANESSA": {
             "level": 30,
@@ -1395,7 +861,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 678
+            "index": 642
         },
         "TRAINER WATTSON 3": {
             "level": 39,
@@ -1418,7 +884,7 @@ var SETDEX_SV = {
                 "Rain Dance",
                 "Shock Wave"
             ],
-            "index": 1629
+            "index": 1593
         }
     },
     "Meowth": {
@@ -1435,7 +901,7 @@ var SETDEX_SV = {
                 "Bite",
                 "Hypnosis"
             ],
-            "index": 53
+            "index": 17
         }
     },
     "Eevee": {
@@ -1455,7 +921,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Alluring Voice"
             ],
-            "index": 54
+            "index": 18
         },
         " SILKE": {
             "level": 9,
@@ -1471,7 +937,7 @@ var SETDEX_SV = {
                 "Calm Mind",
                 "Weather Ball"
             ],
-            "index": 55
+            "index": 19
         },
         "  SILKE": {
             "level": 8,
@@ -1485,7 +951,7 @@ var SETDEX_SV = {
                 "Fake Out",
                 "Last Resort"
             ],
-            "index": 56
+            "index": 20
         }
     },
     "Impidimp": {
@@ -1502,7 +968,7 @@ var SETDEX_SV = {
                 "Sucker Punch",
                 "Draining Kiss"
             ],
-            "index": 57
+            "index": 21
         }
     },
     "Frillish": {
@@ -1522,7 +988,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Confuse Ray"
             ],
-            "index": 58
+            "index": 22
         }
     },
     "Archen": {
@@ -1539,7 +1005,7 @@ var SETDEX_SV = {
                 "Rock Throw",
                 "Quick Attack"
             ],
-            "index": 59
+            "index": 23
         }
     },
     "Porygon": {
@@ -1558,7 +1024,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Rest"
             ],
-            "index": 60
+            "index": 24
         }
     },
     "Beedrill": {
@@ -1575,7 +1041,7 @@ var SETDEX_SV = {
                 "Poison Sting",
                 "Pursuit"
             ],
-            "index": 61
+            "index": 25
         },
         "Nicolas": {
             "level": 18,
@@ -1591,7 +1057,7 @@ var SETDEX_SV = {
                 "Poison Jab",
                 "X-Scissor"
             ],
-            "index": 103
+            "index": 67
         }
     },
     "Magnemite": {
@@ -1610,7 +1076,7 @@ var SETDEX_SV = {
                 "Mirror Shot",
                 "Sonic Boom"
             ],
-            "index": 62
+            "index": 26
         },
         "GABBY & TY": {
             "level": 27,
@@ -1628,7 +1094,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 203
+            "index": 167
         },
         "TRAINER SHAWN": {
             "level": 17,
@@ -1646,7 +1112,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 449
+            "index": 413
         },
         "TRAINER DALTON 1": {
             "level": 15,
@@ -1664,7 +1130,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 452
+            "index": 416
         },
         "TRAINER DALTON 2": {
             "level": 25,
@@ -1682,7 +1148,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 454
+            "index": 418
         },
         " TRAINER DALTON 2": {
             "level": 25,
@@ -1700,7 +1166,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 456
+            "index": 420
         },
         "TRAINER DALTON 3": {
             "level": 28,
@@ -1718,7 +1184,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 457
+            "index": 421
         },
         " TRAINER DALTON 3": {
             "level": 28,
@@ -1736,7 +1202,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 459
+            "index": 423
         },
         " TRAINER JACOB": {
             "level": 14,
@@ -1754,7 +1220,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 774
+            "index": 738
         },
         "TRAINER ANTHONY": {
             "level": 14,
@@ -1772,7 +1238,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 775
+            "index": 739
         },
         " TRAINER ANTHONY": {
             "level": 14,
@@ -1790,7 +1256,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 776
+            "index": 740
         },
         "TRAINER BENJAMIN 1": {
             "level": 16,
@@ -1808,7 +1274,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 777
+            "index": 741
         },
         "TRAINER BENJAMIN 2": {
             "level": 30,
@@ -1826,7 +1292,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 778
+            "index": 742
         },
         "TRAINER BENJAMIN 3": {
             "level": 33,
@@ -1844,7 +1310,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 779
+            "index": 743
         },
         "TRAINER ABIGAIL 1": {
             "level": 16,
@@ -1862,7 +1328,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 782
+            "index": 746
         },
         "TRAINER JASMINE": {
             "level": 14,
@@ -1880,7 +1346,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 783
+            "index": 747
         },
         " TRAINER JASMINE": {
             "level": 14,
@@ -1898,7 +1364,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 784
+            "index": 748
         },
         "TRAINER ABIGAIL 2": {
             "level": 28,
@@ -1916,7 +1382,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 786
+            "index": 750
         },
         "TRAINER ABIGAIL 3": {
             "level": 31,
@@ -1934,7 +1400,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 787
+            "index": 751
         },
         "TRAINER JULIO": {
             "level": 21,
@@ -1952,7 +1418,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1201
+            "index": 1165
         },
         "TRAINER ALYSSA": {
             "level": 15,
@@ -1970,7 +1436,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1468
+            "index": 1432
         }
     },
     "Sneasel-Hisui": {
@@ -1987,7 +1453,7 @@ var SETDEX_SV = {
                 "Lash Out",
                 "Poison Tail"
             ],
-            "index": 63
+            "index": 27
         }
     },
     "Staravia": {
@@ -2004,7 +1470,7 @@ var SETDEX_SV = {
                 "Take Down",
                 "Quick Attack"
             ],
-            "index": 64
+            "index": 28
         }
     },
     "Tinkatuff": {
@@ -2022,7 +1488,7 @@ var SETDEX_SV = {
                 "Knock Off",
                 "Fake Out"
             ],
-            "index": 65
+            "index": 29
         }
     },
     "Voltorb": {
@@ -2040,7 +1506,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Volt Switch"
             ],
-            "index": 66
+            "index": 30
         },
         "TRAINER KIRK": {
             "level": 17,
@@ -2062,7 +1528,7 @@ var SETDEX_SV = {
                 "Shock Wave",
                 "Screech"
             ],
-            "index": 444
+            "index": 408
         },
         "TRAINER SHAWN": {
             "level": 17,
@@ -2080,7 +1546,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 448
+            "index": 412
         },
         "TRAINER WATTSON 1": {
             "level": 20,
@@ -2103,7 +1569,7 @@ var SETDEX_SV = {
                 "Self Destruct",
                 "Shock Wave"
             ],
-            "index": 603
+            "index": 567
         },
         "TRAINER JACOB": {
             "level": 6,
@@ -2121,7 +1587,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 772
+            "index": 736
         },
         " TRAINER JACOB": {
             "level": 6,
@@ -2139,7 +1605,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 773
+            "index": 737
         },
         " TRAINER JASMINE": {
             "level": 6,
@@ -2157,7 +1623,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 785
+            "index": 749
         },
         "TRAINER JOSEPH": {
             "level": 14,
@@ -2175,7 +1641,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1467
+            "index": 1431
         },
         "TRAINER MARCOS": {
             "level": 15,
@@ -2193,7 +1659,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1469
+            "index": 1433
         }
     },
     "Togedemaru": {
@@ -2209,7 +1675,7 @@ var SETDEX_SV = {
                 "Fake Out",
                 "U-turn"
             ],
-            "index": 67
+            "index": 31
         }
     },
     "Qwilfish": {
@@ -2224,7 +1690,7 @@ var SETDEX_SV = {
             "moves": [
                 "Flip Turn"
             ],
-            "index": 68
+            "index": 32
         }
     },
     "Buneary": {
@@ -2241,7 +1707,7 @@ var SETDEX_SV = {
                 "Swift",
                 "Ice Beam"
             ],
-            "index": 70
+            "index": 34
         }
     },
     "Litwick": {
@@ -2261,7 +1727,7 @@ var SETDEX_SV = {
                 "Flame Burst",
                 "Clear Smog"
             ],
-            "index": 71
+            "index": 35
         }
     },
     "Pawmi": {
@@ -2278,7 +1744,7 @@ var SETDEX_SV = {
                 "Discharge",
                 "Mach Punch"
             ],
-            "index": 72
+            "index": 36
         }
     },
     "Nickit": {
@@ -2296,7 +1762,7 @@ var SETDEX_SV = {
                 "Nasty Plot",
                 "Snarl"
             ],
-            "index": 73
+            "index": 37
         }
     },
     "Yungoos": {
@@ -2314,7 +1780,7 @@ var SETDEX_SV = {
                 "Psychic Fangs",
                 "Fire Fang"
             ],
-            "index": 74
+            "index": 38
         }
     },
     "Patrat": {
@@ -2332,7 +1798,7 @@ var SETDEX_SV = {
                 "Pursuit",
                 "Low Kick"
             ],
-            "index": 75
+            "index": 39
         }
     },
     "Elgyem": {
@@ -2352,7 +1818,7 @@ var SETDEX_SV = {
                 "Shadow Ball",
                 "Dark Pulse"
             ],
-            "index": 76
+            "index": 40
         }
     },
     "Lampent": {
@@ -2376,7 +1842,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Energy Ball"
             ],
-            "index": 77
+            "index": 41
         }
     },
     "Slowpoke-Galar": {
@@ -2395,7 +1861,7 @@ var SETDEX_SV = {
                 "Belch",
                 "Ice Beam"
             ],
-            "index": 78
+            "index": 42
         }
     },
     "Meowstic": {
@@ -2415,7 +1881,7 @@ var SETDEX_SV = {
                 "Alluring Voice",
                 "Thunderbolt"
             ],
-            "index": 79
+            "index": 43
         }
     },
     "Flittle": {
@@ -2435,7 +1901,7 @@ var SETDEX_SV = {
                 "Stored Power",
                 "Disarming Voice"
             ],
-            "index": 80
+            "index": 44
         }
     },
     "Mime Jr.": {
@@ -2454,7 +1920,7 @@ var SETDEX_SV = {
                 "Calm Mind",
                 "Baton Pass"
             ],
-            "index": 81
+            "index": 45
         }
     },
     "Inkay": {
@@ -2472,7 +1938,7 @@ var SETDEX_SV = {
                 "Psybeam",
                 "Retaliate"
             ],
-            "index": 82
+            "index": 46
         }
     },
     "Metang": {
@@ -2490,7 +1956,7 @@ var SETDEX_SV = {
                 "Ice Punch",
                 "Rock Slide"
             ],
-            "index": 83
+            "index": 47
         }
     },
     "Gothita": {
@@ -2510,7 +1976,7 @@ var SETDEX_SV = {
                 "Charge Beam",
                 "Signal Beam"
             ],
-            "index": 84
+            "index": 48
         }
     },
     "Combusken": {
@@ -2528,7 +1994,7 @@ var SETDEX_SV = {
                 "Aerial Ace",
                 "Focus Energy"
             ],
-            "index": 85
+            "index": 49
         },
         "TRAINER BRENDAN ROUTE 110 TREECKO": {
             "level": 20,
@@ -2546,7 +2012,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1078
+            "index": 1042
         },
         "TRAINER BRENDAN ROUTE 119 TREECKO": {
             "level": 31,
@@ -2564,7 +2030,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1081
+            "index": 1045
         },
         "TRAINER MAY ROUTE 110 TREECKO": {
             "level": 20,
@@ -2582,7 +2048,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1099
+            "index": 1063
         },
         "TRAINER MAY ROUTE 119 TREECKO": {
             "level": 31,
@@ -2600,7 +2066,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1102
+            "index": 1066
         },
         "TRAINER BRENDAN LILYCOVE TREECKO": {
             "level": 34,
@@ -2618,7 +2084,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1387
+            "index": 1351
         },
         "TRAINER MAY LILYCOVE TREECKO": {
             "level": 34,
@@ -2636,7 +2102,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1399
+            "index": 1363
         }
     },
     "Hatenna": {
@@ -2656,7 +2122,7 @@ var SETDEX_SV = {
                 "Substitute",
                 "Disarming Voice"
             ],
-            "index": 86
+            "index": 50
         }
     },
     "Prinplup": {
@@ -2673,7 +2139,7 @@ var SETDEX_SV = {
                 "Brick Break",
                 "Liquidation"
             ],
-            "index": 87
+            "index": 51
         }
     },
     "Toedscool": {
@@ -2692,7 +2158,7 @@ var SETDEX_SV = {
                 "Earth Power",
                 "Giga Drain"
             ],
-            "index": 88
+            "index": 52
         }
     },
     "Drowzee": {
@@ -2710,7 +2176,7 @@ var SETDEX_SV = {
                 "Hypnosis",
                 "Dream Eater"
             ],
-            "index": 89
+            "index": 53
         },
         "TATE&LIZA": {
             "level": 53,
@@ -2733,7 +2199,7 @@ var SETDEX_SV = {
                 "Headbutt",
                 "Protect"
             ],
-            "index": 1714
+            "index": 1678
         }
     },
     "Glimmet": {
@@ -2752,7 +2218,7 @@ var SETDEX_SV = {
                 "Toxic",
                 "Mud Shot"
             ],
-            "index": 90
+            "index": 54
         }
     },
     "Mareanie": {
@@ -2772,7 +2238,7 @@ var SETDEX_SV = {
                 "Toxic",
                 "Chilling Water"
             ],
-            "index": 91
+            "index": 55
         }
     },
     "Togetic": {
@@ -2788,7 +2254,7 @@ var SETDEX_SV = {
                 "Body Slam",
                 "Fling"
             ],
-            "index": 92
+            "index": 56
         }
     },
     "Stunfisk": {
@@ -2807,7 +2273,7 @@ var SETDEX_SV = {
                 "Earth Power",
                 "Discharge"
             ],
-            "index": 93
+            "index": 57
         }
     },
     "Flaaffy": {
@@ -2827,7 +2293,7 @@ var SETDEX_SV = {
                 "Shock Wave",
                 "Hidden Power"
             ],
-            "index": 94
+            "index": 58
         },
         "TRAINER WATTSON 3": {
             "level": 41,
@@ -2850,7 +2316,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Light Screen"
             ],
-            "index": 1630
+            "index": 1594
         }
     },
     "Passimian": {
@@ -2868,7 +2334,7 @@ var SETDEX_SV = {
                 "Knock Off",
                 "Brick Break"
             ],
-            "index": 95
+            "index": 59
         }
     },
     "Machoke": {
@@ -2886,7 +2352,7 @@ var SETDEX_SV = {
                 "Bullet Punch",
                 "Ice Punch"
             ],
-            "index": 96
+            "index": 60
         },
         "TRAINER FREDRICK": {
             "level": 30,
@@ -2904,7 +2370,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 159
+            "index": 123
         },
         "TRAINER HITOSHI": {
             "level": 32,
@@ -2922,7 +2388,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 424
+            "index": 388
         },
         "TRAINER KOICHI": {
             "level": 28,
@@ -2940,7 +2406,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 427
+            "index": 391
         },
         "TRAINER NOB 2": {
             "level": 27,
@@ -2958,7 +2424,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 429
+            "index": 393
         },
         "TRAINER NOB 3": {
             "level": 29,
@@ -2976,7 +2442,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 431
+            "index": 395
         },
         "TRAINER NOB 4": {
             "level": 31,
@@ -2994,7 +2460,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 433
+            "index": 397
         },
         " TRAINER NOB 4": {
             "level": 31,
@@ -3012,7 +2478,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 434
+            "index": 398
         },
         "TRAINER NOB 5": {
             "level": 33,
@@ -3030,7 +2496,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 436
+            "index": 400
         },
         " TRAINER NOB 5": {
             "level": 33,
@@ -3048,7 +2514,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 437
+            "index": 401
         },
         "TRAINER YUJI": {
             "level": 26,
@@ -3066,7 +2532,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 440
+            "index": 404
         },
         "TRAINER ERNEST 1": {
             "level": 33,
@@ -3084,7 +2550,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1009
+            "index": 973
         },
         "TRAINER PHILLIP": {
             "level": 44,
@@ -3102,7 +2568,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1014
+            "index": 978
         },
         "TRAINER LEONARD": {
             "level": 43,
@@ -3120,7 +2586,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1017
+            "index": 981
         },
         "TRAINER DUNCAN": {
             "level": 25,
@@ -3138,7 +2604,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1019
+            "index": 983
         },
         "TRAINER ERNEST 2": {
             "level": 36,
@@ -3156,7 +2622,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1022
+            "index": 986
         },
         "TRAINER ERNEST 3": {
             "level": 39,
@@ -3174,7 +2640,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1025
+            "index": 989
         },
         "TRAINER ERNEST 4": {
             "level": 42,
@@ -3192,7 +2658,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1028
+            "index": 992
         },
         "TRAINER ERNEST 5": {
             "level": 45,
@@ -3210,7 +2676,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1030
+            "index": 994
         },
         "TRAINER KELVIN": {
             "level": 33,
@@ -3228,7 +2694,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1040
+            "index": 1004
         },
         "TRAINER KOJI 1": {
             "level": 34,
@@ -3246,7 +2712,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1416
+            "index": 1380
         },
         "TRAINER CORY 5": {
             "level": 36,
@@ -3264,7 +2730,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1791
+            "index": 1755
         },
         "TRAINER KOJI 2": {
             "level": 37,
@@ -3282,7 +2748,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1804
+            "index": 1768
         },
         " TRAINER KOJI 2": {
             "level": 37,
@@ -3300,7 +2766,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1805
+            "index": 1769
         },
         "TRAINER KOJI 3": {
             "level": 39,
@@ -3318,7 +2784,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1807
+            "index": 1771
         },
         " TRAINER KOJI 3": {
             "level": 39,
@@ -3336,7 +2802,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1808
+            "index": 1772
         },
         "TRAINER KOJI 4": {
             "level": 41,
@@ -3354,7 +2820,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1810
+            "index": 1774
         },
         " TRAINER KOJI 4": {
             "level": 41,
@@ -3372,7 +2838,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1811
+            "index": 1775
         },
         "TRAINER SAWYER 5": {
             "level": 33,
@@ -3390,7 +2856,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1846
+            "index": 1810
         }
     },
     "Gabite": {
@@ -3408,7 +2874,7 @@ var SETDEX_SV = {
                 "Fire Fang",
                 "Iron Head"
             ],
-            "index": 97
+            "index": 61
         }
     },
     "Drakloak": {
@@ -3425,7 +2891,7 @@ var SETDEX_SV = {
                 "Double-Edge",
                 "Psychic Fangs"
             ],
-            "index": 98
+            "index": 62
         }
     },
     "Vivillon": {
@@ -3444,7 +2910,7 @@ var SETDEX_SV = {
                 "Bug Buzz",
                 "Draining Kiss"
             ],
-            "index": 99
+            "index": 63
         }
     },
     "Yanma": {
@@ -3463,7 +2929,7 @@ var SETDEX_SV = {
                 "Ancient Power",
                 "Bug Buzz"
             ],
-            "index": 100
+            "index": 64
         }
     },
     "Brionne": {
@@ -3482,7 +2948,7 @@ var SETDEX_SV = {
                 "Round",
                 "Ice Beam"
             ],
-            "index": 101
+            "index": 65
         }
     },
     "Herdier": {
@@ -3499,7 +2965,7 @@ var SETDEX_SV = {
                 "Fire Fang",
                 "Crunch"
             ],
-            "index": 102
+            "index": 66
         }
     },
     "Growlithe": {
@@ -3516,7 +2982,7 @@ var SETDEX_SV = {
                 "Fire Fang",
                 "Play Rough"
             ],
-            "index": 104
+            "index": 68
         },
         "TRAINER FLANNERY 3": {
             "level": 41,
@@ -3539,7 +3005,7 @@ var SETDEX_SV = {
                 "Roar",
                 "Sunny Day"
             ],
-            "index": 1649
+            "index": 1613
         },
         "TRAINER FLANNERY 4": {
             "level": 46,
@@ -3562,7 +3028,7 @@ var SETDEX_SV = {
                 "Sunny Day",
                 "Roar"
             ],
-            "index": 1655
+            "index": 1619
         }
     },
     "Haunter": {
@@ -3581,7 +3047,7 @@ var SETDEX_SV = {
                 "Venoshock",
                 "Hex"
             ],
-            "index": 105
+            "index": 69
         }
     },
     "Misdreavus": {
@@ -3600,7 +3066,7 @@ var SETDEX_SV = {
                 "Dazzling Gleam",
                 "Burning Jealousy"
             ],
-            "index": 106
+            "index": 70
         }
     },
     "Krokorok": {
@@ -3617,7 +3083,7 @@ var SETDEX_SV = {
                 "Crunch",
                 "Body Slam"
             ],
-            "index": 107
+            "index": 71
         }
     },
     "Varoom": {
@@ -3635,7 +3101,7 @@ var SETDEX_SV = {
                 "Bulldoze",
                 "Spin Out"
             ],
-            "index": 108
+            "index": 72
         }
     },
     "Dewpider": {
@@ -3654,7 +3120,7 @@ var SETDEX_SV = {
                 "Hydro Pump",
                 "Bug Buzz"
             ],
-            "index": 109
+            "index": 73
         }
     },
     "Grotle": {
@@ -3672,7 +3138,7 @@ var SETDEX_SV = {
                 "Zen Headbutt",
                 "Grassy Glide"
             ],
-            "index": 110
+            "index": 74
         }
     },
     "Croconaw": {
@@ -3690,7 +3156,7 @@ var SETDEX_SV = {
                 "Aqua Tail",
                 "Rock Slide"
             ],
-            "index": 111
+            "index": 75
         }
     },
     "Lombre": {
@@ -3710,7 +3176,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Ice Beam"
             ],
-            "index": 112
+            "index": 76
         },
         "TRAINER OLIVIA": {
             "level": 39,
@@ -3733,7 +3199,7 @@ var SETDEX_SV = {
                 "Fake Out",
                 "Water Pulse"
             ],
-            "index": 350
+            "index": 314
         },
         "TRAINER CAROL": {
             "level": 17,
@@ -3751,7 +3217,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 966
+            "index": 930
         },
         "TRAINER NANCY": {
             "level": 18,
@@ -3769,7 +3235,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 968
+            "index": 932
         },
         "TRAINER EDWIN 1": {
             "level": 14,
@@ -3787,7 +3253,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1048
+            "index": 1012
         },
         "TRAINER EDWIN 2": {
             "level": 26,
@@ -3805,7 +3271,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1055
+            "index": 1019
         },
         "TRAINER EDWIN 3": {
             "level": 29,
@@ -3823,7 +3289,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1057
+            "index": 1021
         },
         "TRAINER EDWIN 4": {
             "level": 32,
@@ -3841,7 +3307,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1059
+            "index": 1023
         },
         "TRAINER BRENDAN ROUTE 110 TREECKO": {
             "level": 18,
@@ -3859,7 +3325,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1077
+            "index": 1041
         },
         "TRAINER BRENDAN ROUTE 119 TREECKO": {
             "level": 29,
@@ -3877,7 +3343,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1080
+            "index": 1044
         },
         "TRAINER BRENDAN ROUTE 110 TORCHIC": {
             "level": 18,
@@ -3895,7 +3361,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1083
+            "index": 1047
         },
         "TRAINER BRENDAN ROUTE 119 TORCHIC": {
             "level": 29,
@@ -3913,7 +3379,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1086
+            "index": 1050
         },
         "TRAINER MAY ROUTE 119 MUDKIP": {
             "level": 29,
@@ -3931,7 +3397,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1094
+            "index": 1058
         },
         "TRAINER MAY ROUTE 110 TREECKO": {
             "level": 18,
@@ -3949,7 +3415,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1098
+            "index": 1062
         },
         "TRAINER MAY ROUTE 119 TREECKO": {
             "level": 29,
@@ -3967,7 +3433,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1101
+            "index": 1065
         },
         "TRAINER MAY ROUTE 110 TORCHIC": {
             "level": 18,
@@ -3985,7 +3451,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1104
+            "index": 1068
         },
         "TRAINER MAY ROUTE 119 TORCHIC": {
             "level": 29,
@@ -4003,7 +3469,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1107
+            "index": 1071
         },
         "TRAINER LORENZO": {
             "level": 28,
@@ -4021,7 +3487,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1179
+            "index": 1143
         },
         "TRAINER JENNA": {
             "level": 28,
@@ -4039,7 +3505,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1189
+            "index": 1153
         },
         "TRAINER HALEY 2": {
             "level": 26,
@@ -4057,7 +3523,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1262
+            "index": 1226
         },
         "TRAINER HALEY 3": {
             "level": 29,
@@ -4075,7 +3541,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1264
+            "index": 1228
         },
         "TRAINER HALEY 4": {
             "level": 32,
@@ -4093,7 +3559,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1266
+            "index": 1230
         },
         "TRAINER HALEY 5": {
             "level": 34,
@@ -4111,7 +3577,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1269
+            "index": 1233
         },
         "TRAINER SOPHIE": {
             "level": 19,
@@ -4129,7 +3595,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1476
+            "index": 1440
         },
         "TRAINER ANGELINA": {
             "level": 18,
@@ -4147,7 +3613,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1483
+            "index": 1447
         },
         "TRAINER CELIA": {
             "level": 22,
@@ -4165,7 +3631,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1533
+            "index": 1497
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -4183,7 +3649,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1858
+            "index": 1822
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -4201,7 +3667,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1864
+            "index": 1828
         }
     },
     "Thwackey": {
@@ -4218,7 +3684,7 @@ var SETDEX_SV = {
                 "Fake Out",
                 "U-turn"
             ],
-            "index": 113
+            "index": 77
         }
     },
     "Munchlax": {
@@ -4236,7 +3702,7 @@ var SETDEX_SV = {
                 "Brick Break",
                 "Stomping Tantrum"
             ],
-            "index": 114
+            "index": 78
         }
     },
     "Happiny": {
@@ -4253,7 +3719,7 @@ var SETDEX_SV = {
                 "Seismic Toss",
                 "Take Down"
             ],
-            "index": 115
+            "index": 79
         }
     },
     "Geodude": {
@@ -4273,7 +3739,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 116
+            "index": 80
         },
         "TRAINER MARC": {
             "level": 8,
@@ -4291,7 +3757,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1210
+            "index": 1174
         },
         " TRAINER MARC": {
             "level": 8,
@@ -4309,7 +3775,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1211
+            "index": 1175
         },
         "TRAINER TRENT 1": {
             "level": 16,
@@ -4327,7 +3793,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1295
+            "index": 1259
         },
         " TRAINER TRENT 1": {
             "level": 17,
@@ -4345,7 +3811,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1296
+            "index": 1260
         },
         "  TRAINER TRENT 1": {
             "level": 16,
@@ -4363,7 +3829,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1297
+            "index": 1261
         },
         "TRAINER LENNY": {
             "level": 18,
@@ -4381,7 +3847,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1298
+            "index": 1262
         },
         "TRAINER LUCAS 1": {
             "level": 18,
@@ -4399,7 +3865,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1300
+            "index": 1264
         },
         "TRAINER ALAN": {
             "level": 22,
@@ -4417,7 +3883,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1302
+            "index": 1266
         },
         "TRAINER ERIC": {
             "level": 20,
@@ -4435,7 +3901,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1305
+            "index": 1269
         },
         "TRAINER MIKE 2": {
             "level": 16,
@@ -4453,7 +3919,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1310
+            "index": 1274
         },
         " TRAINER MIKE 2": {
             "level": 16,
@@ -4471,7 +3937,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1311
+            "index": 1275
         },
         "TRAINER TRENT 2": {
             "level": 24,
@@ -4489,7 +3955,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1313
+            "index": 1277
         },
         " TRAINER TRENT 2": {
             "level": 24,
@@ -4507,7 +3973,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1314
+            "index": 1278
         },
         "  TRAINER TRENT 2": {
             "level": 24,
@@ -4525,7 +3991,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1315
+            "index": 1279
         },
         "TRAINER TRENT 3": {
             "level": 27,
@@ -4543,7 +4009,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1317
+            "index": 1281
         },
         " TRAINER TRENT 3": {
             "level": 27,
@@ -4561,7 +4027,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1318
+            "index": 1282
         },
         "TRAINER TRENT 4": {
             "level": 30,
@@ -4579,7 +4045,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1321
+            "index": 1285
         },
         "TRAINER DEVAN": {
             "level": 8,
@@ -4597,7 +4063,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1552
+            "index": 1516
         },
         " TRAINER DEVAN": {
             "level": 8,
@@ -4615,7 +4081,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1553
+            "index": 1517
         },
         "TRAINER SAWYER 2": {
             "level": 26,
@@ -4633,7 +4099,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1838
+            "index": 1802
         }
     },
     "Poochyena": {
@@ -4653,7 +4119,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 117
+            "index": 81
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 1": {
             "level": 36,
@@ -4671,7 +4137,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 122
+            "index": 86
         },
         "TRAINER GABRIELLE 1": {
             "level": 26,
@@ -4689,7 +4155,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 126
+            "index": 90
         },
         "TRAINER GRUNT PETALBURG WOODS": {
             "level": 9,
@@ -4707,7 +4173,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 131
+            "index": 95
         },
         "TRAINER GRUNT WEATHER INST 1": {
             "level": 27,
@@ -4725,7 +4191,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 141
+            "index": 105
         },
         "TRAINER GRUNT WEATHER INST 2": {
             "level": 27,
@@ -4743,7 +4209,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 142
+            "index": 106
         },
         "TRAINER GRUNT WEATHER INST 3": {
             "level": 26,
@@ -4761,7 +4227,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 144
+            "index": 108
         },
         "TRAINER GRUNT MT PYRE 3": {
             "level": 30,
@@ -4779,7 +4245,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 153
+            "index": 117
         },
         "TRAINER GRUNT AQUA HIDEOUT 7": {
             "level": 31,
@@ -4797,7 +4263,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 445
+            "index": 409
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -4815,7 +4281,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1113
+            "index": 1077
         },
         "TRAINER GRUNT JAGGED PASS": {
             "level": 22,
@@ -4833,7 +4299,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1208
+            "index": 1172
         },
         "TRAINER GRUNT SPACE CENTER 3": {
             "level": 31,
@@ -4851,7 +4317,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1228
+            "index": 1192
         },
         "TRAINER GRUNT WEATHER INST 5": {
             "level": 27,
@@ -4869,7 +4335,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1242
+            "index": 1206
         },
         "TRAINER TABITHA MT CHIMNEY": {
             "level": 20,
@@ -4887,7 +4353,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1244
+            "index": 1208
         },
         "TRAINER MIKE 1": {
             "level": 10,
@@ -4908,7 +4374,7 @@ var SETDEX_SV = {
                 "Bite",
                 "Scary Face"
             ],
-            "index": 1309
+            "index": 1273
         },
         "TRAINER GRUNT MAGMA HIDEOUT 2": {
             "level": 29,
@@ -4926,7 +4392,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1491
+            "index": 1455
         },
         "TRAINER GRUNT MAGMA HIDEOUT 8": {
             "level": 29,
@@ -4944,7 +4410,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1499
+            "index": 1463
         },
         "TRAINER PAT": {
             "level": 25,
@@ -4962,7 +4428,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1574
+            "index": 1538
         }
     },
     "Zubat": {
@@ -4982,7 +4448,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 118
+            "index": 82
         },
         "TRAINER GRUNT AQUA HIDEOUT 3": {
             "level": 32,
@@ -5000,7 +4466,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 120
+            "index": 84
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 3": {
             "level": 36,
@@ -5018,7 +4484,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 124
+            "index": 88
         },
         "TRAINER GRUNT WEATHER INST 1": {
             "level": 27,
@@ -5036,7 +4502,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 140
+            "index": 104
         },
         "TRAINER GRUNT WEATHER INST 3": {
             "level": 26,
@@ -5054,7 +4520,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 145
+            "index": 109
         },
         "TRAINER GRUNT MUSEUM 2": {
             "level": 14,
@@ -5072,7 +4538,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 148
+            "index": 112
         },
         "TRAINER GRUNT MT PYRE 1": {
             "level": 32,
@@ -5090,7 +4556,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 151
+            "index": 115
         },
         "TRAINER GRUNT AQUA HIDEOUT 6": {
             "level": 32,
@@ -5108,7 +4574,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 157
+            "index": 121
         },
         "TRAINER GRUNT AQUA HIDEOUT 7": {
             "level": 31,
@@ -5126,7 +4592,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 446
+            "index": 410
         },
         "TRAINER GRUNT UNUSED": {
             "level": 31,
@@ -5144,7 +4610,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1205
+            "index": 1169
         },
         "TRAINER GRUNT MT PYRE 4": {
             "level": 30,
@@ -5162,7 +4628,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1207
+            "index": 1171
         },
         "TRAINER GRUNT MT CHIMNEY 2": {
             "level": 20,
@@ -5180,7 +4646,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1220
+            "index": 1184
         },
         "TRAINER GRUNT SPACE CENTER 3": {
             "level": 31,
@@ -5198,7 +4664,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1227
+            "index": 1191
         },
         "TRAINER GRUNT SPACE CENTER 5": {
             "level": 32,
@@ -5216,7 +4682,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1230
+            "index": 1194
         },
         "TRAINER GRUNT WEATHER INST 5": {
             "level": 27,
@@ -5234,7 +4700,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1241
+            "index": 1205
         },
         " TRAINER TABITHA MT CHIMNEY": {
             "level": 22,
@@ -5252,7 +4718,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1246
+            "index": 1210
         },
         "TRAINER MAXIE MT CHIMNEY": {
             "level": 24,
@@ -5270,7 +4736,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1257
+            "index": 1221
         },
         "TRAINER GRUNT MAGMA HIDEOUT 1": {
             "level": 29,
@@ -5288,7 +4754,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1490
+            "index": 1454
         },
         "TRAINER GRUNT MAGMA HIDEOUT 4": {
             "level": 28,
@@ -5306,7 +4772,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1494
+            "index": 1458
         },
         "TRAINER GRUNT MAGMA HIDEOUT 7": {
             "level": 29,
@@ -5324,7 +4790,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1498
+            "index": 1462
         },
         "TRAINER GRUNT MAGMA HIDEOUT 9": {
             "level": 29,
@@ -5342,7 +4808,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1500
+            "index": 1464
         },
         "TRAINER GRUNT MAGMA HIDEOUT 13": {
             "level": 29,
@@ -5360,7 +4826,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1504
+            "index": 1468
         },
         "TRAINER TABITHA MAGMA HIDEOUT": {
             "level": 30,
@@ -5378,7 +4844,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1510
+            "index": 1474
         }
     },
     "Carvanha": {
@@ -5398,7 +4864,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 119
+            "index": 83
         },
         "TRAINER GRUNT AQUA HIDEOUT 4": {
             "level": 32,
@@ -5416,7 +4882,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 121
+            "index": 85
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 2": {
             "level": 36,
@@ -5434,7 +4900,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 123
+            "index": 87
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 4": {
             "level": 36,
@@ -5452,7 +4918,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 138
+            "index": 102
         },
         "TRAINER GRUNT WEATHER INST 2": {
             "level": 27,
@@ -5470,7 +4936,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 143
+            "index": 107
         },
         "TRAINER GRUNT WEATHER INST 3": {
             "level": 26,
@@ -5488,7 +4954,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 146
+            "index": 110
         },
         "TRAINER GRUNT MUSEUM 1": {
             "level": 15,
@@ -5506,7 +4972,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 147
+            "index": 111
         },
         "TRAINER GRUNT MUSEUM 2": {
             "level": 14,
@@ -5524,7 +4990,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 149
+            "index": 113
         },
         "TRAINER GRUNT MT PYRE 2": {
             "level": 32,
@@ -5542,7 +5008,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 152
+            "index": 116
         },
         "TRAINER GRUNT MT PYRE 3": {
             "level": 30,
@@ -5560,7 +5026,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 154
+            "index": 118
         },
         "TRAINER GRUNT WEATHER INST 4": {
             "level": 28,
@@ -5578,7 +5044,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 155
+            "index": 119
         },
         "TRAINER GRUNT AQUA HIDEOUT 5": {
             "level": 32,
@@ -5596,7 +5062,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 156
+            "index": 120
         },
         "TRAINER SHELLY WEATHER INSTITUTE": {
             "level": 28,
@@ -5614,7 +5080,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 163
+            "index": 127
         },
         "TRAINER TIFFANY": {
             "level": 39,
@@ -5632,7 +5098,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 351
+            "index": 315
         },
         "TRAINER LUIS": {
             "level": 26,
@@ -5650,7 +5116,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 380
+            "index": 344
         },
         "TRAINER TONY 1": {
             "level": 26,
@@ -5668,7 +5134,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 387
+            "index": 351
         },
         "TRAINER MATTHEW": {
             "level": 26,
@@ -5686,7 +5152,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 389
+            "index": 353
         },
         "TRAINER DAVID": {
             "level": 25,
@@ -5704,7 +5170,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 391
+            "index": 355
         },
         "TRAINER ROLAND": {
             "level": 34,
@@ -5722,7 +5188,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 394
+            "index": 358
         },
         "TRAINER DEAN": {
             "level": 31,
@@ -5740,7 +5206,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 398
+            "index": 362
         },
         " TRAINER DEAN": {
             "level": 31,
@@ -5758,7 +5224,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 400
+            "index": 364
         },
         "TRAINER GRUNT AQUA HIDEOUT 8": {
             "level": 32,
@@ -5776,7 +5242,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 447
+            "index": 411
         },
         "TRAINER BARNY": {
             "level": 25,
@@ -5794,7 +5260,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 747
+            "index": 711
         },
         "TRAINER ELLIOT 3": {
             "level": 26,
@@ -5812,7 +5278,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 755
+            "index": 719
         },
         "TRAINER ELLIOT 4": {
             "level": 30,
@@ -5830,7 +5296,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 759
+            "index": 723
         },
         "TRAINER LEONARDO": {
             "level": 34,
@@ -5848,7 +5314,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1216
+            "index": 1180
         },
         "TRAINER HENRY": {
             "level": 31,
@@ -5866,7 +5332,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1407
+            "index": 1371
         },
         "LILA & ROY": {
             "level": 43,
@@ -5884,7 +5350,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1450
+            "index": 1414
         },
         "TRAINER CHRIS": {
             "level": 23,
@@ -5902,7 +5368,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1460
+            "index": 1424
         }
     },
     "Skitty": {
@@ -5922,7 +5388,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 125
+            "index": 89
         },
         "TRAINER MIGUEL 1": {
             "level": 15,
@@ -5940,7 +5406,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 666
+            "index": 630
         },
         "TRAINER COLTON": {
             "level": 22,
@@ -5963,7 +5429,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 667
+            "index": 631
         },
         " TRAINER COLTON": {
             "level": 36,
@@ -5986,7 +5452,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 668
+            "index": 632
         },
         "  TRAINER COLTON": {
             "level": 40,
@@ -6009,7 +5475,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 669
+            "index": 633
         },
         "   TRAINER COLTON": {
             "level": 12,
@@ -6032,7 +5498,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 670
+            "index": 634
         },
         "    TRAINER COLTON": {
             "level": 30,
@@ -6055,7 +5521,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 671
+            "index": 635
         },
         "TRAINER MIGUEL 2": {
             "level": 29,
@@ -6073,7 +5539,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 673
+            "index": 637
         },
         "TRAINER MIGUEL 3": {
             "level": 32,
@@ -6091,7 +5557,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 674
+            "index": 638
         },
         "TRAINER MARTHA": {
             "level": 23,
@@ -6109,7 +5575,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 969
+            "index": 933
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -6127,7 +5593,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1147
+            "index": 1111
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -6145,7 +5611,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1156
+            "index": 1120
         },
         "TRAINER ROBIN": {
             "level": 14,
@@ -6163,7 +5629,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1272
+            "index": 1236
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -6181,7 +5647,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1849
+            "index": 1813
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -6199,7 +5665,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1855
+            "index": 1819
         }
     },
     "Zigzagoon": {
@@ -6219,7 +5685,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 127
+            "index": 91
         },
         "TRAINER RICKY 1": {
             "level": 13,
@@ -6242,7 +5708,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Surf"
             ],
-            "index": 225
+            "index": 189
         },
         "TRAINER CINDY 2": {
             "level": 11,
@@ -6263,7 +5729,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Tail Whip"
             ],
-            "index": 334
+            "index": 298
         },
         "TRAINER ETHAN 1": {
             "level": 20,
@@ -6281,7 +5747,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 490
+            "index": 454
         },
         "TRAINER ETHAN 2": {
             "level": 26,
@@ -6299,7 +5765,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 494
+            "index": 458
         },
         "ANNA & MEG": {
             "level": 31,
@@ -6322,7 +5788,7 @@ var SETDEX_SV = {
                 "Headbutt",
                 "Odor Sleuth"
             ],
-            "index": 658
+            "index": 622
         },
         "TRAINER VICTOR": {
             "level": 16,
@@ -6340,7 +5806,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 665
+            "index": 629
         },
         "TRAINER BEN": {
             "level": 17,
@@ -6363,7 +5829,7 @@ var SETDEX_SV = {
                 "Growl",
                 "Thunderbolt"
             ],
-            "index": 708
+            "index": 672
         },
         "TRAINER EDDIE": {
             "level": 14,
@@ -6381,7 +5847,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 725
+            "index": 689
         },
         " TRAINER EDDIE": {
             "level": 16,
@@ -6399,7 +5865,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 726
+            "index": 690
         },
         "TRAINER DEMETRIUS": {
             "level": 25,
@@ -6417,7 +5883,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 802
+            "index": 766
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -6435,7 +5901,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1111
+            "index": 1075
         },
         "TRAINER DEANDRE": {
             "level": 14,
@@ -6453,7 +5919,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1487
+            "index": 1451
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -6471,7 +5937,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1571
+            "index": 1535
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -6489,7 +5955,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1851
+            "index": 1815
         }
     },
     "Lotad": {
@@ -6509,7 +5975,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 128
+            "index": 92
         },
         "TRAINER JENNA": {
             "level": 28,
@@ -6527,7 +5993,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1188
+            "index": 1152
         },
         "TRAINER BRENDAN RUSTBORO TREECKO": {
             "level": 13,
@@ -6545,7 +6011,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1234
+            "index": 1198
         },
         "TRAINER MAY RUSTBORO TREECKO": {
             "level": 13,
@@ -6563,7 +6029,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1582
+            "index": 1546
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -6581,7 +6047,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1852
+            "index": 1816
         }
     },
     "Seedot": {
@@ -6601,7 +6067,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 129
+            "index": 93
         },
         "TRAINER LORENZO": {
             "level": 28,
@@ -6619,7 +6085,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1177
+            "index": 1141
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -6637,7 +6103,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1853
+            "index": 1817
         }
     },
     "Taillow": {
@@ -6657,7 +6123,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 130
+            "index": 94
         },
         "TRAINER ETHAN 1": {
             "level": 20,
@@ -6675,7 +6141,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 491
+            "index": 455
         },
         "TRAINER ETHAN 2": {
             "level": 26,
@@ -6693,7 +6159,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 495
+            "index": 459
         },
         "TRAINER VICTOR": {
             "level": 16,
@@ -6711,7 +6177,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 664
+            "index": 628
         },
         "TRAINER CHESTER": {
             "level": 25,
@@ -6729,7 +6195,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 855
+            "index": 819
         },
         "TRAINER CAROL": {
             "level": 17,
@@ -6747,7 +6213,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 965
+            "index": 929
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -6765,7 +6231,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1114
+            "index": 1078
         },
         "TRAINER JOSUE": {
             "level": 25,
@@ -6783,7 +6249,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1521
+            "index": 1485
         },
         "TRAINER BRANDEN": {
             "level": 22,
@@ -6801,7 +6267,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1536
+            "index": 1500
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -6819,7 +6285,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1854
+            "index": 1818
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -6837,7 +6303,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1860
+            "index": 1824
         }
     },
     "Manectric": {
@@ -6857,7 +6323,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 132
+            "index": 96
         },
         "TRAINER WILTON 3": {
             "level": 29,
@@ -6875,7 +6341,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 267
+            "index": 231
         },
         "TRAINER WILTON 4": {
             "level": 32,
@@ -6893,7 +6359,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 270
+            "index": 234
         },
         "TRAINER WILTON 5": {
             "level": 35,
@@ -6911,7 +6377,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 273
+            "index": 237
         },
         "TRAINER KEIRA": {
             "level": 45,
@@ -6929,7 +6395,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 285
+            "index": 249
         },
         "TRAINER WALTER 1": {
             "level": 29,
@@ -6947,7 +6413,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 568
+            "index": 532
         },
         "TRAINER MICAH": {
             "level": 44,
@@ -6965,7 +6431,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 569
+            "index": 533
         },
         " TRAINER MICAH": {
             "level": 44,
@@ -6983,7 +6449,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 570
+            "index": 534
         },
         "TRAINER WALTER 2": {
             "level": 34,
@@ -7001,7 +6467,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 572
+            "index": 536
         },
         "TRAINER WALTER 3": {
             "level": 36,
@@ -7024,7 +6490,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Roar"
             ],
-            "index": 574
+            "index": 538
         },
         "TRAINER WALTER 4": {
             "level": 39,
@@ -7046,7 +6512,7 @@ var SETDEX_SV = {
                 "Spark",
                 "Odor Sleuth"
             ],
-            "index": 576
+            "index": 540
         },
         "TRAINER WALTER 5": {
             "level": 41,
@@ -7069,7 +6535,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Roar"
             ],
-            "index": 579
+            "index": 543
         },
         "TRAINER WATTSON 1": {
             "level": 24,
@@ -7092,7 +6558,7 @@ var SETDEX_SV = {
                 "Shock Wave",
                 "Howl"
             ],
-            "index": 606
+            "index": 570
         },
         "TRAINER AURON": {
             "level": 33,
@@ -7110,7 +6576,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1038
+            "index": 1002
         },
         "TRAINER MARLEY": {
             "level": 34,
@@ -7133,7 +6599,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Thunderbolt"
             ],
-            "index": 1042
+            "index": 1006
         },
         "TRAINER ATHENA": {
             "level": 32,
@@ -7155,7 +6621,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Quick Attack"
             ],
-            "index": 1217
+            "index": 1181
         },
         "DEZ & LUKE": {
             "level": 31,
@@ -7173,7 +6639,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1330
+            "index": 1294
         },
         "TRAINER CAROLINA": {
             "level": 24,
@@ -7191,7 +6657,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1527
+            "index": 1491
         },
         " TRAINER CAROLINA": {
             "level": 24,
@@ -7209,7 +6675,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1529
+            "index": 1493
         },
         "TRAINER FABIAN": {
             "level": 26,
@@ -7227,7 +6693,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1559
+            "index": 1523
         },
         "TRAINER LEONEL": {
             "level": 30,
@@ -7249,7 +6715,7 @@ var SETDEX_SV = {
                 "Quick Attack",
                 "Thunder Wave"
             ],
-            "index": 1563
+            "index": 1527
         },
         "TRAINER WATTSON 2": {
             "level": 40,
@@ -7272,7 +6738,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Protect"
             ],
-            "index": 1628
+            "index": 1592
         },
         "TRAINER WATTSON 3": {
             "level": 45,
@@ -7295,7 +6761,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Protect"
             ],
-            "index": 1633
+            "index": 1597
         },
         "TRAINER WATTSON 4": {
             "level": 50,
@@ -7318,7 +6784,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Protect"
             ],
-            "index": 1638
+            "index": 1602
         },
         "TRAINER WATTSON 5": {
             "level": 55,
@@ -7341,7 +6807,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Protect"
             ],
-            "index": 1644
+            "index": 1608
         },
         "TRAINER FERNANDO 3": {
             "level": 37,
@@ -7359,7 +6825,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1830
+            "index": 1794
         },
         "TRAINER FERNANDO 4": {
             "level": 39,
@@ -7377,7 +6843,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1832
+            "index": 1796
         },
         " TRAINER FERNANDO 4": {
             "level": 39,
@@ -7395,7 +6861,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1833
+            "index": 1797
         },
         "TRAINER FERNANDO 5": {
             "level": 41,
@@ -7413,7 +6879,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1835
+            "index": 1799
         },
         " TRAINER FERNANDO 5": {
             "level": 41,
@@ -7431,7 +6897,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1836
+            "index": 1800
         }
     },
     "Shiftry": {
@@ -7451,7 +6917,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 133
+            "index": 97
         },
         "TRAINER BRAXTON": {
             "level": 28,
@@ -7474,7 +6940,7 @@ var SETDEX_SV = {
                 "Double Team",
                 "Swagger"
             ],
-            "index": 241
+            "index": 205
         },
         "TRAINER VITO": {
             "level": 42,
@@ -7492,7 +6958,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 260
+            "index": 224
         },
         "TRAINER SIDNEY": {
             "level": 48,
@@ -7515,7 +6981,7 @@ var SETDEX_SV = {
                 "Swagger",
                 "Extrasensory"
             ],
-            "index": 581
+            "index": 545
         },
         "TRAINER EDWIN 5": {
             "level": 35,
@@ -7533,7 +6999,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1062
+            "index": 1026
         },
         "TRAINER RUBEN": {
             "level": 34,
@@ -7551,7 +7017,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1414
+            "index": 1378
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -7569,7 +7035,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1871
+            "index": 1835
         }
     },
     "Pelipper": {
@@ -7589,7 +7055,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 134
+            "index": 98
         },
         "TRAINER EDGAR": {
             "level": 43,
@@ -7607,7 +7073,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 251
+            "index": 215
         },
         "TRAINER WENDY": {
             "level": 29,
@@ -7630,7 +7096,7 @@ var SETDEX_SV = {
                 "Mist",
                 "Protect"
             ],
-            "index": 283
+            "index": 247
         },
         "TRAINER BROOKE 3": {
             "level": 29,
@@ -7648,7 +7114,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 303
+            "index": 267
         },
         "TRAINER BROOKE 4": {
             "level": 32,
@@ -7666,7 +7132,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 306
+            "index": 270
         },
         "TRAINER BROOKE 5": {
             "level": 34,
@@ -7684,7 +7150,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 309
+            "index": 273
         },
         "TRAINER RICHARD": {
             "level": 34,
@@ -7702,7 +7168,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 402
+            "index": 366
         },
         "TRAINER BERNIE 3": {
             "level": 29,
@@ -7720,7 +7186,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 477
+            "index": 441
         },
         "TRAINER BERNIE 4": {
             "level": 32,
@@ -7738,7 +7204,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 479
+            "index": 443
         },
         "TRAINER BERNIE 5": {
             "level": 35,
@@ -7756,7 +7222,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 481
+            "index": 445
         },
         "TRAINER WINONA 1": {
             "level": 30,
@@ -7779,7 +7245,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Aerial Ace"
             ],
-            "index": 617
+            "index": 581
         },
         "TRAINER EDWARDO": {
             "level": 29,
@@ -7797,7 +7263,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 848
+            "index": 812
         },
         "TRAINER BENNY": {
             "level": 36,
@@ -7815,7 +7281,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 853
+            "index": 817
         },
         "TRAINER KAYLEE": {
             "level": 34,
@@ -7833,7 +7299,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 950
+            "index": 914
         },
         "TRAINER LEONARD": {
             "level": 43,
@@ -7851,7 +7317,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1016
+            "index": 980
         },
         "TRAINER ERNEST 3": {
             "level": 39,
@@ -7869,7 +7335,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1023
+            "index": 987
         },
         "TRAINER ERNEST 4": {
             "level": 42,
@@ -7887,7 +7353,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1026
+            "index": 990
         },
         "TRAINER ERNEST 5": {
             "level": 45,
@@ -7905,7 +7371,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1029
+            "index": 993
         },
         "TRAINER BRENDAN ROUTE 119 MUDKIP": {
             "level": 29,
@@ -7923,7 +7389,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1073
+            "index": 1037
         },
         "TRAINER BRENDAN ROUTE 119 TREECKO": {
             "level": 29,
@@ -7941,7 +7407,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1079
+            "index": 1043
         },
         "TRAINER MAY ROUTE 119 TREECKO": {
             "level": 29,
@@ -7959,7 +7425,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1100
+            "index": 1064
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -7977,7 +7443,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1158
+            "index": 1122
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -7995,7 +7461,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1164
+            "index": 1128
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -8013,7 +7479,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1170
+            "index": 1134
         },
         "TRAINER MIKE 1": {
             "level": 10,
@@ -8034,7 +7500,7 @@ var SETDEX_SV = {
                 "Gust",
                 "Growl"
             ],
-            "index": 1308
+            "index": 1272
         },
         "TRAINER BRENDAN LILYCOVE MUDKIP": {
             "level": 32,
@@ -8052,7 +7518,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1382
+            "index": 1346
         },
         "TRAINER BRENDAN LILYCOVE TREECKO": {
             "level": 32,
@@ -8070,7 +7536,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1385
+            "index": 1349
         },
         "TRAINER MAY LILYCOVE MUDKIP": {
             "level": 32,
@@ -8088,7 +7554,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1394
+            "index": 1358
         },
         "TRAINER MAY LILYCOVE TREECKO": {
             "level": 32,
@@ -8106,7 +7572,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1397
+            "index": 1361
         },
         "TRAINER DARCY": {
             "level": 33,
@@ -8124,7 +7590,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1512
+            "index": 1476
         },
         "TRAINER WINONA 2": {
             "level": 41,
@@ -8147,7 +7613,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Aerial Ace"
             ],
-            "index": 1688
+            "index": 1652
         },
         "TRAINER WINONA 3": {
             "level": 46,
@@ -8170,7 +7636,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Aerial Ace"
             ],
-            "index": 1694
+            "index": 1658
         },
         "TRAINER WINONA 4": {
             "level": 51,
@@ -8193,7 +7659,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Aerial Ace"
             ],
-            "index": 1700
+            "index": 1664
         },
         "TRAINER WINONA 5": {
             "level": 55,
@@ -8216,7 +7682,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Aerial Ace"
             ],
-            "index": 1705
+            "index": 1669
         },
         "TRAINER CORY 3": {
             "level": 32,
@@ -8234,7 +7700,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1784
+            "index": 1748
         },
         "TRAINER CORY 4": {
             "level": 34,
@@ -8252,7 +7718,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1787
+            "index": 1751
         },
         "TRAINER CORY 5": {
             "level": 36,
@@ -8270,7 +7736,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1790
+            "index": 1754
         },
         "TRAINER PABLO 4": {
             "level": 41,
@@ -8288,7 +7754,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1798
+            "index": 1762
         },
         "TRAINER PABLO 5": {
             "level": 43,
@@ -8306,7 +7772,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1801
+            "index": 1765
         }
     },
     "Xatu": {
@@ -8326,7 +7792,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 135
+            "index": 99
         },
         "TRAINER SAMANTHA": {
             "level": 36,
@@ -8344,7 +7810,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 551
+            "index": 515
         },
         "TRAINER ALEXIS": {
             "level": 41,
@@ -8362,7 +7828,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 557
+            "index": 521
         },
         "TATE&LIZA": {
             "level": 64,
@@ -8385,7 +7851,7 @@ var SETDEX_SV = {
                 "Confuse Ray",
                 "Calm Mind"
             ],
-            "index": 1729
+            "index": 1693
         },
         "TRAINER PRESLEY": {
             "level": 33,
@@ -8403,7 +7869,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 846
+            "index": 810
         },
         "TRAINER BENNY": {
             "level": 36,
@@ -8421,7 +7887,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 854
+            "index": 818
         },
         "TRAINER ROBERT 5": {
             "level": 41,
@@ -8439,7 +7905,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 864
+            "index": 828
         },
         "TRAINER FLINT": {
             "level": 29,
@@ -8457,7 +7923,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1355
+            "index": 1319
         }
     },
     "Zangoose": {
@@ -8477,7 +7943,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 136
+            "index": 100
         },
         "TRAINER JODY": {
             "level": 26,
@@ -8498,7 +7964,7 @@ var SETDEX_SV = {
                 "Swords Dance",
                 "Slash"
             ],
-            "index": 280
+            "index": 244
         },
         "TRAINER THOMAS": {
             "level": 45,
@@ -8516,7 +7982,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 571
+            "index": 535
         },
         "TRAINER HECTOR": {
             "level": 18,
@@ -8534,7 +8000,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1050
+            "index": 1014
         }
     },
     "Seviper": {
@@ -8554,7 +8020,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 137
+            "index": 101
         },
         "TRAINER JESSICA 1": {
             "level": 29,
@@ -8577,7 +8043,7 @@ var SETDEX_SV = {
                 "Glare",
                 "Crunch"
             ],
-            "index": 345
+            "index": 309
         },
         "TRAINER JESSICA 2": {
             "level": 35,
@@ -8600,7 +8066,7 @@ var SETDEX_SV = {
                 "Glare",
                 "Crunch"
             ],
-            "index": 354
+            "index": 318
         },
         "TRAINER JESSICA 3": {
             "level": 38,
@@ -8623,7 +8089,7 @@ var SETDEX_SV = {
                 "Glare",
                 "Crunch"
             ],
-            "index": 356
+            "index": 320
         },
         "TRAINER JESSICA 4": {
             "level": 41,
@@ -8646,7 +8112,7 @@ var SETDEX_SV = {
                 "Glare",
                 "Crunch"
             ],
-            "index": 358
+            "index": 322
         },
         "TRAINER JESSICA 5": {
             "level": 44,
@@ -8669,7 +8135,7 @@ var SETDEX_SV = {
                 "Glare",
                 "Crunch"
             ],
-            "index": 360
+            "index": 324
         },
         "TRAINER HECTOR": {
             "level": 18,
@@ -8687,7 +8153,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1051
+            "index": 1015
         }
     },
     "Gyarados": {
@@ -8707,7 +8173,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 139
+            "index": 103
         },
         "TRAINER BARRY": {
             "level": 34,
@@ -8725,7 +8191,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 397
+            "index": 361
         },
         "TRAINER RODNEY": {
             "level": 34,
@@ -8743,7 +8209,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 401
+            "index": 365
         },
         "TRAINER JACK": {
             "level": 34,
@@ -8761,7 +8227,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 410
+            "index": 374
         },
         "TRAINER WALLACE": {
             "level": 56,
@@ -8784,7 +8250,7 @@ var SETDEX_SV = {
                 "Hyper Beam",
                 "Surf"
             ],
-            "index": 733
+            "index": 697
         },
         "TRAINER ELLIOT 2": {
             "level": 27,
@@ -8802,7 +8268,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 752
+            "index": 716
         },
         " TRAINER ELLIOT 2": {
             "level": 27,
@@ -8820,7 +8286,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 753
+            "index": 717
         },
         "TRAINER ELLIOT 3": {
             "level": 29,
@@ -8838,7 +8304,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 754
+            "index": 718
         },
         " TRAINER ELLIOT 3": {
             "level": 29,
@@ -8856,7 +8322,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 757
+            "index": 721
         },
         "TRAINER ELLIOT 4": {
             "level": 31,
@@ -8874,7 +8340,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 758
+            "index": 722
         },
         " TRAINER ELLIOT 4": {
             "level": 31,
@@ -8892,7 +8358,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 761
+            "index": 725
         },
         "TRAINER ELLIOT 5": {
             "level": 33,
@@ -8910,7 +8376,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 762
+            "index": 726
         },
         " TRAINER ELLIOT 5": {
             "level": 33,
@@ -8928,7 +8394,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 764
+            "index": 728
         },
         "TRAINER RONALD": {
             "level": 21,
@@ -8946,7 +8412,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 767
+            "index": 731
         },
         " TRAINER RONALD": {
             "level": 23,
@@ -8964,7 +8430,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 768
+            "index": 732
         },
         "  TRAINER RONALD": {
             "level": 26,
@@ -8982,7 +8448,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 769
+            "index": 733
         },
         "   TRAINER RONALD": {
             "level": 30,
@@ -9000,7 +8466,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 770
+            "index": 734
         },
         "    TRAINER RONALD": {
             "level": 35,
@@ -9018,7 +8484,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 771
+            "index": 735
         },
         " TRAINER ROGER": {
             "level": 35,
@@ -9036,7 +8502,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1411
+            "index": 1375
         }
     },
     "Numel": {
@@ -9056,7 +8522,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 150
+            "index": 114
         },
         "TRAINER BROOKE 1": {
             "level": 17,
@@ -9074,7 +8540,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 287
+            "index": 251
         },
         "TRAINER BROOKE 2": {
             "level": 26,
@@ -9092,7 +8558,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 301
+            "index": 265
         },
         "TRAINER BROOKE 3": {
             "level": 29,
@@ -9110,7 +8576,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 304
+            "index": 268
         },
         "TRAINER BROOKE 4": {
             "level": 32,
@@ -9128,7 +8594,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 307
+            "index": 271
         },
         " TRAINER GRUNT SPACE CENTER 2": {
             "level": 30,
@@ -9146,7 +8612,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 333
+            "index": 297
         },
         "TRAINER SHIRLEY": {
             "level": 21,
@@ -9164,7 +8630,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 343
+            "index": 307
         },
         "TRAINER GRUNT MT CHIMNEY 1": {
             "level": 20,
@@ -9182,7 +8648,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 372
+            "index": 336
         },
         "TRAINER COLE": {
             "level": 23,
@@ -9200,7 +8666,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 466
+            "index": 430
         },
         "TRAINER AXLE": {
             "level": 23,
@@ -9218,7 +8684,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 469
+            "index": 433
         },
         "TRAINER FLANNERY 1": {
             "level": 24,
@@ -9241,7 +8707,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Sunny Day"
             ],
-            "index": 607
+            "index": 571
         },
         "TRAINER PAUL": {
             "level": 15,
@@ -9259,7 +8725,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 630
+            "index": 594
         },
         "TRAINER MADELINE 1": {
             "level": 19,
@@ -9282,7 +8748,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Sunny Day"
             ],
-            "index": 909
+            "index": 873
         },
         "TRAINER MADELINE 2": {
             "level": 29,
@@ -9305,7 +8771,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Sunny Day"
             ],
-            "index": 913
+            "index": 877
         },
         "TRAINER MADELINE 3": {
             "level": 32,
@@ -9328,7 +8794,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Sunny Day"
             ],
-            "index": 914
+            "index": 878
         },
         "TRAINER MADELINE 4": {
             "level": 34,
@@ -9351,7 +8817,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Sunny Day"
             ],
-            "index": 916
+            "index": 880
         },
         "TRAINER ELI": {
             "level": 23,
@@ -9369,7 +8835,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1032
+            "index": 996
         },
         "TRAINER GRUNT JAGGED PASS": {
             "level": 22,
@@ -9387,7 +8853,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1209
+            "index": 1173
         },
         "TRAINER TABITHA MT CHIMNEY": {
             "level": 18,
@@ -9405,7 +8871,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1243
+            "index": 1207
         },
         " TRAINER TABITHA MT CHIMNEY": {
             "level": 22,
@@ -9423,7 +8889,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1245
+            "index": 1209
         },
         "TRAINER VIVI": {
             "level": 15,
@@ -9441,7 +8907,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1261
+            "index": 1225
         },
         "TRAINER BRICE": {
             "level": 17,
@@ -9459,7 +8925,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1293
+            "index": 1257
         },
         "TRAINER LUCAS 1": {
             "level": 18,
@@ -9477,7 +8943,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1301
+            "index": 1265
         },
         "KIM & IRIS": {
             "level": 35,
@@ -9500,7 +8966,7 @@ var SETDEX_SV = {
                 "Rest",
                 "Earthquake"
             ],
-            "index": 1428
+            "index": 1392
         },
         "TRAINER HAYDEN": {
             "level": 18,
@@ -9518,7 +8984,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1474
+            "index": 1438
         },
         "TRAINER GRUNT MAGMA HIDEOUT 3": {
             "level": 29,
@@ -9536,7 +9002,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1492
+            "index": 1456
         },
         "TRAINER GRUNT MAGMA HIDEOUT 5": {
             "level": 28,
@@ -9554,7 +9020,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1496
+            "index": 1460
         },
         "TRAINER GRUNT MAGMA HIDEOUT 12": {
             "level": 29,
@@ -9572,7 +9038,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1503
+            "index": 1467
         },
         "TRAINER GRUNT MAGMA HIDEOUT 15": {
             "level": 29,
@@ -9590,7 +9056,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1506
+            "index": 1470
         },
         "TRAINER TABITHA MAGMA HIDEOUT": {
             "level": 26,
@@ -9608,7 +9074,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1508
+            "index": 1472
         },
         "TRAINER BRYANT": {
             "level": 18,
@@ -9626,7 +9092,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1538
+            "index": 1502
         },
         "TRAINER DAYTON": {
             "level": 25,
@@ -9644,7 +9110,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1561
+            "index": 1525
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -9662,7 +9128,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1573
+            "index": 1537
         },
         "TRAINER SAWYER 2": {
             "level": 26,
@@ -9680,7 +9146,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1839
+            "index": 1803
         },
         "TRAINER SAWYER 3": {
             "level": 28,
@@ -9698,7 +9164,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1841
+            "index": 1805
         },
         "TRAINER SAWYER 4": {
             "level": 30,
@@ -9716,7 +9182,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1844
+            "index": 1808
         }
     },
     "Makuhita": {
@@ -9736,7 +9202,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 158
+            "index": 122
         },
         "TRAINER WILTON 1": {
             "level": 17,
@@ -9754,7 +9220,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 249
+            "index": 213
         },
         "TRAINER WILTON 2": {
             "level": 26,
@@ -9772,7 +9238,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 266
+            "index": 230
         },
         "TRAINER WILTON 3": {
             "level": 29,
@@ -9790,7 +9256,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 269
+            "index": 233
         },
         "TRAINER WILTON 4": {
             "level": 32,
@@ -9808,7 +9274,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 272
+            "index": 236
         },
         "TRAINER YUJI": {
             "level": 26,
@@ -9826,7 +9292,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 439
+            "index": 403
         },
         "TRAINER BRAWLY 1": {
             "level": 19,
@@ -9849,7 +9315,7 @@ var SETDEX_SV = {
                 "Reversal",
                 "Bulk Up"
             ],
-            "index": 602
+            "index": 566
         },
         "ANNA & MEG": {
             "level": 36,
@@ -9871,7 +9337,7 @@ var SETDEX_SV = {
                 "Focus Energy",
                 "Arm Thrust"
             ],
-            "index": 661
+            "index": 625
         },
         "TRAINER SHELBY 1": {
             "level": 21,
@@ -9889,7 +9355,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 699
+            "index": 663
         },
         "TRAINER SHELBY 2": {
             "level": 30,
@@ -9907,7 +9373,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 701
+            "index": 665
         },
         "TRAINER CYNDY 1": {
             "level": 18,
@@ -9925,7 +9391,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 898
+            "index": 862
         },
         "TRAINER CYNDY 2": {
             "level": 26,
@@ -9943,7 +9409,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 902
+            "index": 866
         },
         "TRAINER CYNDY 3": {
             "level": 29,
@@ -9961,7 +9427,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 904
+            "index": 868
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -9979,7 +9445,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1115
+            "index": 1079
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -9997,7 +9463,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1124
+            "index": 1088
         },
         "TRAINER CRISTIAN": {
             "level": 13,
@@ -10015,7 +9481,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1214
+            "index": 1178
         },
         "TRAINER RHETT": {
             "level": 15,
@@ -10033,7 +9499,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1470
+            "index": 1434
         },
         "TRAINER HELENE": {
             "level": 26,
@@ -10051,7 +9517,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1549
+            "index": 1513
         },
         "TRAINER CALLIE": {
             "level": 28,
@@ -10069,7 +9535,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1565
+            "index": 1529
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -10087,7 +9553,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1568
+            "index": 1532
         },
         "TRAINER KOJI 3": {
             "level": 39,
@@ -10105,7 +9571,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1806
+            "index": 1770
         }
     },
     "Mightyena": {
@@ -10125,7 +9591,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 160
+            "index": 124
         },
         "TRAINER SHELLY WEATHER INSTITUTE": {
             "level": 28,
@@ -10143,7 +9609,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 164
+            "index": 128
         },
         "TRAINER SHELLY SEAFLOOR CAVERN": {
             "level": 37,
@@ -10161,7 +9627,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 166
+            "index": 130
         },
         "TRAINER ARCHIE": {
             "level": 41,
@@ -10179,7 +9645,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 167
+            "index": 131
         },
         "TRAINER GRUNT SPACE CENTER 2": {
             "level": 26,
@@ -10197,7 +9663,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 331
+            "index": 295
         },
         " TRAINER GRUNT SPACE CENTER 2": {
             "level": 28,
@@ -10215,7 +9681,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 332
+            "index": 296
         },
         "TRAINER SIDNEY": {
             "level": 46,
@@ -10238,7 +9704,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Crunch"
             ],
-            "index": 580
+            "index": 544
         },
         "TRAINER CALVIN 2": {
             "level": 27,
@@ -10256,7 +9722,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 716
+            "index": 680
         },
         "TRAINER CALVIN 3": {
             "level": 30,
@@ -10274,7 +9740,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 718
+            "index": 682
         },
         "TRAINER CALVIN 4": {
             "level": 33,
@@ -10292,7 +9758,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 721
+            "index": 685
         },
         "TRAINER CALVIN 5": {
             "level": 36,
@@ -10310,7 +9776,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 724
+            "index": 688
         },
         "TRAINER TABITHA MOSSDEEP": {
             "level": 38,
@@ -10328,7 +9794,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1053
+            "index": 1017
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -10346,7 +9812,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1122
+            "index": 1086
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -10364,7 +9830,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1128
+            "index": 1092
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -10382,7 +9848,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1134
+            "index": 1098
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -10400,7 +9866,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1140
+            "index": 1104
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 5": {
             "level": 35,
@@ -10418,7 +9884,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1202
+            "index": 1166
         },
         "TRAINER GRUNT SPACE CENTER 6": {
             "level": 32,
@@ -10436,7 +9902,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1231
+            "index": 1195
         },
         "TRAINER MAXIE MAGMA HIDEOUT": {
             "level": 37,
@@ -10454,7 +9920,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1253
+            "index": 1217
         },
         "TRAINER MAXIE MT CHIMNEY": {
             "level": 24,
@@ -10472,7 +9938,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1256
+            "index": 1220
         },
         "TRAINER GRUNT MAGMA HIDEOUT 6": {
             "level": 29,
@@ -10490,7 +9956,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1497
+            "index": 1461
         },
         "TRAINER GRUNT MAGMA HIDEOUT 10": {
             "level": 29,
@@ -10508,7 +9974,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1501
+            "index": 1465
         },
         "TRAINER GRUNT MAGMA HIDEOUT 14": {
             "level": 29,
@@ -10526,7 +9992,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1505
+            "index": 1469
         },
         "TRAINER TABITHA MAGMA HIDEOUT": {
             "level": 28,
@@ -10544,7 +10010,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1509
+            "index": 1473
         },
         "TRAINER MAXIE MOSSDEEP": {
             "level": 42,
@@ -10562,7 +10028,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1514
+            "index": 1478
         },
         "TRAINER GABRIELLE 2": {
             "level": 31,
@@ -10580,7 +10046,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1850
+            "index": 1814
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -10598,7 +10064,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1856
+            "index": 1820
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -10616,7 +10082,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1862
+            "index": 1826
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -10634,7 +10100,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1868
+            "index": 1832
         }
     },
     "Golbat": {
@@ -10654,7 +10120,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 161
+            "index": 125
         },
         "TRAINER TABITHA MOSSDEEP": {
             "level": 40,
@@ -10672,7 +10138,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1054
+            "index": 1018
         },
         "TRAINER GRUNT SEAFLOOR CAVERN 5": {
             "level": 35,
@@ -10690,7 +10156,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1203
+            "index": 1167
         }
     },
     "Hariyama": {
@@ -10710,7 +10176,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 162
+            "index": 126
         },
         "TRAINER WILTON 5": {
             "level": 35,
@@ -10728,7 +10194,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 275
+            "index": 239
         },
         "TRAINER KIYO": {
             "level": 34,
@@ -10746,7 +10212,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 425
+            "index": 389
         },
         "TRAINER ATSUSHI": {
             "level": 32,
@@ -10764,7 +10230,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 442
+            "index": 406
         },
         "ANNA & MEG": {
             "level": 38,
@@ -10786,7 +10252,7 @@ var SETDEX_SV = {
                 "Focus Energy",
                 "Arm Thrust"
             ],
-            "index": 663
+            "index": 627
         },
         "TRAINER TIMOTHY 1": {
             "level": 27,
@@ -10804,7 +10270,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 692
+            "index": 656
         },
         "TRAINER TIMOTHY 2": {
             "level": 33,
@@ -10827,7 +10293,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Dig"
             ],
-            "index": 693
+            "index": 657
         },
         "TRAINER TIMOTHY 3": {
             "level": 36,
@@ -10850,7 +10316,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Dig"
             ],
-            "index": 694
+            "index": 658
         },
         "TRAINER TIMOTHY 4": {
             "level": 39,
@@ -10873,7 +10339,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Dig"
             ],
-            "index": 695
+            "index": 659
         },
         "TRAINER TIMOTHY 5": {
             "level": 42,
@@ -10896,7 +10362,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Dig"
             ],
-            "index": 696
+            "index": 660
         },
         "TRAINER SHELBY 3": {
             "level": 33,
@@ -10914,7 +10380,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 703
+            "index": 667
         },
         "TRAINER SHELBY 4": {
             "level": 36,
@@ -10932,7 +10398,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 705
+            "index": 669
         },
         "TRAINER SHELBY 5": {
             "level": 39,
@@ -10950,7 +10416,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 707
+            "index": 671
         },
         "TRAINER CYNDY 4": {
             "level": 32,
@@ -10968,7 +10434,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 906
+            "index": 870
         },
         "TRAINER CYNDY 5": {
             "level": 35,
@@ -10986,7 +10452,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 908
+            "index": 872
         },
         "TRAINER REYNA": {
             "level": 33,
@@ -11004,7 +10470,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1044
+            "index": 1008
         },
         "TRAINER CONOR": {
             "level": 33,
@@ -11022,7 +10488,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1047
+            "index": 1011
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -11040,7 +10506,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1130
+            "index": 1094
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -11058,7 +10524,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1136
+            "index": 1100
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -11076,7 +10542,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1142
+            "index": 1106
         },
         "JOHN & JAY": {
             "level": 52,
@@ -11099,7 +10565,7 @@ var SETDEX_SV = {
                 "Rest",
                 "Belly Drum"
             ],
-            "index": 1442
+            "index": 1406
         },
         "TRAINER BRAWLY 2": {
             "level": 37,
@@ -11122,7 +10588,7 @@ var SETDEX_SV = {
                 "Belly Drum",
                 "Earthquake"
             ],
-            "index": 1609
+            "index": 1573
         },
         "TRAINER BRAWLY 3": {
             "level": 42,
@@ -11145,7 +10611,7 @@ var SETDEX_SV = {
                 "Belly Drum",
                 "Earthquake"
             ],
-            "index": 1613
+            "index": 1577
         },
         "TRAINER BRAWLY 4": {
             "level": 47,
@@ -11168,7 +10634,7 @@ var SETDEX_SV = {
                 "Belly Drum",
                 "Earthquake"
             ],
-            "index": 1618
+            "index": 1582
         },
         "TRAINER BRAWLY 5": {
             "level": 52,
@@ -11191,7 +10657,7 @@ var SETDEX_SV = {
                 "Belly Drum",
                 "Earthquake"
             ],
-            "index": 1624
+            "index": 1588
         },
         "TRAINER KOJI 4": {
             "level": 41,
@@ -11209,7 +10675,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1809
+            "index": 1773
         },
         "TRAINER KOJI 5": {
             "level": 43,
@@ -11227,7 +10693,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1812
+            "index": 1776
         }
     },
     "Sharpedo": {
@@ -11247,7 +10713,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 165
+            "index": 129
         },
         "TRAINER ARCHIE": {
             "level": 43,
@@ -11265,7 +10731,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 169
+            "index": 133
         },
         "TRAINER VINCENT": {
             "level": 44,
@@ -11283,7 +10749,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 244
+            "index": 208
         },
         "TRAINER TIFFANY": {
             "level": 39,
@@ -11301,7 +10767,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 352
+            "index": 316
         },
         "TRAINER GILBERT": {
             "level": 34,
@@ -11319,7 +10785,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 407
+            "index": 371
         },
         "TRAINER TONY 2": {
             "level": 30,
@@ -11337,7 +10803,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 416
+            "index": 380
         },
         "TRAINER TONY 3": {
             "level": 33,
@@ -11355,7 +10821,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 417
+            "index": 381
         },
         "TRAINER TONY 4": {
             "level": 36,
@@ -11373,7 +10839,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 419
+            "index": 383
         },
         "TRAINER TONY 5": {
             "level": 39,
@@ -11391,7 +10857,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 421
+            "index": 385
         },
         "TRAINER ELLIOT 5": {
             "level": 33,
@@ -11409,7 +10875,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 763
+            "index": 727
         },
         "TRAINER CLARENCE": {
             "level": 34,
@@ -11427,7 +10893,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1221
+            "index": 1185
         },
         "TRAINER JONAH": {
             "level": 32,
@@ -11445,7 +10911,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1406
+            "index": 1370
         },
         "TRAINER REED": {
             "level": 33,
@@ -11463,7 +10929,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1423
+            "index": 1387
         },
         "LILA & ROY": {
             "level": 49,
@@ -11481,7 +10947,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1454
+            "index": 1418
         }
     },
     "Crobat": {
@@ -11501,7 +10967,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 168
+            "index": 132
         },
         "TRAINER MAXIE MAGMA HIDEOUT": {
             "level": 38,
@@ -11519,7 +10985,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1254
+            "index": 1218
         },
         "TRAINER MAXIE MOSSDEEP": {
             "level": 43,
@@ -11537,7 +11003,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1515
+            "index": 1479
         }
     },
     "Spoink": {
@@ -11557,7 +11023,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 170
+            "index": 134
         },
         "TRAINER VALERIE 2": {
             "level": 31,
@@ -11575,7 +11041,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 321
+            "index": 285
         },
         "TRAINER VALERIE 3": {
             "level": 35,
@@ -11593,7 +11059,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 322
+            "index": 286
         },
         "TRAINER VALERIE 4": {
             "level": 40,
@@ -11611,7 +11077,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 324
+            "index": 288
         },
         "TRAINER NATE": {
             "level": 36,
@@ -11629,7 +11095,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1223
+            "index": 1187
         },
         "TRAINER MARLENE": {
             "level": 18,
@@ -11647,7 +11113,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1551
+            "index": 1515
         }
     },
     "Shroomish": {
@@ -11667,7 +11133,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 171
+            "index": 135
         },
         "TRAINER ROSE 1": {
             "level": 14,
@@ -11685,7 +11151,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 174
+            "index": 138
         },
         "TRAINER ROSE 2": {
             "level": 26,
@@ -11703,7 +11169,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 180
+            "index": 144
         },
         "TRAINER ROSE 3": {
             "level": 28,
@@ -11721,7 +11187,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 182
+            "index": 146
         },
         "TRAINER ROSE 4": {
             "level": 31,
@@ -11739,7 +11205,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 185
+            "index": 149
         },
         "TRAINER SHEILA": {
             "level": 21,
@@ -11757,7 +11223,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 342
+            "index": 306
         },
         "TRAINER AUTUMN": {
             "level": 21,
@@ -11775,7 +11241,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 492
+            "index": 456
         },
         "TRAINER GEORGIA": {
             "level": 16,
@@ -11793,7 +11259,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 642
+            "index": 606
         },
         "TRAINER KAREN 2": {
             "level": 26,
@@ -11811,7 +11277,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 644
+            "index": 608
         },
         "TRAINER KAREN 3": {
             "level": 29,
@@ -11829,7 +11295,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 646
+            "index": 610
         },
         "TRAINER DIANA 1": {
             "level": 19,
@@ -11847,7 +11313,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 971
+            "index": 935
         },
         "TRAINER IRENE": {
             "level": 17,
@@ -11865,7 +11331,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 975
+            "index": 939
         },
         "TRAINER DIANA 2": {
             "level": 25,
@@ -11883,7 +11349,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 977
+            "index": 941
         },
         "GINA & MIA": {
             "level": 10,
@@ -11904,7 +11370,7 @@ var SETDEX_SV = {
                 "Absorb",
                 "Leech Seed"
             ],
-            "index": 998
+            "index": 962
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -11922,7 +11388,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1144
+            "index": 1108
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -11940,7 +11406,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1153
+            "index": 1117
         },
         "TRAINER VIVI": {
             "level": 15,
@@ -11958,7 +11424,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1260
+            "index": 1224
         },
         "TRAINER HALEY 2": {
             "level": 26,
@@ -11976,7 +11442,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1263
+            "index": 1227
         },
         "TRAINER ROBIN": {
             "level": 14,
@@ -11994,7 +11460,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1273
+            "index": 1237
         },
         "TRAINER BIANCA": {
             "level": 18,
@@ -12012,7 +11478,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1473
+            "index": 1437
         },
         "TRAINER SHAYLA": {
             "level": 18,
@@ -12030,7 +11496,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1540
+            "index": 1504
         },
         "TRAINER PAT": {
             "level": 25,
@@ -12048,7 +11514,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1575
+            "index": 1539
         }
     },
     "Roselia": {
@@ -12068,7 +11534,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 172
+            "index": 136
         },
         "TRAINER ROSE 1": {
             "level": 14,
@@ -12086,7 +11552,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 173
+            "index": 137
         },
         " TRAINER ROSE 1": {
             "level": 14,
@@ -12104,7 +11570,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 175
+            "index": 139
         },
         "TRAINER VIOLET": {
             "level": 26,
@@ -12122,7 +11588,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 178
+            "index": 142
         },
         "TRAINER ROSE 2": {
             "level": 26,
@@ -12140,7 +11606,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 181
+            "index": 145
         },
         "TRAINER ROSE 3": {
             "level": 28,
@@ -12158,7 +11624,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 184
+            "index": 148
         },
         "TRAINER ROSE 4": {
             "level": 31,
@@ -12176,7 +11642,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 187
+            "index": 151
         },
         "TRAINER ROSE 5": {
             "level": 34,
@@ -12194,7 +11660,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 190
+            "index": 154
         },
         "TRAINER WENDY": {
             "level": 29,
@@ -12217,7 +11683,7 @@ var SETDEX_SV = {
                 "Grass Whistle",
                 "Leech Seed"
             ],
-            "index": 282
+            "index": 246
         },
         "TRAINER BROOKE 1": {
             "level": 17,
@@ -12235,7 +11701,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 288
+            "index": 252
         },
         "TRAINER HOPE": {
             "level": 45,
@@ -12253,7 +11719,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 290
+            "index": 254
         },
         "TRAINER BROOKE 2": {
             "level": 26,
@@ -12271,7 +11737,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 302
+            "index": 266
         },
         "TRAINER BROOKE 3": {
             "level": 29,
@@ -12289,7 +11755,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 305
+            "index": 269
         },
         "TRAINER BROOKE 4": {
             "level": 32,
@@ -12307,7 +11773,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 308
+            "index": 272
         },
         "TRAINER BROOKE 5": {
             "level": 34,
@@ -12325,7 +11791,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 311
+            "index": 275
         },
         "TRAINER NAOMI": {
             "level": 45,
@@ -12343,7 +11809,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 336
+            "index": 300
         },
         "TRAINER VICTORIA": {
             "level": 17,
@@ -12361,7 +11827,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 677
+            "index": 641
         },
         "TRAINER CLARISSA": {
             "level": 28,
@@ -12379,7 +11845,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 910
+            "index": 874
         },
         "TRAINER MADELINE 4": {
             "level": 34,
@@ -12402,7 +11868,7 @@ var SETDEX_SV = {
                 "Grass Whistle",
                 "Sunny Day"
             ],
-            "index": 915
+            "index": 879
         },
         "TRAINER MADELINE 5": {
             "level": 37,
@@ -12425,7 +11891,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Sunny Day"
             ],
-            "index": 917
+            "index": 881
         },
         "TRAINER WALLY VR 1": {
             "level": 44,
@@ -12448,7 +11914,7 @@ var SETDEX_SV = {
                 "Giga Drain",
                 "Toxic"
             ],
-            "index": 1065
+            "index": 1029
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -12466,7 +11932,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1146
+            "index": 1110
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -12484,7 +11950,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1155
+            "index": 1119
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -12502,7 +11968,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1161
+            "index": 1125
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -12520,7 +11986,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1167
+            "index": 1131
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -12538,7 +12004,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1173
+            "index": 1137
         },
         "TRAINER CATHERINE 1": {
             "level": 26,
@@ -12556,7 +12022,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1187
+            "index": 1151
         },
         "TRAINER SOPHIA": {
             "level": 38,
@@ -12574,7 +12040,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1192
+            "index": 1156
         },
         "TRAINER CATHERINE 2": {
             "level": 30,
@@ -12592,7 +12058,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1194
+            "index": 1158
         },
         "TRAINER CATHERINE 3": {
             "level": 33,
@@ -12610,7 +12076,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1196
+            "index": 1160
         },
         "TRAINER CATHERINE 4": {
             "level": 36,
@@ -12628,7 +12094,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1198
+            "index": 1162
         },
         "TRAINER CATHERINE 5": {
             "level": 39,
@@ -12646,7 +12112,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1200
+            "index": 1164
         },
         "TRAINER WALLY VR 2": {
             "level": 47,
@@ -12669,7 +12135,7 @@ var SETDEX_SV = {
                 "Giga Drain",
                 "Toxic"
             ],
-            "index": 1362
+            "index": 1326
         },
         "TRAINER WALLY VR 3": {
             "level": 50,
@@ -12692,7 +12158,7 @@ var SETDEX_SV = {
                 "Giga Drain",
                 "Toxic"
             ],
-            "index": 1367
+            "index": 1331
         },
         "TRAINER WALLY VR 4": {
             "level": 53,
@@ -12715,7 +12181,7 @@ var SETDEX_SV = {
                 "Giga Drain",
                 "Toxic"
             ],
-            "index": 1372
+            "index": 1336
         },
         "TRAINER WALLY VR 5": {
             "level": 56,
@@ -12738,7 +12204,7 @@ var SETDEX_SV = {
                 "Giga Drain",
                 "Toxic"
             ],
-            "index": 1377
+            "index": 1341
         },
         "TYRA & IVY": {
             "level": 18,
@@ -12761,7 +12227,7 @@ var SETDEX_SV = {
                 "Mega Drain",
                 "Leech Seed"
             ],
-            "index": 1429
+            "index": 1393
         },
         "TRAINER CELINA": {
             "level": 18,
@@ -12779,7 +12245,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1472
+            "index": 1436
         },
         "TRAINER SHAYLA": {
             "level": 18,
@@ -12797,7 +12263,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1541
+            "index": 1505
         },
         "TRAINER MAKAYLA": {
             "level": 33,
@@ -12815,7 +12281,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1557
+            "index": 1521
         }
     },
     "Medicham": {
@@ -12837,7 +12303,7 @@ var SETDEX_SV = {
             "moves": [
                 "Psychic"
             ],
-            "index": 176
+            "index": 140
         },
         "TRAINER VINCENT": {
             "level": 44,
@@ -12855,7 +12321,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 243
+            "index": 207
         },
         "TRAINER MICHELLE": {
             "level": 42,
@@ -12873,7 +12339,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 293
+            "index": 257
         },
         "TRAINER JERRY 4": {
             "level": 32,
@@ -12891,7 +12357,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 638
+            "index": 602
         },
         "TRAINER JERRY 5": {
             "level": 34,
@@ -12909,7 +12375,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 641
+            "index": 605
         },
         "TRAINER SHELBY 3": {
             "level": 33,
@@ -12927,7 +12393,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 702
+            "index": 666
         },
         "TRAINER SHELBY 4": {
             "level": 36,
@@ -12945,7 +12411,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 704
+            "index": 668
         },
         "TRAINER SHELBY 5": {
             "level": 39,
@@ -12963,7 +12429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 706
+            "index": 670
         },
         "TRAINER CYNDY 4": {
             "level": 32,
@@ -12981,7 +12447,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 905
+            "index": 869
         },
         "TRAINER CYNDY 5": {
             "level": 35,
@@ -12999,7 +12465,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 907
+            "index": 871
         },
         "JOHN & JAY": {
             "level": 52,
@@ -13022,7 +12488,7 @@ var SETDEX_SV = {
                 "Psych Up",
                 "Protect"
             ],
-            "index": 1441
+            "index": 1405
         },
         "TRAINER MAKAYLA": {
             "level": 33,
@@ -13040,7 +12506,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1558
+            "index": 1522
         },
         "TRAINER BRAWLY 3": {
             "level": 38,
@@ -13063,7 +12529,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Focus Punch"
             ],
-            "index": 1611
+            "index": 1575
         },
         "TRAINER BRAWLY 4": {
             "level": 43,
@@ -13086,7 +12552,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Psychic"
             ],
-            "index": 1616
+            "index": 1580
         },
         "TRAINER BRAWLY 5": {
             "level": 48,
@@ -13109,7 +12575,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Psychic"
             ],
-            "index": 1622
+            "index": 1586
         }
     },
     "Claydol": {
@@ -13132,7 +12598,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Earthquake"
             ],
-            "index": 177
+            "index": 141
         },
         "TRAINER SHANNON": {
             "level": 45,
@@ -13150,7 +12616,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 291
+            "index": 255
         },
         "TATE&LIZA": {
             "level": 64,
@@ -13173,7 +12639,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Light Screen"
             ],
-            "index": 1727
+            "index": 1691
         },
         "TRAINER DIANNE": {
             "level": 43,
@@ -13194,7 +12660,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Earthquake"
             ],
-            "index": 871
+            "index": 835
         },
         "TRAINER STEVEN": {
             "level": 75,
@@ -13217,7 +12683,7 @@ var SETDEX_SV = {
                 "Ancient Power",
                 "Earthquake"
             ],
-            "index": 1758
+            "index": 1722
         }
     },
     "Gloom": {
@@ -13237,7 +12703,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 179
+            "index": 143
         },
         "TRAINER ROSE 3": {
             "level": 28,
@@ -13255,7 +12721,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 183
+            "index": 147
         },
         "TRAINER ROSE 4": {
             "level": 31,
@@ -13273,7 +12739,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 186
+            "index": 150
         },
         "TRAINER ROSE 5": {
             "level": 34,
@@ -13291,7 +12757,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 189
+            "index": 153
         },
         "TRAINER DIANA 2": {
             "level": 25,
@@ -13309,7 +12775,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 978
+            "index": 942
         },
         "TRAINER DIANA 3": {
             "level": 28,
@@ -13327,7 +12793,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 981
+            "index": 945
         },
         "TRAINER DIANA 4": {
             "level": 31,
@@ -13345,7 +12811,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 984
+            "index": 948
         },
         "TRAINER CATHERINE 1": {
             "level": 26,
@@ -13363,7 +12829,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1186
+            "index": 1150
         },
         "TRAINER CATHERINE 2": {
             "level": 30,
@@ -13381,7 +12847,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1193
+            "index": 1157
         },
         "TRAINER CATHERINE 3": {
             "level": 33,
@@ -13399,7 +12865,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1195
+            "index": 1159
         },
         "TRAINER CATHERINE 4": {
             "level": 36,
@@ -13417,7 +12883,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1197
+            "index": 1161
         },
         "TRAINER ALEXA": {
             "level": 34,
@@ -13435,7 +12901,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1412
+            "index": 1376
         }
     },
     "Breloom": {
@@ -13455,7 +12921,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 188
+            "index": 152
         },
         "TRAINER KAREN 4": {
             "level": 32,
@@ -13473,7 +12939,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 648
+            "index": 612
         },
         "TRAINER KAREN 5": {
             "level": 35,
@@ -13491,7 +12957,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 650
+            "index": 614
         },
         "TRAINER PAULA": {
             "level": 27,
@@ -13509,7 +12975,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 900
+            "index": 864
         },
         "TRAINER DIANA 3": {
             "level": 28,
@@ -13527,7 +12993,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 980
+            "index": 944
         },
         "TRAINER DIANA 4": {
             "level": 31,
@@ -13545,7 +13011,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 983
+            "index": 947
         },
         "TRAINER DIANA 5": {
             "level": 40,
@@ -13563,7 +13029,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 986
+            "index": 950
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -13581,7 +13047,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1159
+            "index": 1123
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -13599,7 +13065,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1165
+            "index": 1129
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -13617,7 +13083,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1171
+            "index": 1135
         },
         "TRAINER JACKSON 1": {
             "level": 27,
@@ -13635,7 +13101,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1176
+            "index": 1140
         },
         "TRAINER JACKSON 2": {
             "level": 31,
@@ -13653,7 +13119,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1181
+            "index": 1145
         },
         "TRAINER JACKSON 3": {
             "level": 34,
@@ -13671,7 +13137,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1182
+            "index": 1146
         },
         "TRAINER JACKSON 4": {
             "level": 37,
@@ -13689,7 +13155,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1183
+            "index": 1147
         },
         "TRAINER JACKSON 5": {
             "level": 39,
@@ -13707,7 +13173,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1185
+            "index": 1149
         },
         "TRAINER PAXTON": {
             "level": 33,
@@ -13725,7 +13191,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1239
+            "index": 1203
         },
         "TRAINER HALEY 3": {
             "level": 29,
@@ -13743,7 +13209,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1265
+            "index": 1229
         },
         "TRAINER HALEY 4": {
             "level": 32,
@@ -13761,7 +13227,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1267
+            "index": 1231
         },
         "TRAINER HALEY 5": {
             "level": 34,
@@ -13779,7 +13245,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1270
+            "index": 1234
         }
     },
     "Sandslash": {
@@ -13804,7 +13270,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 191
+            "index": 155
         },
         "TRAINER CHIP": {
             "level": 27,
@@ -13827,7 +13293,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 194
+            "index": 158
         },
         "TRAINER FOSTER": {
             "level": 25,
@@ -13850,7 +13316,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 196
+            "index": 160
         },
         "TRAINER DUSTY 2": {
             "level": 27,
@@ -13873,7 +13339,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 197
+            "index": 161
         },
         "TRAINER DUSTY 3": {
             "level": 30,
@@ -13896,7 +13362,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 198
+            "index": 162
         },
         "TRAINER DUSTY 4": {
             "level": 33,
@@ -13919,7 +13385,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 199
+            "index": 163
         },
         "TRAINER DUSTY 5": {
             "level": 36,
@@ -13942,7 +13408,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 200
+            "index": 164
         },
         "TRAINER JULIE": {
             "level": 42,
@@ -13960,7 +13426,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 297
+            "index": 261
         },
         "TRAINER ETHAN 5": {
             "level": 34,
@@ -13978,7 +13444,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 502
+            "index": 466
         },
         "TRAINER GARRISON": {
             "level": 26,
@@ -13996,7 +13462,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1151
+            "index": 1115
         },
         "TRAINER BRYAN": {
             "level": 22,
@@ -14014,7 +13480,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1535
+            "index": 1499
         },
         "TRAINER ANDRES 5": {
             "level": 37,
@@ -14032,7 +13498,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1779
+            "index": 1743
         },
         " TRAINER ANDRES 5": {
             "level": 37,
@@ -14050,7 +13516,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1780
+            "index": 1744
         }
     },
     "Baltoy": {
@@ -14075,7 +13541,7 @@ var SETDEX_SV = {
                 "Sandstorm",
                 "Ancient Power"
             ],
-            "index": 192
+            "index": 156
         },
         "TRAINER BEAU": {
             "level": 21,
@@ -14098,7 +13564,7 @@ var SETDEX_SV = {
                 "Psybeam",
                 "Rock Tomb"
             ],
-            "index": 483
+            "index": 447
         },
         " TRAINER BEAU": {
             "level": 21,
@@ -14121,7 +13587,7 @@ var SETDEX_SV = {
                 "Psybeam",
                 "Rock Tomb"
             ],
-            "index": 485
+            "index": 449
         },
         "TRAINER HEIDI": {
             "level": 22,
@@ -14144,7 +13610,7 @@ var SETDEX_SV = {
                 "Psybeam",
                 "Rock Tomb"
             ],
-            "index": 962
+            "index": 926
         },
         "TRAINER GRUNT SPACE CENTER 4": {
             "level": 32,
@@ -14162,7 +13628,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1229
+            "index": 1193
         },
         "TRAINER GRUNT SPACE CENTER 7": {
             "level": 32,
@@ -14180,7 +13646,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1232
+            "index": 1196
         },
         "TRAINER ERIC": {
             "level": 20,
@@ -14198,7 +13664,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1306
+            "index": 1270
         },
         "TRAINER LAWRENCE": {
             "level": 18,
@@ -14216,7 +13682,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1479
+            "index": 1443
         },
         "TRAINER GRUNT MAGMA HIDEOUT 4": {
             "level": 28,
@@ -14234,7 +13700,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1493
+            "index": 1457
         },
         "TRAINER GRUNT MAGMA HIDEOUT 5": {
             "level": 28,
@@ -14252,7 +13718,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1495
+            "index": 1459
         },
         "TRAINER GRUNT MAGMA HIDEOUT 11": {
             "level": 29,
@@ -14270,7 +13736,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1502
+            "index": 1466
         },
         "TRAINER GRUNT MAGMA HIDEOUT 16": {
             "level": 29,
@@ -14288,7 +13754,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1507
+            "index": 1471
         }
     },
     "Sandshrew": {
@@ -14313,7 +13779,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 193
+            "index": 157
         },
         "TRAINER FOSTER": {
             "level": 25,
@@ -14336,7 +13802,7 @@ var SETDEX_SV = {
                 "Sand Attack",
                 "Poison Sting"
             ],
-            "index": 195
+            "index": 159
         },
         "TRAINER DREW": {
             "level": 23,
@@ -14359,7 +13825,7 @@ var SETDEX_SV = {
                 "Poison Sting",
                 "Slash"
             ],
-            "index": 482
+            "index": 446
         },
         "TRAINER BEAU": {
             "level": 21,
@@ -14382,7 +13848,7 @@ var SETDEX_SV = {
                 "Scratch",
                 "Dig"
             ],
-            "index": 484
+            "index": 448
         },
         "TRAINER SHANE": {
             "level": 18,
@@ -14400,7 +13866,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 487
+            "index": 451
         },
         "TRAINER TRAVIS": {
             "level": 18,
@@ -14418,7 +13884,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 493
+            "index": 457
         },
         "TRAINER ETHAN 4": {
             "level": 31,
@@ -14436,7 +13902,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 498
+            "index": 462
         },
         "TRAINER HEIDI": {
             "level": 22,
@@ -14459,7 +13925,7 @@ var SETDEX_SV = {
                 "Poison Sting",
                 "Slash"
             ],
-            "index": 961
+            "index": 925
         },
         "TRAINER BECKY": {
             "level": 22,
@@ -14482,7 +13948,7 @@ var SETDEX_SV = {
                 "Slash",
                 "Dig"
             ],
-            "index": 963
+            "index": 927
         },
         "TRAINER TYRON": {
             "level": 19,
@@ -14500,7 +13966,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1471
+            "index": 1435
         },
         "TRAINER LAWRENCE": {
             "level": 18,
@@ -14518,7 +13984,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1480
+            "index": 1444
         },
         "TRAINER ANDRES 1": {
             "level": 25,
@@ -14536,7 +14002,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1519
+            "index": 1483
         },
         " TRAINER ANDRES 1": {
             "level": 25,
@@ -14554,7 +14020,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1520
+            "index": 1484
         },
         "TRAINER BRYAN": {
             "level": 22,
@@ -14572,7 +14038,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1534
+            "index": 1498
         },
         "TRAINER PAT": {
             "level": 25,
@@ -14590,7 +14056,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1578
+            "index": 1542
         },
         "TRAINER ANDRES 2": {
             "level": 31,
@@ -14608,7 +14074,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1770
+            "index": 1734
         },
         " TRAINER ANDRES 2": {
             "level": 31,
@@ -14626,7 +14092,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1771
+            "index": 1735
         },
         "TRAINER ANDRES 3": {
             "level": 33,
@@ -14644,7 +14110,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1773
+            "index": 1737
         },
         " TRAINER ANDRES 3": {
             "level": 33,
@@ -14662,7 +14128,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1774
+            "index": 1738
         },
         "TRAINER ANDRES 4": {
             "level": 35,
@@ -14680,7 +14146,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1776
+            "index": 1740
         },
         " TRAINER ANDRES 4": {
             "level": 35,
@@ -14698,7 +14164,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1777
+            "index": 1741
         }
     },
     "Whismur": {
@@ -14718,7 +14184,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 202
+            "index": 166
         },
         "TRAINER DALTON 1": {
             "level": 15,
@@ -14736,7 +14202,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 453
+            "index": 417
         },
         "TRAINER DALTON 2": {
             "level": 25,
@@ -14754,7 +14220,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 455
+            "index": 419
         },
         "TRAINER KAREN 2": {
             "level": 26,
@@ -14772,7 +14238,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 645
+            "index": 609
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -14790,7 +14256,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1110
+            "index": 1074
         }
     },
     "Loudred": {
@@ -14810,7 +14276,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 210
+            "index": 174
         },
         "TRAINER FERNANDO 1": {
             "level": 30,
@@ -14828,7 +14294,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 451
+            "index": 415
         },
         "TRAINER DALTON 3": {
             "level": 28,
@@ -14846,7 +14312,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 458
+            "index": 422
         },
         "TRAINER DALTON 4": {
             "level": 31,
@@ -14864,7 +14330,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 461
+            "index": 425
         },
         "TRAINER KAREN 3": {
             "level": 29,
@@ -14882,7 +14348,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 647
+            "index": 611
         },
         "TRAINER KAREN 4": {
             "level": 32,
@@ -14900,7 +14366,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 649
+            "index": 613
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -14918,7 +14384,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1119
+            "index": 1083
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -14936,7 +14402,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1125
+            "index": 1089
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -14954,7 +14420,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1131
+            "index": 1095
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -14972,7 +14438,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1137
+            "index": 1101
         },
         "TRAINER JONATHAN": {
             "level": 33,
@@ -14990,7 +14456,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1248
+            "index": 1212
         },
         "TRAINER CRISTIN 1": {
             "level": 29,
@@ -15008,7 +14474,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1580
+            "index": 1544
         },
         "TRAINER CRISTIN 2": {
             "level": 35,
@@ -15026,7 +14492,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1815
+            "index": 1779
         },
         "TRAINER CRISTIN 3": {
             "level": 37,
@@ -15044,7 +14510,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1818
+            "index": 1782
         },
         "TRAINER CRISTIN 4": {
             "level": 39,
@@ -15062,7 +14528,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1821
+            "index": 1785
         },
         " TRAINER FERNANDO 2": {
             "level": 35,
@@ -15080,7 +14546,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1828
+            "index": 1792
         },
         "TRAINER FERNANDO 3": {
             "level": 37,
@@ -15098,7 +14564,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1831
+            "index": 1795
         },
         " TRAINER FERNANDO 4": {
             "level": 39,
@@ -15116,7 +14582,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1834
+            "index": 1798
         }
     },
     "Magneton": {
@@ -15141,7 +14607,7 @@ var SETDEX_SV = {
                 "Metal Sound",
                 "Thunderbolt"
             ],
-            "index": 211
+            "index": 175
         },
         "TRAINER BRAXTON": {
             "level": 28,
@@ -15164,7 +14630,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Sonic Boom"
             ],
-            "index": 240
+            "index": 204
         },
         "TRAINER ALBERT": {
             "level": 43,
@@ -15182,7 +14648,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 252
+            "index": 216
         },
         "TRAINER DALTON 4": {
             "level": 31,
@@ -15200,7 +14666,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 460
+            "index": 424
         },
         " TRAINER DALTON 4": {
             "level": 31,
@@ -15218,7 +14684,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 462
+            "index": 426
         },
         "TRAINER DALTON 5": {
             "level": 34,
@@ -15236,7 +14702,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 463
+            "index": 427
         },
         " TRAINER DALTON 5": {
             "level": 34,
@@ -15254,7 +14720,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 465
+            "index": 429
         },
         "TRAINER WATTSON 1": {
             "level": 22,
@@ -15277,7 +14743,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Sonic Boom"
             ],
-            "index": 605
+            "index": 569
         },
         "TRAINER BENJAMIN 4": {
             "level": 36,
@@ -15295,7 +14761,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 780
+            "index": 744
         },
         "TRAINER BENJAMIN 5": {
             "level": 39,
@@ -15313,7 +14779,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 781
+            "index": 745
         },
         "TRAINER ABIGAIL 4": {
             "level": 34,
@@ -15331,7 +14797,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 788
+            "index": 752
         },
         "TRAINER ABIGAIL 5": {
             "level": 37,
@@ -15349,7 +14815,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 789
+            "index": 753
         },
         "TRAINER WALLY VR 1": {
             "level": 41,
@@ -15372,7 +14838,7 @@ var SETDEX_SV = {
                 "Tri Attack",
                 "Screech"
             ],
-            "index": 1066
+            "index": 1030
         },
         "TRAINER WALLY VR 2": {
             "level": 44,
@@ -15395,7 +14861,7 @@ var SETDEX_SV = {
                 "Tri Attack",
                 "Screech"
             ],
-            "index": 1363
+            "index": 1327
         },
         "TRAINER WALLY VR 3": {
             "level": 47,
@@ -15418,7 +14884,7 @@ var SETDEX_SV = {
                 "Tri Attack",
                 "Screech"
             ],
-            "index": 1368
+            "index": 1332
         },
         "TRAINER WALLY VR 4": {
             "level": 50,
@@ -15441,7 +14907,7 @@ var SETDEX_SV = {
                 "Tri Attack",
                 "Screech"
             ],
-            "index": 1373
+            "index": 1337
         },
         "TRAINER WALLY VR 5": {
             "level": 53,
@@ -15464,7 +14930,7 @@ var SETDEX_SV = {
                 "Tri Attack",
                 "Screech"
             ],
-            "index": 1378
+            "index": 1342
         },
         "TRAINER WATTSON 2": {
             "level": 38,
@@ -15487,7 +14953,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Rain Dance"
             ],
-            "index": 1627
+            "index": 1591
         },
         "TRAINER WATTSON 3": {
             "level": 43,
@@ -15510,7 +14976,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Rain Dance"
             ],
-            "index": 1632
+            "index": 1596
         },
         "TRAINER WATTSON 4": {
             "level": 48,
@@ -15533,7 +14999,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Rain Dance"
             ],
-            "index": 1637
+            "index": 1601
         },
         "TRAINER WATTSON 5": {
             "level": 53,
@@ -15556,7 +15022,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Rain Dance"
             ],
-            "index": 1643
+            "index": 1607
         }
     },
     "Exploud": {
@@ -15581,7 +15047,7 @@ var SETDEX_SV = {
                 "Supersonic",
                 "Hyper Voice"
             ],
-            "index": 212
+            "index": 176
         },
         "TRAINER DALTON 5": {
             "level": 34,
@@ -15599,7 +15065,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 464
+            "index": 428
         },
         "TRAINER KAREN 5": {
             "level": 35,
@@ -15617,7 +15083,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 651
+            "index": 615
         },
         "TRAINER CRISTIN 5": {
             "level": 41,
@@ -15635,7 +15101,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1824
+            "index": 1788
         },
         " TRAINER FERNANDO 5": {
             "level": 41,
@@ -15653,7 +15119,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1837
+            "index": 1801
         }
     },
     "Azurill": {
@@ -15673,7 +15139,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 213
+            "index": 177
         },
         " TRAINER LOLA 1": {
             "level": 12,
@@ -15691,7 +15157,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 214
+            "index": 178
         },
         "TRAINER SIMON": {
             "level": 12,
@@ -15709,7 +15175,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 226
+            "index": 190
         },
         "TRAINER BETHANY": {
             "level": 35,
@@ -15727,7 +15193,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 679
+            "index": 643
         }
     },
     "Marill": {
@@ -15747,7 +15213,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 215
+            "index": 179
         },
         "TRAINER GWEN": {
             "level": 26,
@@ -15765,7 +15231,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 216
+            "index": 180
         },
         "TRAINER LOLA 2": {
             "level": 26,
@@ -15783,7 +15249,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 217
+            "index": 181
         },
         " TRAINER LOLA 2": {
             "level": 26,
@@ -15801,7 +15267,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 218
+            "index": 182
         },
         "TRAINER LOLA 3": {
             "level": 29,
@@ -15819,7 +15285,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 219
+            "index": 183
         },
         " TRAINER LOLA 3": {
             "level": 29,
@@ -15837,7 +15303,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 220
+            "index": 184
         },
         "TRAINER LOLA 4": {
             "level": 32,
@@ -15855,7 +15321,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 221
+            "index": 185
         },
         " TRAINER LOLA 4": {
             "level": 32,
@@ -15873,7 +15339,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 222
+            "index": 186
         },
         "TRAINER SIMON": {
             "level": 12,
@@ -15891,7 +15357,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 227
+            "index": 191
         },
         "TRAINER CHARLIE": {
             "level": 26,
@@ -15909,7 +15375,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 228
+            "index": 192
         },
         "TRAINER MELISSA": {
             "level": 21,
@@ -15927,7 +15393,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 341
+            "index": 305
         },
         "TRAINER BETHANY": {
             "level": 37,
@@ -15945,7 +15411,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 680
+            "index": 644
         },
         "TRAINER JANI": {
             "level": 26,
@@ -15963,7 +15429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 873
+            "index": 837
         },
         "TRAINER IMANI": {
             "level": 26,
@@ -15981,7 +15447,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 921
+            "index": 885
         },
         "TRAINER TARA": {
             "level": 25,
@@ -15999,7 +15465,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 927
+            "index": 891
         },
         "TRAINER GRACE": {
             "level": 34,
@@ -16017,7 +15483,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 933
+            "index": 897
         },
         "TRAINER NIKKI": {
             "level": 33,
@@ -16035,7 +15501,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 936
+            "index": 900
         },
         "TRAINER BECKY": {
             "level": 22,
@@ -16058,7 +15524,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Defense Curl"
             ],
-            "index": 964
+            "index": 928
         },
         "TRAINER NANCY": {
             "level": 18,
@@ -16076,7 +15542,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 967
+            "index": 931
         },
         "TRAINER IRENE": {
             "level": 17,
@@ -16094,7 +15560,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 976
+            "index": 940
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -16112,7 +15578,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1145
+            "index": 1109
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -16130,7 +15596,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1154
+            "index": 1118
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -16148,7 +15614,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1160
+            "index": 1124
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -16166,7 +15632,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1166
+            "index": 1130
         },
         "TRAINER VIVI": {
             "level": 15,
@@ -16184,7 +15650,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1259
+            "index": 1223
         },
         "TRAINER ROBIN": {
             "level": 14,
@@ -16202,7 +15668,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1274
+            "index": 1238
         },
         "TRAINER HAILEY": {
             "level": 13,
@@ -16220,7 +15686,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1461
+            "index": 1425
         },
         "TRAINER SOPHIE": {
             "level": 17,
@@ -16238,7 +15704,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1475
+            "index": 1439
         },
         "TRAINER ANGELINA": {
             "level": 18,
@@ -16256,7 +15722,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1484
+            "index": 1448
         },
         "TRAINER ISABELLE": {
             "level": 15,
@@ -16274,7 +15740,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1518
+            "index": 1482
         },
         "TRAINER CELIA": {
             "level": 22,
@@ -16292,7 +15758,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1532
+            "index": 1496
         },
         "TRAINER PAT": {
             "level": 25,
@@ -16310,7 +15776,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1577
+            "index": 1541
         }
     },
     "Azumarill": {
@@ -16330,7 +15796,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 223
+            "index": 187
         },
         " TRAINER LOLA 5": {
             "level": 35,
@@ -16348,7 +15814,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 224
+            "index": 188
         },
         "TRAINER BRIDGET": {
             "level": 40,
@@ -16366,7 +15832,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 347
+            "index": 311
         },
         "TRAINER GARRET": {
             "level": 45,
@@ -16384,7 +15850,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 363
+            "index": 327
         },
         "TRAINER BETHANY": {
             "level": 39,
@@ -16402,7 +15868,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 681
+            "index": 645
         },
         "TRAINER DANA": {
             "level": 34,
@@ -16420,7 +15886,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 943
+            "index": 907
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -16438,7 +15904,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1172
+            "index": 1136
         },
         "TRAINER ALEXA": {
             "level": 34,
@@ -16456,7 +15922,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1413
+            "index": 1377
         },
         "RELI & IAN": {
             "level": 35,
@@ -16474,7 +15940,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1443
+            "index": 1407
         }
     },
     "Linoone": {
@@ -16499,7 +15965,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Surf"
             ],
-            "index": 229
+            "index": 193
         },
         "TRAINER RICKY 3": {
             "level": 30,
@@ -16522,7 +15988,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Surf"
             ],
-            "index": 230
+            "index": 194
         },
         "TRAINER RICKY 4": {
             "level": 33,
@@ -16545,7 +16011,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Surf"
             ],
-            "index": 231
+            "index": 195
         },
         "TRAINER RICKY 5": {
             "level": 36,
@@ -16568,7 +16034,7 @@ var SETDEX_SV = {
                 "Tail Whip",
                 "Surf"
             ],
-            "index": 232
+            "index": 196
         },
         "TRAINER CINDY 3": {
             "level": 27,
@@ -16586,7 +16052,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 337
+            "index": 301
         },
         "TRAINER CINDY 4": {
             "level": 30,
@@ -16604,7 +16070,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 338
+            "index": 302
         },
         "TRAINER CINDY 5": {
             "level": 33,
@@ -16622,7 +16088,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 339
+            "index": 303
         },
         "TRAINER CINDY 6": {
             "level": 36,
@@ -16645,7 +16111,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Sand Attack"
             ],
-            "index": 340
+            "index": 304
         },
         "TRAINER WINSTON 2": {
             "level": 27,
@@ -16663,7 +16129,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 364
+            "index": 328
         },
         "TRAINER WINSTON 3": {
             "level": 30,
@@ -16681,7 +16147,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 365
+            "index": 329
         },
         "TRAINER WINSTON 4": {
             "level": 33,
@@ -16699,7 +16165,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 366
+            "index": 330
         },
         "TRAINER WINSTON 5": {
             "level": 36,
@@ -16722,7 +16188,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Sand Attack"
             ],
-            "index": 367
+            "index": 331
         },
         "TRAINER ETHAN 3": {
             "level": 29,
@@ -16740,7 +16206,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 496
+            "index": 460
         },
         "TRAINER ETHAN 4": {
             "level": 31,
@@ -16758,7 +16224,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 500
+            "index": 464
         },
         "TRAINER ETHAN 5": {
             "level": 34,
@@ -16776,7 +16242,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 503
+            "index": 467
         },
         "TRAINER WALTER 3": {
             "level": 36,
@@ -16799,7 +16265,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Fury Swipes"
             ],
-            "index": 573
+            "index": 537
         },
         "TRAINER WALTER 4": {
             "level": 39,
@@ -16822,7 +16288,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Fury Swipes"
             ],
-            "index": 575
+            "index": 539
         },
         "TRAINER WALTER 5": {
             "level": 41,
@@ -16845,7 +16311,7 @@ var SETDEX_SV = {
                 "Odor Sleuth",
                 "Fury Swipes"
             ],
-            "index": 577
+            "index": 541
         },
         "TRAINER NORMAN 1": {
             "level": 29,
@@ -16868,7 +16334,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Headbutt"
             ],
-            "index": 613
+            "index": 577
         },
         "ANNA & MEG": {
             "level": 36,
@@ -16891,7 +16357,7 @@ var SETDEX_SV = {
                 "Headbutt",
                 "Odor Sleuth"
             ],
-            "index": 662
+            "index": 626
         },
         "TRAINER CALVIN 4": {
             "level": 29,
@@ -16909,7 +16375,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 720
+            "index": 684
         },
         "TRAINER CALVIN 5": {
             "level": 32,
@@ -16927,7 +16393,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 723
+            "index": 687
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -16945,7 +16411,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1120
+            "index": 1084
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -16963,7 +16429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1126
+            "index": 1090
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -16981,7 +16447,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1132
+            "index": 1096
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -16999,7 +16465,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1138
+            "index": 1102
         },
         "TRAINER ATHENA": {
             "level": 32,
@@ -17020,7 +16486,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Thief"
             ],
-            "index": 1218
+            "index": 1182
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -17038,7 +16504,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1857
+            "index": 1821
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -17056,7 +16522,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1863
+            "index": 1827
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -17074,7 +16540,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1869
+            "index": 1833
         }
     },
     "Swellow": {
@@ -17098,7 +16564,7 @@ var SETDEX_SV = {
                 "Agility",
                 "Wing Attack"
             ],
-            "index": 233
+            "index": 197
         },
         "TRAINER BRAXTON": {
             "level": 28,
@@ -17121,7 +16587,7 @@ var SETDEX_SV = {
                 "Wing Attack",
                 "Endeavor"
             ],
-            "index": 237
+            "index": 201
         },
         "TRAINER SAMUEL": {
             "level": 42,
@@ -17139,7 +16605,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 254
+            "index": 218
         },
         "TRAINER ETHAN 3": {
             "level": 29,
@@ -17157,7 +16623,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 497
+            "index": 461
         },
         "TRAINER ETHAN 4": {
             "level": 31,
@@ -17175,7 +16641,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 499
+            "index": 463
         },
         "TRAINER ETHAN 5": {
             "level": 34,
@@ -17193,7 +16659,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 501
+            "index": 465
         },
         "TRAINER CALVIN 3": {
             "level": 28,
@@ -17211,7 +16677,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 717
+            "index": 681
         },
         "TRAINER CALVIN 4": {
             "level": 31,
@@ -17229,7 +16695,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 719
+            "index": 683
         },
         "TRAINER CALVIN 5": {
             "level": 34,
@@ -17247,7 +16713,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 722
+            "index": 686
         },
         "TRAINER PHIL": {
             "level": 26,
@@ -17265,7 +16731,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 840
+            "index": 804
         },
         "TRAINER BENNY": {
             "level": 36,
@@ -17283,7 +16749,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 852
+            "index": 816
         },
         "TRAINER CHESTER": {
             "level": 25,
@@ -17301,7 +16767,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 856
+            "index": 820
         },
         "TRAINER ALEX": {
             "level": 33,
@@ -17319,7 +16785,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 866
+            "index": 830
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -17337,7 +16803,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1123
+            "index": 1087
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -17355,7 +16821,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1129
+            "index": 1093
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -17373,7 +16839,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1135
+            "index": 1099
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -17391,7 +16857,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1141
+            "index": 1105
         },
         "TRAINER PAXTON": {
             "level": 33,
@@ -17409,7 +16875,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1238
+            "index": 1202
         },
         "TRAINER HALEY 5": {
             "level": 34,
@@ -17427,7 +16893,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1268
+            "index": 1232
         },
         "TRAINER FLINT": {
             "level": 29,
@@ -17445,7 +16911,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1354
+            "index": 1318
         },
         "TRAINER AIDAN": {
             "level": 32,
@@ -17463,7 +16929,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1420
+            "index": 1384
         },
         "TRAINER COBY": {
             "level": 19,
@@ -17481,7 +16947,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1478
+            "index": 1442
         },
         "TRAINER CAROLINA": {
             "level": 24,
@@ -17499,7 +16965,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1528
+            "index": 1492
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -17517,7 +16983,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1866
+            "index": 1830
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -17535,7 +17001,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1872
+            "index": 1836
         }
     },
     "Spinda": {
@@ -17559,7 +17025,7 @@ var SETDEX_SV = {
                 "Dizzy Punch",
                 "Focus Punch"
             ],
-            "index": 234
+            "index": 198
         },
         "TRAINER NORMAN 1": {
             "level": 27,
@@ -17582,7 +17048,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Encore"
             ],
-            "index": 611
+            "index": 575
         },
         "KATE & JOY": {
             "level": 30,
@@ -17605,7 +17071,7 @@ var SETDEX_SV = {
                 "Dizzy Punch",
                 "Teeter Dance"
             ],
-            "index": 652
+            "index": 616
         },
         "TORI & TIA": {
             "level": 19,
@@ -17623,7 +17089,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1425
+            "index": 1389
         },
         " TORI & TIA": {
             "level": 19,
@@ -17641,7 +17107,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1426
+            "index": 1390
         },
         "TRAINER NORMAN 2": {
             "level": 43,
@@ -17664,7 +17130,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Hypnosis"
             ],
-            "index": 1668
+            "index": 1632
         },
         "TRAINER NORMAN 3": {
             "level": 48,
@@ -17687,7 +17153,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Hypnosis"
             ],
-            "index": 1673
+            "index": 1637
         },
         "TRAINER NORMAN 4": {
             "level": 53,
@@ -17710,7 +17176,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Hypnosis"
             ],
-            "index": 1678
+            "index": 1642
         },
         "TRAINER NORMAN 5": {
             "level": 58,
@@ -17733,7 +17199,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Hypnosis"
             ],
-            "index": 1684
+            "index": 1648
         },
         "TRAINER CRISTIN 3": {
             "level": 37,
@@ -17751,7 +17217,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1817
+            "index": 1781
         },
         "TRAINER CRISTIN 4": {
             "level": 39,
@@ -17769,7 +17235,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1820
+            "index": 1784
         },
         "TRAINER CRISTIN 5": {
             "level": 41,
@@ -17787,7 +17253,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1823
+            "index": 1787
         }
     },
     "Slakoth": {
@@ -17811,7 +17277,7 @@ var SETDEX_SV = {
                 "Counter",
                 "Shadow Ball"
             ],
-            "index": 235
+            "index": 199
         }
     },
     "Vigoroth": {
@@ -17834,7 +17300,7 @@ var SETDEX_SV = {
                 "Focus Energy",
                 "Slash"
             ],
-            "index": 236
+            "index": 200
         },
         "TRAINER NORMAN 1": {
             "level": 27,
@@ -17857,7 +17323,7 @@ var SETDEX_SV = {
                 "Encore",
                 "Feint Attack"
             ],
-            "index": 612
+            "index": 576
         },
         "TRAINER CRISTIN 1": {
             "level": 29,
@@ -17875,7 +17341,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1581
+            "index": 1545
         },
         "TRAINER CRISTIN 2": {
             "level": 35,
@@ -17893,7 +17359,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1816
+            "index": 1780
         },
         "TRAINER CRISTIN 3": {
             "level": 37,
@@ -17911,7 +17377,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1819
+            "index": 1783
         },
         "TRAINER CRISTIN 4": {
             "level": 39,
@@ -17929,7 +17395,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1822
+            "index": 1786
         }
     },
     "Trapinch": {
@@ -17954,7 +17420,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Sand Tomb"
             ],
-            "index": 238
+            "index": 202
         },
         "TRAINER JAYLEN": {
             "level": 19,
@@ -17972,7 +17438,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 714
+            "index": 678
         }
     },
     "Wailmer": {
@@ -17997,7 +17463,7 @@ var SETDEX_SV = {
                 "Astonish",
                 "Water Pulse"
             ],
-            "index": 239
+            "index": 203
         },
         "TRAINER WILTON 1": {
             "level": 17,
@@ -18015,7 +17481,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 248
+            "index": 212
         },
         "TRAINER WILTON 2": {
             "level": 26,
@@ -18033,7 +17499,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 265
+            "index": 229
         },
         "TRAINER WILTON 3": {
             "level": 29,
@@ -18051,7 +17517,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 268
+            "index": 232
         },
         "TRAINER WILTON 4": {
             "level": 32,
@@ -18069,7 +17535,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 271
+            "index": 235
         },
         "TRAINER WILTON 5": {
             "level": 35,
@@ -18087,7 +17553,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 274
+            "index": 238
         },
         "TRAINER THALIA 1": {
             "level": 25,
@@ -18105,7 +17571,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 369
+            "index": 333
         },
         "TRAINER SANTIAGO": {
             "level": 33,
@@ -18123,7 +17589,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 406
+            "index": 370
         },
         "TRAINER CHAD": {
             "level": 33,
@@ -18141,7 +17607,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 415
+            "index": 379
         },
         "TRAINER DALE": {
             "level": 14,
@@ -18159,7 +17625,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 742
+            "index": 706
         },
         " TRAINER DALE": {
             "level": 14,
@@ -18177,7 +17643,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 744
+            "index": 708
         },
         "TRAINER CARTER": {
             "level": 25,
@@ -18195,7 +17661,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 749
+            "index": 713
         },
         "TRAINER CLARISSA": {
             "level": 28,
@@ -18213,7 +17679,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 911
+            "index": 875
         },
         "TRAINER BEVERLY": {
             "level": 25,
@@ -18231,7 +17697,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 920
+            "index": 884
         },
         "TRAINER KYLA": {
             "level": 26,
@@ -18249,7 +17715,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 922
+            "index": 886
         },
         "TRAINER JENNY 1": {
             "level": 34,
@@ -18267,7 +17733,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 932
+            "index": 896
         },
         "TRAINER JENNY 2": {
             "level": 38,
@@ -18285,7 +17751,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 954
+            "index": 918
         },
         "TRAINER JENNY 3": {
             "level": 41,
@@ -18303,7 +17769,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 955
+            "index": 919
         },
         "TRAINER JENNY 4": {
             "level": 43,
@@ -18321,7 +17787,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 957
+            "index": 921
         },
         "TRAINER JENNY 5": {
             "level": 45,
@@ -18339,7 +17805,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 959
+            "index": 923
         },
         "TRAINER HUDSON": {
             "level": 34,
@@ -18357,7 +17823,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1045
+            "index": 1009
         },
         "TRAINER GRUNT UNUSED": {
             "level": 31,
@@ -18375,7 +17841,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1204
+            "index": 1168
         },
         "TRAINER GRUNT MT PYRE 4": {
             "level": 30,
@@ -18393,7 +17859,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1206
+            "index": 1170
         },
         "TRAINER CRISSY": {
             "level": 39,
@@ -18411,7 +17877,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1277
+            "index": 1241
         },
         "TRAINER LUCAS 2": {
             "level": 9,
@@ -18432,7 +17898,7 @@ var SETDEX_SV = {
                 "Splash",
                 "Water Gun"
             ],
-            "index": 1307
+            "index": 1271
         },
         "TRAINER JONAH": {
             "level": 30,
@@ -18450,7 +17916,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1404
+            "index": 1368
         },
         " TRAINER WAYNE": {
             "level": 36,
@@ -18468,7 +17934,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1419
+            "index": 1383
         },
         "TRAINER THALIA 2": {
             "level": 34,
@@ -18486,7 +17952,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1873
+            "index": 1837
         },
         "TRAINER THALIA 3": {
             "level": 36,
@@ -18504,7 +17970,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1876
+            "index": 1840
         },
         "TRAINER THALIA 4": {
             "level": 38,
@@ -18522,7 +17988,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1879
+            "index": 1843
         }
     },
     "Sableye": {
@@ -18542,7 +18008,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 242
+            "index": 206
         },
         "TRAINER JENNIFER": {
             "level": 30,
@@ -18560,7 +18026,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 289
+            "index": 253
         },
         "TRAINER CAROLINE": {
             "level": 43,
@@ -18578,7 +18044,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 296
+            "index": 260
         },
         "TRAINER VALERIE 1": {
             "level": 32,
@@ -18596,7 +18062,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 318
+            "index": 282
         },
         "TRAINER VALERIE 2": {
             "level": 31,
@@ -18614,7 +18080,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 320
+            "index": 284
         },
         "TRAINER VALERIE 3": {
             "level": 35,
@@ -18632,7 +18098,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 323
+            "index": 287
         },
         "TRAINER VALERIE 4": {
             "level": 40,
@@ -18650,7 +18116,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 325
+            "index": 289
         },
         "TRAINER VALERIE 5": {
             "level": 42,
@@ -18668,7 +18134,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 327
+            "index": 291
         },
         "TRAINER PHOEBE": {
             "level": 50,
@@ -18691,7 +18157,7 @@ var SETDEX_SV = {
                 "Night Shade",
                 "Feint Attack"
             ],
-            "index": 587
+            "index": 551
         },
         "TRAINER HALLE": {
             "level": 43,
@@ -18709,7 +18175,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1149
+            "index": 1113
         }
     },
     "Mawile": {
@@ -18729,7 +18195,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 245
+            "index": 209
         },
         "TRAINER SAMUEL": {
             "level": 42,
@@ -18747,7 +18213,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 255
+            "index": 219
         },
         "TRAINER WENDY": {
             "level": 29,
@@ -18770,7 +18236,7 @@ var SETDEX_SV = {
                 "Fake Tears",
                 "Bite"
             ],
-            "index": 281
+            "index": 245
         }
     },
     "Starmie": {
@@ -18790,7 +18256,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 246
+            "index": 210
         },
         "TRAINER TONY 5": {
             "level": 37,
@@ -18808,7 +18274,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 420
+            "index": 384
         },
         "TRAINER ISAIAH 4": {
             "level": 45,
@@ -18826,7 +18292,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 811
+            "index": 775
         },
         "TRAINER ISAIAH 5": {
             "level": 48,
@@ -18844,7 +18310,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 812
+            "index": 776
         },
         "TRAINER KATELYN 4": {
             "level": 45,
@@ -18862,7 +18328,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 822
+            "index": 786
         },
         "TRAINER KATELYN 5": {
             "level": 48,
@@ -18880,7 +18346,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 823
+            "index": 787
         },
         "TRAINER JENNY 5": {
             "level": 45,
@@ -18898,7 +18364,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 960
+            "index": 924
         },
         "TRAINER PABLO 5": {
             "level": 43,
@@ -18916,7 +18382,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1802
+            "index": 1766
         },
         " TRAINER PABLO 5": {
             "level": 43,
@@ -18934,7 +18400,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1803
+            "index": 1767
         }
     },
     "Electrike": {
@@ -18954,7 +18420,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 247
+            "index": 211
         },
         "TRAINER WILTON 2": {
             "level": 26,
@@ -18972,7 +18438,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 264
+            "index": 228
         },
         "TRAINER KIRK": {
             "level": 17,
@@ -18995,7 +18461,7 @@ var SETDEX_SV = {
                 "Spark",
                 "Leer"
             ],
-            "index": 443
+            "index": 407
         },
         "TRAINER FERNANDO 1": {
             "level": 30,
@@ -19013,7 +18479,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 450
+            "index": 414
         },
         "TRAINER WATTSON 1": {
             "level": 20,
@@ -19036,7 +18502,7 @@ var SETDEX_SV = {
                 "Quick Attack",
                 "Howl"
             ],
-            "index": 604
+            "index": 568
         },
         "TRAINER TIMMY": {
             "level": 13,
@@ -19054,7 +18520,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 728
+            "index": 692
         },
         "TRAINER DEMETRIUS": {
             "level": 25,
@@ -19072,7 +18538,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 803
+            "index": 767
         },
         "TRAINER JOSEPH": {
             "level": 14,
@@ -19090,7 +18556,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1466
+            "index": 1430
         },
         "TRAINER DEANDRE": {
             "level": 14,
@@ -19108,7 +18574,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1489
+            "index": 1453
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -19126,7 +18592,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1572
+            "index": 1536
         },
         "TRAINER PAT": {
             "level": 25,
@@ -19144,7 +18610,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1576
+            "index": 1540
         },
         "TRAINER FERNANDO 2": {
             "level": 35,
@@ -19162,7 +18628,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1826
+            "index": 1790
         },
         " TRAINER FERNANDO 2": {
             "level": 35,
@@ -19180,7 +18646,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1827
+            "index": 1791
         },
         "TRAINER FERNANDO 3": {
             "level": 37,
@@ -19198,7 +18664,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1829
+            "index": 1793
         }
     },
     "Cacturne": {
@@ -19218,7 +18684,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 250
+            "index": 214
         },
         "TRAINER SIDNEY": {
             "level": 46,
@@ -19241,7 +18707,7 @@ var SETDEX_SV = {
                 "Needle Arm",
                 "Cotton Spore"
             ],
-            "index": 582
+            "index": 546
         },
         "TRAINER SEBASTIAN": {
             "level": 39,
@@ -19259,7 +18725,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1180
+            "index": 1144
         }
     },
     "Muk": {
@@ -19279,7 +18745,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 253
+            "index": 217
         }
     },
     "Kadabra": {
@@ -19299,7 +18765,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 256
+            "index": 220
         },
         "TRAINER VITO": {
             "level": 42,
@@ -19317,7 +18783,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 258
+            "index": 222
         },
         "TRAINER JOSHUA": {
             "level": 41,
@@ -19335,7 +18801,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 538
+            "index": 502
         },
         "TRAINER CAMERON 2": {
             "level": 33,
@@ -19353,7 +18819,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 541
+            "index": 505
         },
         "TRAINER CAMERON 3": {
             "level": 38,
@@ -19371,7 +18837,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 543
+            "index": 507
         },
         "TRAINER CAMERON 4": {
             "level": 41,
@@ -19389,7 +18855,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 545
+            "index": 509
         },
         "TRAINER MAURA": {
             "level": 36,
@@ -19407,7 +18873,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 552
+            "index": 516
         },
         "TRAINER KAYLA": {
             "level": 26,
@@ -19425,7 +18891,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 555
+            "index": 519
         },
         "TRAINER JACKI 1": {
             "level": 30,
@@ -19443,7 +18909,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 558
+            "index": 522
         },
         "TRAINER JACKI 2": {
             "level": 34,
@@ -19461,7 +18927,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 560
+            "index": 524
         },
         "TRAINER JACKI 3": {
             "level": 37,
@@ -19479,7 +18945,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 562
+            "index": 526
         },
         "TRAINER JACKI 4": {
             "level": 40,
@@ -19497,7 +18963,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 564
+            "index": 528
         },
         "TRAINER KATHLEEN": {
             "level": 36,
@@ -19515,7 +18981,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1224
+            "index": 1188
         },
         "TRAINER ALIX": {
             "level": 26,
@@ -19533,7 +18999,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1546
+            "index": 1510
         },
         "TRAINER ALVARO": {
             "level": 41,
@@ -19551,7 +19017,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1886
+            "index": 1850
         }
     },
     "Dodrio": {
@@ -19571,7 +19037,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 257
+            "index": 221
         },
         "TRAINER DYLAN 4": {
             "level": 34,
@@ -19589,7 +19055,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 793
+            "index": 757
         },
         "TRAINER DYLAN 5": {
             "level": 37,
@@ -19607,7 +19073,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 794
+            "index": 758
         },
         "TRAINER MARIA 4": {
             "level": 34,
@@ -19625,7 +19091,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 798
+            "index": 762
         },
         "TRAINER MARIA 5": {
             "level": 37,
@@ -19643,7 +19109,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 799
+            "index": 763
         },
         "TRAINER KYRA": {
             "level": 26,
@@ -19661,7 +19127,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1543
+            "index": 1507
         }
     },
     "Electrode": {
@@ -19681,7 +19147,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 259
+            "index": 223
         },
         "TRAINER WATTSON 2": {
             "level": 36,
@@ -19704,7 +19170,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Rain Dance"
             ],
-            "index": 1626
+            "index": 1590
         },
         "TRAINER WATTSON 3": {
             "level": 41,
@@ -19727,7 +19193,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Rain Dance"
             ],
-            "index": 1631
+            "index": 1595
         },
         "TRAINER WATTSON 4": {
             "level": 46,
@@ -19750,7 +19216,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Rain Dance"
             ],
-            "index": 1636
+            "index": 1600
         },
         "TRAINER WATTSON 5": {
             "level": 53,
@@ -19773,7 +19239,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Rain Dance"
             ],
-            "index": 1642
+            "index": 1606
         }
     },
     "Kecleon": {
@@ -19793,7 +19259,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 261
+            "index": 225
         },
         "TRAINER JESSICA 1": {
             "level": 29,
@@ -19816,7 +19282,7 @@ var SETDEX_SV = {
                 "Fury Swipes",
                 "Feint Attack"
             ],
-            "index": 344
+            "index": 308
         },
         "TRAINER JESSICA 2": {
             "level": 35,
@@ -19839,7 +19305,7 @@ var SETDEX_SV = {
                 "Fury Swipes",
                 "Feint Attack"
             ],
-            "index": 353
+            "index": 317
         },
         "TRAINER JESSICA 3": {
             "level": 38,
@@ -19862,7 +19328,7 @@ var SETDEX_SV = {
                 "Fury Swipes",
                 "Feint Attack"
             ],
-            "index": 355
+            "index": 319
         },
         "TRAINER JESSICA 4": {
             "level": 41,
@@ -19885,7 +19351,7 @@ var SETDEX_SV = {
                 "Fury Swipes",
                 "Feint Attack"
             ],
-            "index": 357
+            "index": 321
         },
         "TRAINER JESSICA 5": {
             "level": 44,
@@ -19908,7 +19374,7 @@ var SETDEX_SV = {
                 "Fury Swipes",
                 "Feint Attack"
             ],
-            "index": 359
+            "index": 323
         },
         "JUSTINK": {
             "level": 24,
@@ -19926,7 +19392,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 489
+            "index": 453
         },
         "TRAINER JACKSON 5": {
             "level": 39,
@@ -19944,7 +19410,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1184
+            "index": 1148
         },
         "TRAINER JONATHAN": {
             "level": 33,
@@ -19962,7 +19428,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1247
+            "index": 1211
         },
         "TRAINER GERALD": {
             "level": 23,
@@ -19985,7 +19451,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Bind"
             ],
-            "index": 1344
+            "index": 1308
         }
     },
     "Graveler": {
@@ -20005,7 +19471,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 262
+            "index": 226
         },
         "TRAINER WARREN": {
             "level": 33,
@@ -20023,7 +19489,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 276
+            "index": 240
         },
         "TRAINER ALAN": {
             "level": 22,
@@ -20041,7 +19507,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1304
+            "index": 1268
         },
         "  TRAINER TRENT 2": {
             "level": 24,
@@ -20059,7 +19525,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1316
+            "index": 1280
         },
         "TRAINER TRENT 3": {
             "level": 27,
@@ -20077,7 +19543,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1319
+            "index": 1283
         },
         " TRAINER TRENT 3": {
             "level": 27,
@@ -20095,7 +19561,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1320
+            "index": 1284
         },
         "TRAINER TRENT 4": {
             "level": 30,
@@ -20113,7 +19579,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1322
+            "index": 1286
         },
         " TRAINER TRENT 4": {
             "level": 30,
@@ -20131,7 +19597,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1323
+            "index": 1287
         },
         "  TRAINER TRENT 4": {
             "level": 30,
@@ -20149,7 +19615,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1324
+            "index": 1288
         },
         "TRAINER TRENT 5": {
             "level": 33,
@@ -20167,7 +19633,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1325
+            "index": 1289
         },
         " TRAINER TRENT 5": {
             "level": 33,
@@ -20185,7 +19651,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1326
+            "index": 1290
         },
         "  TRAINER TRENT 5": {
             "level": 33,
@@ -20203,7 +19669,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1327
+            "index": 1291
         },
         "TYRA & IVY": {
             "level": 20,
@@ -20226,7 +19692,7 @@ var SETDEX_SV = {
                 "Mud Sport",
                 "Rock Throw"
             ],
-            "index": 1430
+            "index": 1394
         },
         "TRAINER SAWYER 3": {
             "level": 28,
@@ -20244,7 +19710,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1842
+            "index": 1806
         },
         "TRAINER SAWYER 4": {
             "level": 30,
@@ -20262,7 +19728,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1845
+            "index": 1809
         }
     },
     "Wailord": {
@@ -20282,7 +19748,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 263
+            "index": 227
         },
         "TRAINER WALLACE": {
             "level": 57,
@@ -20305,7 +19771,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Blizzard"
             ],
-            "index": 729
+            "index": 693
         },
         "TRAINER THALIA 5": {
             "level": 40,
@@ -20323,7 +19789,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1882
+            "index": 1846
         }
     },
     "Ludicolo": {
@@ -20343,7 +19809,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 277
+            "index": 241
         },
         "TRAINER MICHELLE": {
             "level": 42,
@@ -20361,7 +19827,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 294
+            "index": 258
         },
         "TRAINER WALLACE": {
             "level": 56,
@@ -20384,7 +19850,7 @@ var SETDEX_SV = {
                 "Leech Seed",
                 "Double Team"
             ],
-            "index": 731
+            "index": 695
         },
         "TRAINER EDWIN 5": {
             "level": 35,
@@ -20402,7 +19868,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1061
+            "index": 1025
         },
         "TRAINER BRENDAN LILYCOVE TREECKO": {
             "level": 32,
@@ -20420,7 +19886,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1386
+            "index": 1350
         },
         "TRAINER BRENDAN LILYCOVE TORCHIC": {
             "level": 32,
@@ -20438,7 +19904,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1389
+            "index": 1353
         },
         "TRAINER MAY LILYCOVE TREECKO": {
             "level": 32,
@@ -20456,7 +19922,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1398
+            "index": 1362
         },
         "TRAINER MAY LILYCOVE TORCHIC": {
             "level": 32,
@@ -20474,7 +19940,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1401
+            "index": 1365
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -20492,7 +19958,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1870
+            "index": 1834
         }
     },
     "Delcatty": {
@@ -20515,7 +19981,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Shock Wave"
             ],
-            "index": 278
+            "index": 242
         },
         "    TRAINER COLTON": {
             "level": 42,
@@ -20538,7 +20004,7 @@ var SETDEX_SV = {
                 "Feint Attack",
                 "Heal Bell"
             ],
-            "index": 672
+            "index": 636
         },
         "TRAINER MIGUEL 4": {
             "level": 35,
@@ -20556,7 +20022,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 675
+            "index": 639
         },
         "TRAINER MIGUEL 5": {
             "level": 38,
@@ -20574,7 +20040,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 676
+            "index": 640
         },
         "TRAINER WALLY VR 1": {
             "level": 43,
@@ -20597,7 +20063,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Feint Attack"
             ],
-            "index": 1064
+            "index": 1028
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -20615,7 +20081,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1162
+            "index": 1126
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -20633,7 +20099,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1168
+            "index": 1132
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -20651,7 +20117,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1174
+            "index": 1138
         },
         "DEZ & LUKE": {
             "level": 31,
@@ -20669,7 +20135,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1329
+            "index": 1293
         },
         "TRAINER WALLY VR 2": {
             "level": 46,
@@ -20692,7 +20158,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Feint Attack"
             ],
-            "index": 1361
+            "index": 1325
         },
         "TRAINER WALLY VR 3": {
             "level": 49,
@@ -20715,7 +20181,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Feint Attack"
             ],
-            "index": 1366
+            "index": 1330
         },
         "TRAINER WALLY VR 4": {
             "level": 52,
@@ -20738,7 +20204,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Feint Attack"
             ],
-            "index": 1371
+            "index": 1335
         },
         "TRAINER WALLY VR 5": {
             "level": 55,
@@ -20761,7 +20227,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Feint Attack"
             ],
-            "index": 1376
+            "index": 1340
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -20779,7 +20245,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1861
+            "index": 1825
         },
         "TRAINER GABRIELLE 5": {
             "level": 37,
@@ -20797,7 +20263,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1867
+            "index": 1831
         }
     },
     "Wigglytuff": {
@@ -20821,7 +20287,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Shadow Ball"
             ],
-            "index": 279
+            "index": 243
         }
     },
     "Lairon": {
@@ -20841,7 +20307,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 284
+            "index": 248
         },
         "TRAINER STEVE 2": {
             "level": 27,
@@ -20859,7 +20325,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 373
+            "index": 337
         },
         "TRAINER STEVE 3": {
             "level": 29,
@@ -20877,7 +20343,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 374
+            "index": 338
         },
         "TRAINER STEVE 4": {
             "level": 32,
@@ -20895,7 +20361,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 376
+            "index": 340
         },
         "TRAINER ISAAC 5": {
             "level": 31,
@@ -20913,7 +20379,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1139
+            "index": 1103
         }
     },
     "Wingull": {
@@ -20933,7 +20399,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 286
+            "index": 250
         },
         "TRAINER BROOKE 2": {
             "level": 26,
@@ -20951,7 +20417,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 300
+            "index": 264
         },
         "TRAINER DARRIN": {
             "level": 24,
@@ -20969,7 +20435,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 385
+            "index": 349
         },
         "TRAINER SPENCER": {
             "level": 33,
@@ -20987,7 +20453,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 393
+            "index": 357
         },
         "TRAINER DEAN": {
             "level": 31,
@@ -21005,7 +20471,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 399
+            "index": 363
         },
         "TRAINER HERMAN": {
             "level": 33,
@@ -21023,7 +20489,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 403
+            "index": 367
         },
         "TRAINER DUDLEY": {
             "level": 33,
@@ -21041,7 +20507,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 412
+            "index": 376
         },
         "TRAINER BERNIE 1": {
             "level": 18,
@@ -21059,7 +20525,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 473
+            "index": 437
         },
         "TRAINER BERNIE 2": {
             "level": 26,
@@ -21077,7 +20543,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 475
+            "index": 439
         },
         "TRAINER PAUL": {
             "level": 15,
@@ -21095,7 +20561,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 632
+            "index": 596
         },
         "TRAINER CHASE": {
             "level": 26,
@@ -21113,7 +20579,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 807
+            "index": 771
         },
         "TRAINER DONNY": {
             "level": 26,
@@ -21131,7 +20597,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 814
+            "index": 778
         },
         "TRAINER ALLISON": {
             "level": 27,
@@ -21149,7 +20615,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 818
+            "index": 782
         },
         "TRAINER PERRY": {
             "level": 26,
@@ -21167,7 +20633,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 837
+            "index": 801
         },
         "TRAINER HUGH": {
             "level": 25,
@@ -21185,7 +20651,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 838
+            "index": 802
         },
         "TRAINER COLIN": {
             "level": 28,
@@ -21203,7 +20669,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 849
+            "index": 813
         },
         "TRAINER BEVERLY": {
             "level": 25,
@@ -21221,7 +20687,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 919
+            "index": 883
         },
         "TRAINER DENISE": {
             "level": 25,
@@ -21239,7 +20705,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 923
+            "index": 887
         },
         "TRAINER ALICE": {
             "level": 24,
@@ -21257,7 +20723,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 930
+            "index": 894
         },
         "TRAINER HUEY": {
             "level": 12,
@@ -21275,7 +20741,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1005
+            "index": 969
         },
         "TRAINER EDMOND": {
             "level": 13,
@@ -21293,7 +20759,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1007
+            "index": 971
         },
         "TRAINER ERNEST 1": {
             "level": 33,
@@ -21311,7 +20777,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1008
+            "index": 972
         },
         "TRAINER DWAYNE": {
             "level": 11,
@@ -21329,7 +20795,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1010
+            "index": 974
         },
         "TRAINER ERNEST 2": {
             "level": 36,
@@ -21347,7 +20813,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1020
+            "index": 984
         },
         "TRAINER BRENDAN ROUTE 110 MUDKIP": {
             "level": 18,
@@ -21365,7 +20831,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1070
+            "index": 1034
         },
         "TRAINER BRENDAN ROUTE 110 TREECKO": {
             "level": 18,
@@ -21383,7 +20849,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1076
+            "index": 1040
         },
         "TRAINER MAY ROUTE 110 MUDKIP": {
             "level": 18,
@@ -21401,7 +20867,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1090
+            "index": 1054
         },
         "TRAINER MAY ROUTE 110 TREECKO": {
             "level": 18,
@@ -21419,7 +20885,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1097
+            "index": 1061
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -21437,7 +20903,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1143
+            "index": 1107
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -21455,7 +20921,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1152
+            "index": 1116
         },
         "TRAINER BRENDAN RUSTBORO MUDKIP": {
             "level": 13,
@@ -21473,7 +20939,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1236
+            "index": 1200
         },
         "TRAINER MAY RUSTBORO MUDKIP": {
             "level": 13,
@@ -21491,7 +20957,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1251
+            "index": 1215
         },
         "RELI & IAN": {
             "level": 33,
@@ -21509,7 +20975,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1444
+            "index": 1408
         },
         "TRAINER JOSUE": {
             "level": 25,
@@ -21527,7 +20993,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1522
+            "index": 1486
         },
         "TRAINER CORY 1": {
             "level": 24,
@@ -21545,7 +21011,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1524
+            "index": 1488
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -21563,7 +21029,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1569
+            "index": 1533
         },
         "TRAINER CORY 2": {
             "level": 30,
@@ -21581,7 +21047,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1781
+            "index": 1745
         },
         "TRAINER PABLO 3": {
             "level": 39,
@@ -21599,7 +21065,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1795
+            "index": 1759
         }
     },
     "Torkoal": {
@@ -21619,7 +21085,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 292
+            "index": 256
         },
         "TRAINER FLANNERY 1": {
             "level": 29,
@@ -21642,7 +21108,7 @@ var SETDEX_SV = {
                 "Body Slam",
                 "Attract"
             ],
-            "index": 610
+            "index": 574
         },
         "TRAINER MAY RUSTBORO TORCHIC": {
             "level": 13,
@@ -21660,7 +21126,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1584
+            "index": 1548
         },
         "TRAINER FLANNERY 2": {
             "level": 40,
@@ -21683,7 +21149,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Attract"
             ],
-            "index": 1648
+            "index": 1612
         },
         "TRAINER FLANNERY 3": {
             "level": 45,
@@ -21706,7 +21172,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Attract"
             ],
-            "index": 1653
+            "index": 1617
         },
         "TRAINER FLANNERY 4": {
             "level": 50,
@@ -21729,7 +21195,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Attract"
             ],
-            "index": 1659
+            "index": 1623
         },
         "TRAINER FLANNERY 5": {
             "level": 55,
@@ -21752,7 +21218,7 @@ var SETDEX_SV = {
                 "Explosion",
                 "Attract"
             ],
-            "index": 1665
+            "index": 1629
         }
     },
     "Skarmory": {
@@ -21772,7 +21238,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 295
+            "index": 259
         },
         "TRAINER WINONA 1": {
             "level": 31,
@@ -21795,7 +21261,7 @@ var SETDEX_SV = {
                 "Steel Wing",
                 "Aerial Ace"
             ],
-            "index": 618
+            "index": 582
         },
         "TRAINER JARED": {
             "level": 27,
@@ -21813,7 +21279,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 842
+            "index": 806
         },
         "TRAINER HUMBERTO": {
             "level": 30,
@@ -21831,7 +21297,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 844
+            "index": 808
         },
         "TRAINER AIDAN": {
             "level": 32,
@@ -21849,7 +21315,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1421
+            "index": 1385
         },
         "TRAINER COBY": {
             "level": 17,
@@ -21867,7 +21333,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1477
+            "index": 1441
         },
         "TRAINER ELIJAH": {
             "level": 25,
@@ -21885,7 +21351,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1530
+            "index": 1494
         },
         " TRAINER ELIJAH": {
             "level": 25,
@@ -21903,7 +21369,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1531
+            "index": 1495
         },
         "TRAINER WINONA 2": {
             "level": 43,
@@ -21926,7 +21392,7 @@ var SETDEX_SV = {
                 "Steel Wing",
                 "Aerial Ace"
             ],
-            "index": 1689
+            "index": 1653
         },
         "TRAINER WINONA 3": {
             "level": 48,
@@ -21949,7 +21415,7 @@ var SETDEX_SV = {
                 "Steel Wing",
                 "Aerial Ace"
             ],
-            "index": 1695
+            "index": 1659
         },
         "TRAINER WINONA 4": {
             "level": 53,
@@ -21972,7 +21438,7 @@ var SETDEX_SV = {
                 "Steel Wing",
                 "Aerial Ace"
             ],
-            "index": 1701
+            "index": 1665
         },
         "TRAINER WINONA 5": {
             "level": 58,
@@ -21995,7 +21461,7 @@ var SETDEX_SV = {
                 "Steel Wing",
                 "Aerial Ace"
             ],
-            "index": 1707
+            "index": 1671
         },
         "TRAINER STEVEN": {
             "level": 77,
@@ -22018,7 +21484,7 @@ var SETDEX_SV = {
                 "Spikes",
                 "Steel Wing"
             ],
-            "index": 1757
+            "index": 1721
         }
     },
     "Ninetales": {
@@ -22038,7 +21504,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 298
+            "index": 262
         }
     },
     "Tropius": {
@@ -22058,7 +21524,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 299
+            "index": 263
         },
         "TRAINER WINONA 1": {
             "level": 29,
@@ -22081,7 +21547,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Synthesis"
             ],
-            "index": 616
+            "index": 580
         },
         "TRAINER HUGH": {
             "level": 25,
@@ -22099,7 +21565,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 839
+            "index": 803
         },
         "TRAINER JARED": {
             "level": 27,
@@ -22117,7 +21583,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 843
+            "index": 807
         },
         "TRAINER PRESLEY": {
             "level": 33,
@@ -22135,7 +21601,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 845
+            "index": 809
         },
         "TRAINER BECK": {
             "level": 34,
@@ -22153,7 +21619,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 867
+            "index": 831
         },
         "TRAINER BRENDAN LILYCOVE MUDKIP": {
             "level": 31,
@@ -22171,7 +21637,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1380
+            "index": 1344
         },
         "TRAINER BRENDAN LILYCOVE TREECKO": {
             "level": 31,
@@ -22189,7 +21655,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1384
+            "index": 1348
         },
         "TRAINER BRENDAN LILYCOVE TORCHIC": {
             "level": 31,
@@ -22207,7 +21673,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1388
+            "index": 1352
         },
         "TRAINER MAY LILYCOVE MUDKIP": {
             "level": 31,
@@ -22225,7 +21691,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1392
+            "index": 1356
         },
         "TRAINER MAY LILYCOVE TREECKO": {
             "level": 31,
@@ -22243,7 +21709,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1396
+            "index": 1360
         },
         "TRAINER MAY LILYCOVE TORCHIC": {
             "level": 31,
@@ -22261,7 +21727,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1400
+            "index": 1364
         },
         "TRAINER MYLES": {
             "level": 25,
@@ -22279,7 +21745,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1570
+            "index": 1534
         },
         "TRAINER WINONA 2": {
             "level": 38,
@@ -22302,7 +21768,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Earthquake"
             ],
-            "index": 1687
+            "index": 1651
         },
         "TRAINER WINONA 3": {
             "level": 43,
@@ -22325,7 +21791,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Earthquake"
             ],
-            "index": 1692
+            "index": 1656
         },
         "TRAINER WINONA 4": {
             "level": 49,
@@ -22348,7 +21814,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Earthquake"
             ],
-            "index": 1698
+            "index": 1662
         },
         "TRAINER WINONA 5": {
             "level": 54,
@@ -22371,7 +21837,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Earthquake"
             ],
-            "index": 1704
+            "index": 1668
         },
         "TRAINER DARIUS": {
             "level": 30,
@@ -22389,7 +21855,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1756
+            "index": 1720
         }
     },
     "Camerupt": {
@@ -22409,7 +21875,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 310
+            "index": 274
         },
         "TRAINER FLANNERY 1": {
             "level": 26,
@@ -22432,7 +21898,7 @@ var SETDEX_SV = {
                 "Sunny Day",
                 "Attract"
             ],
-            "index": 609
+            "index": 573
         },
         "TRAINER MADELINE 5": {
             "level": 37,
@@ -22455,7 +21921,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Sunny Day"
             ],
-            "index": 918
+            "index": 882
         },
         "TRAINER TABITHA MOSSDEEP": {
             "level": 36,
@@ -22473,7 +21939,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1052
+            "index": 1016
         },
         "TRAINER MAXIE MAGMA HIDEOUT": {
             "level": 39,
@@ -22491,7 +21957,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1255
+            "index": 1219
         },
         "TRAINER MAXIE MT CHIMNEY": {
             "level": 25,
@@ -22509,7 +21975,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1258
+            "index": 1222
         },
         "TRAINER TABITHA MAGMA HIDEOUT": {
             "level": 33,
@@ -22527,7 +21993,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1511
+            "index": 1475
         },
         "TRAINER DARCY": {
             "level": 33,
@@ -22545,7 +22011,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1513
+            "index": 1477
         },
         "TRAINER MAXIE MOSSDEEP": {
             "level": 44,
@@ -22563,7 +22029,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1516
+            "index": 1480
         },
         "TRAINER FLANNERY 2": {
             "level": 38,
@@ -22586,7 +22052,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Attract"
             ],
-            "index": 1647
+            "index": 1611
         },
         "TRAINER FLANNERY 3": {
             "level": 43,
@@ -22609,7 +22075,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Attract"
             ],
-            "index": 1652
+            "index": 1616
         },
         "TRAINER FLANNERY 4": {
             "level": 48,
@@ -22632,7 +22098,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Attract"
             ],
-            "index": 1658
+            "index": 1622
         },
         "TRAINER FLANNERY 5": {
             "level": 53,
@@ -22655,7 +22121,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Attract"
             ],
-            "index": 1664
+            "index": 1628
         },
         "TRAINER SAWYER 5": {
             "level": 33,
@@ -22673,7 +22139,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1847
+            "index": 1811
         }
     },
     "Banette": {
@@ -22693,7 +22159,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 312
+            "index": 276
         },
         "TRAINER PHOEBE": {
             "level": 49,
@@ -22716,7 +22182,7 @@ var SETDEX_SV = {
                 "Will O Wisp",
                 "Feint Attack"
             ],
-            "index": 586
+            "index": 550
         },
         " TRAINER PHOEBE": {
             "level": 49,
@@ -22739,7 +22205,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Facade"
             ],
-            "index": 588
+            "index": 552
         },
         "TRAINER JERRY 5": {
             "level": 34,
@@ -22757,7 +22223,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 640
+            "index": 604
         },
         "TRAINER ALVARO": {
             "level": 41,
@@ -22775,7 +22241,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1885
+            "index": 1849
         }
     },
     "Lunatone": {
@@ -22795,7 +22261,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 313
+            "index": 277
         },
         "TRAINER JACKI 1": {
             "level": 30,
@@ -22813,7 +22279,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 559
+            "index": 523
         },
         "TRAINER JACKI 2": {
             "level": 34,
@@ -22831,7 +22297,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 561
+            "index": 525
         },
         "TRAINER JACKI 3": {
             "level": 37,
@@ -22849,7 +22315,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 563
+            "index": 527
         },
         "TRAINER JACKI 4": {
             "level": 40,
@@ -22867,7 +22333,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 565
+            "index": 529
         },
         "TRAINER JACKI 5": {
             "level": 43,
@@ -22885,7 +22351,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 566
+            "index": 530
         },
         "TATE&LIZA": {
             "level": 65,
@@ -22908,7 +22374,7 @@ var SETDEX_SV = {
                 "Rest",
                 "Calm Mind"
             ],
-            "index": 1730
+            "index": 1694
         },
         "TRAINER MITCHELL": {
             "level": 43,
@@ -22931,7 +22397,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Psychic"
             ],
-            "index": 1117
+            "index": 1081
         }
     },
     "Duskull": {
@@ -22951,7 +22417,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 314
+            "index": 278
         },
         "TRAINER TAMMY": {
             "level": 29,
@@ -22969,7 +22435,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 316
+            "index": 280
         },
         "TRAINER VALERIE 5": {
             "level": 42,
@@ -22987,7 +22453,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 326
+            "index": 290
         },
         "GINA & MIA": {
             "level": 10,
@@ -23008,7 +22474,7 @@ var SETDEX_SV = {
                 "Night Shade",
                 "Disable"
             ],
-            "index": 997
+            "index": 961
         }
     },
     "Shuppet": {
@@ -23028,7 +22494,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 315
+            "index": 279
         },
         "TRAINER TAMMY": {
             "level": 29,
@@ -23046,7 +22512,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 317
+            "index": 281
         },
         "TRAINER TASHA": {
             "level": 32,
@@ -23064,7 +22530,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 319
+            "index": 283
         }
     },
     "Grumpig": {
@@ -23084,7 +22550,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 328
+            "index": 292
         }
     },
     "Luvdisc": {
@@ -23109,7 +22575,7 @@ var SETDEX_SV = {
                 "Flail",
                 "Water Pulse"
             ],
-            "index": 329
+            "index": 293
         },
         " TRAINER DAPHNE": {
             "level": 39,
@@ -23132,7 +22598,7 @@ var SETDEX_SV = {
                 "Take Down",
                 "Water Pulse"
             ],
-            "index": 330
+            "index": 294
         },
         "TRAINER JUAN 1": {
             "level": 41,
@@ -23155,7 +22621,7 @@ var SETDEX_SV = {
                 "Sweet Kiss",
                 "Flail"
             ],
-            "index": 624
+            "index": 588
         },
         "TRAINER TANYA": {
             "level": 34,
@@ -23173,7 +22639,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 934
+            "index": 898
         },
         "TRAINER SUSIE": {
             "level": 34,
@@ -23191,7 +22657,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 941
+            "index": 905
         },
         "TRAINER SIENNA": {
             "level": 33,
@@ -23209,7 +22675,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 944
+            "index": 908
         },
         " TRAINER SIENNA": {
             "level": 33,
@@ -23227,7 +22693,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 945
+            "index": 909
         },
         "TRAINER LAUREL": {
             "level": 33,
@@ -23245,7 +22711,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 951
+            "index": 915
         },
         " TRAINER LAUREL": {
             "level": 33,
@@ -23263,7 +22729,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 952
+            "index": 916
         },
         "TRAINER JENNY 5": {
             "level": 45,
@@ -23281,7 +22747,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 958
+            "index": 922
         },
         "TRAINER ANDREA": {
             "level": 40,
@@ -23299,7 +22765,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1275
+            "index": 1239
         },
         "LEA & JED": {
             "level": 45,
@@ -23317,7 +22783,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1331
+            "index": 1295
         },
         " LEA & JED": {
             "level": 45,
@@ -23335,7 +22801,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1332
+            "index": 1296
         },
         "TRAINER THALIA 3": {
             "level": 36,
@@ -23353,7 +22819,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1875
+            "index": 1839
         },
         "TRAINER THALIA 4": {
             "level": 38,
@@ -23371,7 +22837,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1878
+            "index": 1842
         },
         "TRAINER THALIA 5": {
             "level": 40,
@@ -23389,7 +22855,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1881
+            "index": 1845
         }
     },
     "Seaking": {
@@ -23409,7 +22875,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 335
+            "index": 299
         },
         "TRAINER SHARON": {
             "level": 34,
@@ -23427,7 +22893,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 935
+            "index": 899
         },
         "TRAINER KARA": {
             "level": 34,
@@ -23445,7 +22911,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 942
+            "index": 906
         },
         "TRAINER DEBRA": {
             "level": 34,
@@ -23463,7 +22929,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 946
+            "index": 910
         },
         "TRAINER CARLEE": {
             "level": 35,
@@ -23481,7 +22947,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 953
+            "index": 917
         },
         "TRAINER LYDIA 5": {
             "level": 31,
@@ -23499,7 +22965,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1175
+            "index": 1139
         }
     },
     "Goldeen": {
@@ -23519,7 +22985,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 346
+            "index": 310
         },
         "TRAINER CLAUDE": {
             "level": 17,
@@ -23537,7 +23003,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 739
+            "index": 703
         },
         "TRAINER DENISE": {
             "level": 25,
@@ -23555,7 +23021,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 924
+            "index": 888
         },
         "TRAINER BETH": {
             "level": 26,
@@ -23573,7 +23039,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 925
+            "index": 889
         },
         "TRAINER MISSY": {
             "level": 26,
@@ -23591,7 +23057,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 928
+            "index": 892
         },
         "TRAINER ALICE": {
             "level": 24,
@@ -23609,7 +23075,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 929
+            "index": 893
         },
         " TRAINER ALICE": {
             "level": 24,
@@ -23627,7 +23093,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 931
+            "index": 895
         },
         "TRAINER BRENDA": {
             "level": 34,
@@ -23645,7 +23111,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 938
+            "index": 902
         },
         "TRAINER KATIE": {
             "level": 33,
@@ -23663,7 +23129,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 939
+            "index": 903
         },
         "TRAINER LYDIA 1": {
             "level": 11,
@@ -23681,7 +23147,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1148
+            "index": 1112
         },
         "TRAINER LYDIA 2": {
             "level": 22,
@@ -23699,7 +23165,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1157
+            "index": 1121
         },
         "TRAINER LYDIA 3": {
             "level": 25,
@@ -23717,7 +23183,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1163
+            "index": 1127
         },
         "TRAINER LYDIA 4": {
             "level": 28,
@@ -23735,7 +23201,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1169
+            "index": 1133
         },
         "TRAINER CRISSY": {
             "level": 39,
@@ -23753,7 +23219,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1276
+            "index": 1240
         },
         "TRAINER JOHANNA": {
             "level": 13,
@@ -23771,7 +23237,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1343
+            "index": 1307
         },
         "LISA & RAY": {
             "level": 27,
@@ -23789,7 +23255,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1455
+            "index": 1419
         },
         "TRAINER RACHEL": {
             "level": 26,
@@ -23807,7 +23273,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1562
+            "index": 1526
         }
     },
     "Clamperl": {
@@ -23832,7 +23298,7 @@ var SETDEX_SV = {
                 "Rain Dance",
                 "Water Pulse"
             ],
-            "index": 348
+            "index": 312
         }
     },
     "Corphish": {
@@ -23856,7 +23322,7 @@ var SETDEX_SV = {
                 "Crabhammer",
                 "Water Pulse"
             ],
-            "index": 349
+            "index": 313
         }
     },
     "Whiscash": {
@@ -23876,7 +23342,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 361
+            "index": 325
         },
         "TRAINER JUAN 1": {
             "level": 41,
@@ -23899,7 +23365,7 @@ var SETDEX_SV = {
                 "Amnesia",
                 "Earthquake"
             ],
-            "index": 625
+            "index": 589
         },
         "TRAINER WALLACE": {
             "level": 56,
@@ -23922,7 +23388,7 @@ var SETDEX_SV = {
                 "Amnesia",
                 "Hyper Beam"
             ],
-            "index": 732
+            "index": 696
         },
         "TRAINER JUAN 2": {
             "level": 46,
@@ -23945,7 +23411,7 @@ var SETDEX_SV = {
                 "Double Team",
                 "Fissure"
             ],
-            "index": 1733
+            "index": 1697
         },
         "TRAINER JUAN 3": {
             "level": 51,
@@ -23968,7 +23434,7 @@ var SETDEX_SV = {
                 "Double Team",
                 "Fissure"
             ],
-            "index": 1738
+            "index": 1702
         },
         "TRAINER JUAN 4": {
             "level": 58,
@@ -23991,7 +23457,7 @@ var SETDEX_SV = {
                 "Double Team",
                 "Fissure"
             ],
-            "index": 1743
+            "index": 1707
         },
         "TRAINER JUAN 5": {
             "level": 63,
@@ -24014,7 +23480,7 @@ var SETDEX_SV = {
                 "Double Team",
                 "Fissure"
             ],
-            "index": 1749
+            "index": 1713
         }
     },
     "Meditite": {
@@ -24034,7 +23500,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 362
+            "index": 326
         },
         "TRAINER BRAWLY 1": {
             "level": 16,
@@ -24057,7 +23523,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Bulk Up"
             ],
-            "index": 601
+            "index": 565
         },
         "TRAINER JERRY 2": {
             "level": 26,
@@ -24075,7 +23541,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 634
+            "index": 598
         },
         "TRAINER JERRY 3": {
             "level": 29,
@@ -24093,7 +23559,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 636
+            "index": 600
         },
         "TRAINER VICKY": {
             "level": 18,
@@ -24116,7 +23582,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Detect"
             ],
-            "index": 697
+            "index": 661
         },
         "TRAINER SHELBY 1": {
             "level": 21,
@@ -24134,7 +23600,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 698
+            "index": 662
         },
         "TRAINER SHELBY 2": {
             "level": 30,
@@ -24152,7 +23618,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 700
+            "index": 664
         },
         "TRAINER JOCELYN": {
             "level": 13,
@@ -24170,7 +23636,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 895
+            "index": 859
         },
         "TRAINER LAURA": {
             "level": 13,
@@ -24188,7 +23654,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 896
+            "index": 860
         },
         "TRAINER CYNDY 1": {
             "level": 18,
@@ -24206,7 +23672,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 897
+            "index": 861
         },
         "TRAINER CORA": {
             "level": 27,
@@ -24224,7 +23690,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 899
+            "index": 863
         },
         "TRAINER CYNDY 2": {
             "level": 26,
@@ -24242,7 +23708,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 901
+            "index": 865
         },
         "TRAINER CYNDY 3": {
             "level": 29,
@@ -24260,7 +23726,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 903
+            "index": 867
         },
         "TRAINER REYNA": {
             "level": 33,
@@ -24278,7 +23744,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1043
+            "index": 1007
         },
         "TRAINER LILITH": {
             "level": 13,
@@ -24296,7 +23762,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1213
+            "index": 1177
         },
         "TRAINER SYLVIA": {
             "level": 36,
@@ -24314,7 +23780,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1215
+            "index": 1179
         },
         "TRAINER VIVIAN": {
             "level": 17,
@@ -24337,7 +23803,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Thunder Punch"
             ],
-            "index": 1345
+            "index": 1309
         },
         " TRAINER VIVIAN": {
             "level": 17,
@@ -24360,7 +23826,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Meditate"
             ],
-            "index": 1346
+            "index": 1310
         },
         "TRAINER DANIELLE": {
             "level": 23,
@@ -24383,7 +23849,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Fire Punch"
             ],
-            "index": 1347
+            "index": 1311
         },
         "TRAINER HELENE": {
             "level": 26,
@@ -24401,7 +23867,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1548
+            "index": 1512
         },
         "TRAINER MARLENE": {
             "level": 18,
@@ -24419,7 +23885,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1550
+            "index": 1514
         },
         "TRAINER AISHA": {
             "level": 17,
@@ -24437,7 +23903,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1556
+            "index": 1520
         },
         "TRAINER CALLIE": {
             "level": 28,
@@ -24455,7 +23921,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1564
+            "index": 1528
         },
         "TRAINER BRAWLY 2": {
             "level": 33,
@@ -24478,7 +23944,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Focus Punch"
             ],
-            "index": 1607
+            "index": 1571
         }
     },
     "Aron": {
@@ -24498,7 +23964,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 368
+            "index": 332
         },
         "TRAINER DILLON": {
             "level": 19,
@@ -24516,7 +23982,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 715
+            "index": 679
         },
         "TRAINER TIMMY": {
             "level": 15,
@@ -24534,7 +24000,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 727
+            "index": 691
         },
         "TRAINER ISAAC 1": {
             "level": 11,
@@ -24552,7 +24018,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1112
+            "index": 1076
         },
         "TRAINER ISAAC 2": {
             "level": 22,
@@ -24570,7 +24036,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1121
+            "index": 1085
         },
         "TRAINER ISAAC 3": {
             "level": 25,
@@ -24588,7 +24054,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1127
+            "index": 1091
         },
         "TRAINER ISAAC 4": {
             "level": 28,
@@ -24606,7 +24072,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1133
+            "index": 1097
         },
         "TRAINER WYATT": {
             "level": 18,
@@ -24624,7 +24090,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1481
+            "index": 1445
         },
         " TRAINER WYATT": {
             "level": 18,
@@ -24642,7 +24108,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1482
+            "index": 1446
         },
         "TRAINER DEANDRE": {
             "level": 14,
@@ -24660,7 +24126,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1488
+            "index": 1452
         }
     },
     "Horsea": {
@@ -24680,7 +24146,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 370
+            "index": 334
         },
         "TRAINER STAN": {
             "level": 34,
@@ -24698,7 +24164,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 396
+            "index": 360
         },
         "TRAINER TARA": {
             "level": 25,
@@ -24716,7 +24182,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 926
+            "index": 890
         },
         "TRAINER LINDA": {
             "level": 33,
@@ -24734,7 +24200,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 947
+            "index": 911
         },
         "TRAINER THALIA 2": {
             "level": 34,
@@ -24752,7 +24218,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1874
+            "index": 1838
         }
     },
     "Rhyhorn": {
@@ -24772,7 +24238,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 371
+            "index": 335
         },
         "TRAINER STEVE 3": {
             "level": 29,
@@ -24790,7 +24256,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 375
+            "index": 339
         },
         "TRAINER STEVE 4": {
             "level": 32,
@@ -24808,7 +24274,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 377
+            "index": 341
         }
     },
     "Aggron": {
@@ -24828,7 +24294,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 378
+            "index": 342
         },
         "TRAINER STEVEN": {
             "level": 76,
@@ -24851,7 +24317,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Dragon Claw"
             ],
-            "index": 1759
+            "index": 1723
         }
     },
     "Rhydon": {
@@ -24871,7 +24337,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 379
+            "index": 343
         }
     },
     "Tentacool": {
@@ -24891,7 +24357,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 381
+            "index": 345
         },
         "TRAINER DOUGLAS": {
             "level": 24,
@@ -24909,7 +24375,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 382
+            "index": 346
         },
         " TRAINER DOUGLAS": {
             "level": 24,
@@ -24927,7 +24393,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 383
+            "index": 347
         },
         "TRAINER DARRIN": {
             "level": 24,
@@ -24945,7 +24411,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 384
+            "index": 348
         },
         " TRAINER DARRIN": {
             "level": 24,
@@ -24963,7 +24429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 386
+            "index": 350
         },
         "TRAINER DAVID": {
             "level": 25,
@@ -24981,7 +24447,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 390
+            "index": 354
         },
         "TRAINER SPENCER": {
             "level": 33,
@@ -24999,7 +24465,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 392
+            "index": 356
         },
         "TRAINER DUDLEY": {
             "level": 33,
@@ -25017,7 +24483,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 411
+            "index": 375
         },
         "TRAINER CHAD": {
             "level": 33,
@@ -25035,7 +24501,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 414
+            "index": 378
         },
         "TRAINER ANDREW": {
             "level": 10,
@@ -25053,7 +24519,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 736
+            "index": 700
         },
         "TRAINER DALE": {
             "level": 11,
@@ -25071,7 +24537,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 741
+            "index": 705
         },
         " TRAINER DALE": {
             "level": 11,
@@ -25089,7 +24555,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 743
+            "index": 707
         },
         "TRAINER BARNY": {
             "level": 25,
@@ -25107,7 +24573,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 746
+            "index": 710
         },
         "TRAINER WADE": {
             "level": 16,
@@ -25125,7 +24591,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 748
+            "index": 712
         },
         "TRAINER ELLIOT 2": {
             "level": 24,
@@ -25143,7 +24609,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 751
+            "index": 715
         },
         "TRAINER ELLIOT 3": {
             "level": 26,
@@ -25161,7 +24627,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 756
+            "index": 720
         },
         "TRAINER DWAYNE": {
             "level": 11,
@@ -25179,7 +24645,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1012
+            "index": 976
         },
         "TRAINER ERNEST 2": {
             "level": 36,
@@ -25197,7 +24663,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1021
+            "index": 985
         },
         "TRAINER ERNEST 3": {
             "level": 39,
@@ -25215,7 +24681,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1024
+            "index": 988
         },
         "TRAINER ERNEST 4": {
             "level": 42,
@@ -25233,7 +24699,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1027
+            "index": 991
         },
         "TRAINER JONAH": {
             "level": 31,
@@ -25251,7 +24717,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1405
+            "index": 1369
         },
         "TRAINER WAYNE": {
             "level": 31,
@@ -25269,7 +24735,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1417
+            "index": 1381
         },
         " TRAINER WAYNE": {
             "level": 31,
@@ -25287,7 +24753,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1418
+            "index": 1382
         },
         "LISA & RAY": {
             "level": 25,
@@ -25305,7 +24771,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1456
+            "index": 1420
         },
         "TRAINER CHRIS": {
             "level": 20,
@@ -25323,7 +24789,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1458
+            "index": 1422
         },
         "TRAINER CHANDLER": {
             "level": 12,
@@ -25341,7 +24807,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1462
+            "index": 1426
         },
         " TRAINER CHANDLER": {
             "level": 12,
@@ -25359,7 +24825,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1463
+            "index": 1427
         },
         "TRAINER PETE": {
             "level": 15,
@@ -25377,7 +24843,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1517
+            "index": 1481
         },
         "TRAINER CORY 1": {
             "level": 24,
@@ -25395,7 +24861,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1526
+            "index": 1490
         },
         "TRAINER CORY 2": {
             "level": 30,
@@ -25413,7 +24879,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1783
+            "index": 1747
         },
         "TRAINER CORY 3": {
             "level": 32,
@@ -25431,7 +24897,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1786
+            "index": 1750
         }
     },
     "Tentacruel": {
@@ -25451,7 +24917,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 388
+            "index": 352
         },
         "TRAINER NOLEN": {
             "level": 34,
@@ -25469,7 +24935,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 395
+            "index": 359
         },
         "TRAINER HERMAN": {
             "level": 33,
@@ -25487,7 +24953,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 404
+            "index": 368
         },
         "TRAINER SANTIAGO": {
             "level": 33,
@@ -25505,7 +24971,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 405
+            "index": 369
         },
         "TRAINER DUDLEY": {
             "level": 33,
@@ -25523,7 +24989,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 413
+            "index": 377
         },
         "TRAINER WALLACE": {
             "level": 55,
@@ -25546,7 +25012,7 @@ var SETDEX_SV = {
                 "Sludge Bomb",
                 "Ice Beam"
             ],
-            "index": 730
+            "index": 694
         },
         "TRAINER CARTER": {
             "level": 25,
@@ -25564,7 +25030,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 750
+            "index": 714
         },
         "TRAINER ELLIOT 4": {
             "level": 30,
@@ -25582,7 +25048,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 760
+            "index": 724
         },
         " TRAINER ELLIOT 5": {
             "level": 35,
@@ -25600,7 +25066,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 765
+            "index": 729
         },
         "TRAINER PHILLIP": {
             "level": 44,
@@ -25618,7 +25084,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1013
+            "index": 977
         },
         "TRAINER ERNEST 5": {
             "level": 45,
@@ -25636,7 +25102,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1031
+            "index": 995
         },
         "TRAINER HARRISON": {
             "level": 35,
@@ -25654,7 +25120,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1219
+            "index": 1183
         },
         "TRAINER HENRY": {
             "level": 34,
@@ -25672,7 +25138,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1408
+            "index": 1372
         },
         "TRAINER CORY 4": {
             "level": 34,
@@ -25690,7 +25156,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1789
+            "index": 1753
         },
         "TRAINER CORY 5": {
             "level": 36,
@@ -25708,7 +25174,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1792
+            "index": 1756
         }
     },
     "Sealeo": {
@@ -25728,7 +25194,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 408
+            "index": 372
         },
         "TRAINER GLACIA": {
             "level": 50,
@@ -25751,7 +25217,7 @@ var SETDEX_SV = {
                 "Hail",
                 "Ice Ball"
             ],
-            "index": 590
+            "index": 554
         },
         " TRAINER GLACIA": {
             "level": 52,
@@ -25774,7 +25240,7 @@ var SETDEX_SV = {
                 "Hail",
                 "Blizzard"
             ],
-            "index": 592
+            "index": 556
         },
         "TRAINER JUAN 1": {
             "level": 43,
@@ -25797,7 +25263,7 @@ var SETDEX_SV = {
                 "Aurora Beam",
                 "Water Pulse"
             ],
-            "index": 626
+            "index": 590
         }
     },
     "Spheal": {
@@ -25817,7 +25283,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 409
+            "index": 373
         },
         "TRAINER NIKKI": {
             "level": 33,
@@ -25835,7 +25301,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 937
+            "index": 901
         },
         "TRAINER KATIE": {
             "level": 33,
@@ -25853,7 +25319,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 940
+            "index": 904
         },
         "TRAINER DUNCAN": {
             "level": 25,
@@ -25871,7 +25337,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1018
+            "index": 982
         },
         "TRAINER KELVIN": {
             "level": 33,
@@ -25889,7 +25355,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1041
+            "index": 1005
         },
         "TRAINER REED": {
             "level": 33,
@@ -25907,7 +25373,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1422
+            "index": 1386
         }
     },
     "Staryu": {
@@ -25927,7 +25393,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 418
+            "index": 382
         },
         "TRAINER CAMDEN": {
             "level": 33,
@@ -25945,7 +25411,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 800
+            "index": 764
         },
         " TRAINER CAMDEN": {
             "level": 33,
@@ -25963,7 +25429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 801
+            "index": 765
         },
         "TRAINER ISAIAH 1": {
             "level": 35,
@@ -25981,7 +25447,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 804
+            "index": 768
         },
         "TRAINER PABLO 1": {
             "level": 33,
@@ -25999,7 +25465,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 805
+            "index": 769
         },
         " TRAINER PABLO 1": {
             "level": 33,
@@ -26017,7 +25483,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 806
+            "index": 770
         },
         "TRAINER CHASE": {
             "level": 34,
@@ -26035,7 +25501,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 808
+            "index": 772
         },
         "TRAINER ISAIAH 2": {
             "level": 39,
@@ -26053,7 +25519,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 809
+            "index": 773
         },
         "TRAINER ISAIAH 3": {
             "level": 42,
@@ -26071,7 +25537,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 810
+            "index": 774
         },
         "TRAINER ISOBEL": {
             "level": 34,
@@ -26089,7 +25555,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 813
+            "index": 777
         },
         "TRAINER DONNY": {
             "level": 34,
@@ -26107,7 +25573,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 815
+            "index": 779
         },
         "TRAINER TALIA": {
             "level": 34,
@@ -26125,7 +25591,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 816
+            "index": 780
         },
         "TRAINER KATELYN 1": {
             "level": 35,
@@ -26143,7 +25609,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 817
+            "index": 781
         },
         "TRAINER ALLISON": {
             "level": 33,
@@ -26161,7 +25627,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 819
+            "index": 783
         },
         "TRAINER KATELYN 2": {
             "level": 39,
@@ -26179,7 +25645,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 820
+            "index": 784
         },
         "TRAINER KATELYN 3": {
             "level": 42,
@@ -26197,7 +25663,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 821
+            "index": 785
         },
         "TRAINER JENNY 4": {
             "level": 43,
@@ -26215,7 +25681,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 956
+            "index": 920
         },
         "TRAINER ISABELLA": {
             "level": 34,
@@ -26233,7 +25699,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1240
+            "index": 1204
         },
         "TRAINER CAMRON": {
             "level": 26,
@@ -26251,7 +25717,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1523
+            "index": 1487
         },
         "TRAINER PABLO 2": {
             "level": 37,
@@ -26269,7 +25735,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1793
+            "index": 1757
         },
         " TRAINER PABLO 2": {
             "level": 37,
@@ -26287,7 +25753,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1794
+            "index": 1758
         },
         "TRAINER PABLO 3": {
             "level": 39,
@@ -26305,7 +25771,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1796
+            "index": 1760
         },
         " TRAINER PABLO 3": {
             "level": 39,
@@ -26323,7 +25789,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1797
+            "index": 1761
         },
         "TRAINER PABLO 4": {
             "level": 41,
@@ -26341,7 +25807,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1799
+            "index": 1763
         },
         " TRAINER PABLO 4": {
             "level": 41,
@@ -26359,7 +25825,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1800
+            "index": 1764
         }
     },
     "Machamp": {
@@ -26379,7 +25845,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 438
+            "index": 402
         },
         "TRAINER AURON": {
             "level": 33,
@@ -26397,7 +25863,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1039
+            "index": 1003
         },
         "TRAINER BRAWLY 2": {
             "level": 33,
@@ -26420,7 +25886,7 @@ var SETDEX_SV = {
                 "Focus Punch",
                 "Bulk Up"
             ],
-            "index": 1606
+            "index": 1570
         },
         "TRAINER BRAWLY 3": {
             "level": 38,
@@ -26443,7 +25909,7 @@ var SETDEX_SV = {
                 "Focus Punch",
                 "Bulk Up"
             ],
-            "index": 1610
+            "index": 1574
         },
         "TRAINER BRAWLY 4": {
             "level": 43,
@@ -26466,7 +25932,7 @@ var SETDEX_SV = {
                 "Focus Punch",
                 "Bulk Up"
             ],
-            "index": 1615
+            "index": 1579
         },
         "TRAINER BRAWLY 5": {
             "level": 48,
@@ -26489,7 +25955,7 @@ var SETDEX_SV = {
                 "Focus Punch",
                 "Bulk Up"
             ],
-            "index": 1621
+            "index": 1585
         },
         "TRAINER KOJI 5": {
             "level": 43,
@@ -26507,7 +25973,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1813
+            "index": 1777
         },
         " TRAINER KOJI 5": {
             "level": 43,
@@ -26525,7 +25991,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1814
+            "index": 1778
         }
     },
     "Slugma": {
@@ -26545,7 +26011,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 467
+            "index": 431
         },
         " TRAINER JEFF": {
             "level": 22,
@@ -26563,7 +26029,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 468
+            "index": 432
         },
         "TRAINER JACE": {
             "level": 23,
@@ -26581,7 +26047,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 470
+            "index": 434
         },
         "TRAINER KEEGAN": {
             "level": 23,
@@ -26599,7 +26065,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 471
+            "index": 435
         },
         "TRAINER BERNIE 1": {
             "level": 18,
@@ -26617,7 +26083,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 472
+            "index": 436
         },
         "TRAINER BERNIE 2": {
             "level": 26,
@@ -26635,7 +26101,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 474
+            "index": 438
         },
         "TRAINER BERNIE 3": {
             "level": 29,
@@ -26653,7 +26119,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 476
+            "index": 440
         },
         "TRAINER BERNIE 4": {
             "level": 32,
@@ -26671,7 +26137,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 478
+            "index": 442
         },
         "TRAINER FLANNERY 1": {
             "level": 24,
@@ -26694,7 +26160,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Sunny Day"
             ],
-            "index": 608
+            "index": 572
         },
         "TRAINER BRENDAN ROUTE 110 MUDKIP": {
             "level": 18,
@@ -26712,7 +26178,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1069
+            "index": 1033
         },
         "TRAINER BRENDAN ROUTE 119 MUDKIP": {
             "level": 29,
@@ -26730,7 +26196,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1072
+            "index": 1036
         },
         "TRAINER BRENDAN ROUTE 110 TORCHIC": {
             "level": 18,
@@ -26748,7 +26214,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1084
+            "index": 1048
         },
         "TRAINER BRENDAN ROUTE 119 TORCHIC": {
             "level": 29,
@@ -26766,7 +26232,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1087
+            "index": 1051
         },
         "TRAINER MAY ROUTE 110 MUDKIP": {
             "level": 18,
@@ -26784,7 +26250,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1091
+            "index": 1055
         },
         "TRAINER MAY ROUTE 119 MUDKIP": {
             "level": 29,
@@ -26802,7 +26268,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1093
+            "index": 1057
         },
         "TRAINER MAY ROUTE 110 TORCHIC": {
             "level": 18,
@@ -26820,7 +26286,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1105
+            "index": 1069
         },
         "TRAINER MAY ROUTE 119 TORCHIC": {
             "level": 29,
@@ -26838,7 +26304,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1108
+            "index": 1072
         },
         "TRAINER BRENDAN RUSTBORO TORCHIC": {
             "level": 13,
@@ -26856,7 +26322,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1249
+            "index": 1213
         },
         "TRAINER BRENDAN LILYCOVE MUDKIP": {
             "level": 32,
@@ -26874,7 +26340,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1381
+            "index": 1345
         },
         "TRAINER BRENDAN LILYCOVE TORCHIC": {
             "level": 32,
@@ -26892,7 +26358,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1390
+            "index": 1354
         },
         "TRAINER MAY LILYCOVE MUDKIP": {
             "level": 32,
@@ -26910,7 +26376,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1393
+            "index": 1357
         },
         "TRAINER MAY LILYCOVE TORCHIC": {
             "level": 32,
@@ -26928,7 +26394,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1402
+            "index": 1366
         },
         "TRAINER BRYANT": {
             "level": 18,
@@ -26946,7 +26412,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1539
+            "index": 1503
         },
         "TRAINER DAYTON": {
             "level": 25,
@@ -26964,7 +26430,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1560
+            "index": 1524
         }
     },
     "Magcargo": {
@@ -26984,7 +26450,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 480
+            "index": 444
         },
         "TRAINER FLANNERY 2": {
             "level": 38,
@@ -27007,7 +26473,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Rock Slide"
             ],
-            "index": 1645
+            "index": 1609
         },
         "TRAINER FLANNERY 3": {
             "level": 43,
@@ -27030,7 +26496,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Rock Slide"
             ],
-            "index": 1650
+            "index": 1614
         },
         "TRAINER FLANNERY 4": {
             "level": 48,
@@ -27053,7 +26519,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Rock Slide"
             ],
-            "index": 1656
+            "index": 1620
         },
         "TRAINER FLANNERY 5": {
             "level": 53,
@@ -27076,7 +26542,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Rock Slide"
             ],
-            "index": 1661
+            "index": 1625
         }
     },
     "Nuzleaf": {
@@ -27096,7 +26562,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 486
+            "index": 450
         },
         "TRAINER SHANE": {
             "level": 18,
@@ -27114,7 +26580,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 488
+            "index": 452
         },
         "TRAINER EDWIN 1": {
             "level": 14,
@@ -27132,7 +26598,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1049
+            "index": 1013
         },
         "TRAINER EDWIN 2": {
             "level": 26,
@@ -27150,7 +26616,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1056
+            "index": 1020
         },
         "TRAINER EDWIN 3": {
             "level": 29,
@@ -27168,7 +26634,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1058
+            "index": 1022
         },
         "TRAINER EDWIN 4": {
             "level": 32,
@@ -27186,7 +26652,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1060
+            "index": 1024
         },
         "TRAINER LORENZO": {
             "level": 28,
@@ -27204,7 +26670,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1178
+            "index": 1142
         },
         "TRAINER JENNA": {
             "level": 28,
@@ -27222,7 +26688,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1190
+            "index": 1154
         },
         "TRAINER CHARLOTTE": {
             "level": 19,
@@ -27240,7 +26706,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1486
+            "index": 1450
         },
         "TRAINER BRANDEN": {
             "level": 22,
@@ -27258,7 +26724,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1537
+            "index": 1501
         },
         "TRAINER GABRIELLE 3": {
             "level": 33,
@@ -27276,7 +26742,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1859
+            "index": 1823
         },
         "TRAINER GABRIELLE 4": {
             "level": 35,
@@ -27294,7 +26760,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1865
+            "index": 1829
         }
     },
     "Surskit": {
@@ -27314,7 +26780,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 504
+            "index": 468
         },
         "TRAINER JEFFREY 1": {
             "level": 27,
@@ -27332,7 +26798,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 511
+            "index": 475
         },
         " TRAINER JEFFREY 1": {
             "level": 27,
@@ -27350,7 +26816,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 512
+            "index": 476
         },
         "  TRAINER JEFFREY 1": {
             "level": 27,
@@ -27368,7 +26834,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 513
+            "index": 477
         },
         "TRAINER JEFFREY 2": {
             "level": 31,
@@ -27386,7 +26852,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 516
+            "index": 480
         },
         " TRAINER JEFFREY 2": {
             "level": 31,
@@ -27404,7 +26870,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 517
+            "index": 481
         },
         "  TRAINER JEFFREY 2": {
             "level": 31,
@@ -27422,7 +26888,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 518
+            "index": 482
         },
         "TRAINER JEFFREY 3": {
             "level": 34,
@@ -27440,7 +26906,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 519
+            "index": 483
         },
         " TRAINER JEFFREY 3": {
             "level": 34,
@@ -27458,7 +26924,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 520
+            "index": 484
         },
         "TRAINER JEFFREY 4": {
             "level": 36,
@@ -27476,7 +26942,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 522
+            "index": 486
         },
         " TRAINER JEFFREY 4": {
             "level": 36,
@@ -27494,7 +26960,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 524
+            "index": 488
         },
         "TRAINER JEFFREY 5": {
             "level": 38,
@@ -27512,7 +26978,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 526
+            "index": 490
         },
         " TRAINER JEFFREY 5": {
             "level": 38,
@@ -27530,7 +26996,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 528
+            "index": 492
         },
         "TRAINER JAMES 4": {
             "level": 31,
@@ -27548,7 +27014,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1286
+            "index": 1250
         },
         "TRAINER JAMES 5": {
             "level": 33,
@@ -27566,7 +27032,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1289
+            "index": 1253
         }
     },
     "Wurmple": {
@@ -27586,7 +27052,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 505
+            "index": 469
         },
         "TRAINER TAYLOR": {
             "level": 27,
@@ -27604,7 +27070,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 508
+            "index": 472
         },
         "TRAINER JEFFREY 4": {
             "level": 36,
@@ -27622,7 +27088,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 523
+            "index": 487
         }
     },
     "Silcoon": {
@@ -27642,7 +27108,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 506
+            "index": 470
         }
     },
     "Beautifly": {
@@ -27662,7 +27128,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 507
+            "index": 471
         },
         "TRAINER DEREK": {
             "level": 16,
@@ -27680,7 +27146,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 515
+            "index": 479
         },
         "TRAINER JEFFREY 5": {
             "level": 38,
@@ -27698,7 +27164,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 530
+            "index": 494
         },
         "TRAINER GEORGIA": {
             "level": 16,
@@ -27716,7 +27182,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 643
+            "index": 607
         },
         "MIU & YUKI": {
             "level": 26,
@@ -27734,7 +27200,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 993
+            "index": 957
         },
         "MEL & PAUL": {
             "level": 27,
@@ -27757,7 +27223,7 @@ var SETDEX_SV = {
                 "Attract",
                 "Stun Spore"
             ],
-            "index": 1432
+            "index": 1396
         },
         "TRAINER CALE": {
             "level": 29,
@@ -27775,7 +27241,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1567
+            "index": 1531
         }
     },
     "Cascoon": {
@@ -27795,7 +27261,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 509
+            "index": 473
         }
     },
     "Dustox": {
@@ -27815,7 +27281,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 510
+            "index": 474
         },
         "TRAINER DEREK": {
             "level": 16,
@@ -27833,7 +27299,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 514
+            "index": 478
         },
         "TRAINER JEFFREY 5": {
             "level": 38,
@@ -27851,7 +27317,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 527
+            "index": 491
         },
         "MIU & YUKI": {
             "level": 26,
@@ -27869,7 +27335,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 994
+            "index": 958
         },
         "TRAINER JAMES 3": {
             "level": 29,
@@ -27887,7 +27353,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1284
+            "index": 1248
         },
         "TRAINER JAMES 4": {
             "level": 31,
@@ -27905,7 +27371,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1287
+            "index": 1251
         },
         "TRAINER JAMES 5": {
             "level": 33,
@@ -27923,7 +27389,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1291
+            "index": 1255
         },
         "MEL & PAUL": {
             "level": 27,
@@ -27946,7 +27412,7 @@ var SETDEX_SV = {
                 "Toxic",
                 "Protect"
             ],
-            "index": 1431
+            "index": 1395
         },
         "TRAINER CALE": {
             "level": 29,
@@ -27964,7 +27430,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1566
+            "index": 1530
         }
     },
     "Masquerain": {
@@ -27984,7 +27450,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 521
+            "index": 485
         },
         " TRAINER JEFFREY 4": {
             "level": 36,
@@ -28002,7 +27468,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 525
+            "index": 489
         },
         "TRAINER JEFFREY 5": {
             "level": 38,
@@ -28020,7 +27486,49 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 529
+            "index": 493
+        }
+    },
+    "Abra": {
+        "TRAINER EDWARD": {
+            "level": 15,
+            "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+            },
+            "item": null,
+            "ability": null,
+            "nature": null,
+            "teraType": null,
+            "status": "Healthy",
+            "moves": [
+                "Hidden Power"
+            ],
+            "index": 495
+        },
+        "TRAINER JACLYN": {
+            "level": 16,
+            "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+            },
+            "item": null,
+            "ability": null,
+            "nature": null,
+            "teraType": null,
+            "status": "Healthy",
+            "moves": [
+                "Hidden Power"
+            ],
+            "index": 513
         }
     },
     "Kirlia": {
@@ -28040,7 +27548,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 532
+            "index": 496
         },
         " TRAINER WILLIAM": {
             "level": 26,
@@ -28058,7 +27566,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 537
+            "index": 501
         },
         "TRAINER HANNAH": {
             "level": 36,
@@ -28076,7 +27584,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 550
+            "index": 514
         },
         "TRAINER ALEXIS": {
             "level": 41,
@@ -28094,7 +27602,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 556
+            "index": 520
         },
         "TRAINER JERRY 3": {
             "level": 29,
@@ -28112,7 +27620,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 635
+            "index": 599
         },
         "TRAINER JERRY 4": {
             "level": 32,
@@ -28130,7 +27638,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 637
+            "index": 601
         },
         "TRAINER JERRY 5": {
             "level": 34,
@@ -28148,7 +27656,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 639
+            "index": 603
         },
         "TRAINER ALIX": {
             "level": 26,
@@ -28166,7 +27674,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1547
+            "index": 1511
         }
     },
     "Ralts": {
@@ -28186,7 +27694,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 533
+            "index": 497
         },
         "TRAINER WILLIAM": {
             "level": 26,
@@ -28204,7 +27712,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 535
+            "index": 499
         },
         " TRAINER WILLIAM": {
             "level": 26,
@@ -28222,7 +27730,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 536
+            "index": 500
         },
         "TRAINER TED": {
             "level": 17,
@@ -28240,7 +27748,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 629
+            "index": 593
         },
         "TRAINER JERRY 2": {
             "level": 26,
@@ -28258,7 +27766,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 633
+            "index": 597
         },
         "TRAINER WALLY MAUVILLE": {
             "level": 16,
@@ -28276,7 +27784,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1359
+            "index": 1323
         },
         "TRAINER BRANDI": {
             "level": 17,
@@ -28294,7 +27802,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1555
+            "index": 1519
         }
     },
     "Girafarig": {
@@ -28314,7 +27822,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 534
+            "index": 498
         },
         "TRAINER TERRY": {
             "level": 37,
@@ -28332,7 +27840,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1222
+            "index": 1186
         },
         "TRAINER CLIFFORD": {
             "level": 36,
@@ -28350,7 +27858,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1225
+            "index": 1189
         }
     },
     "Solrock": {
@@ -28370,7 +27878,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 539
+            "index": 503
         },
         "TRAINER CAMERON 1": {
             "level": 31,
@@ -28388,7 +27896,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 540
+            "index": 504
         },
         "TRAINER CAMERON 2": {
             "level": 33,
@@ -28406,7 +27914,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 542
+            "index": 506
         },
         "TRAINER CAMERON 3": {
             "level": 38,
@@ -28424,7 +27932,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 544
+            "index": 508
         },
         "TRAINER CAMERON 4": {
             "level": 41,
@@ -28442,7 +27950,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 546
+            "index": 510
         },
         "TRAINER CAMERON 5": {
             "level": 45,
@@ -28460,7 +27968,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 547
+            "index": 511
         },
         "TATE&LIZA": {
             "level": 65,
@@ -28483,7 +27991,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Flamethrower"
             ],
-            "index": 1731
+            "index": 1695
         },
         "TRAINER MITCHELL": {
             "level": 43,
@@ -28506,7 +28014,7 @@ var SETDEX_SV = {
                 "Light Screen",
                 "Shadow Ball"
             ],
-            "index": 1118
+            "index": 1082
         }
     },
     "Alakazam": {
@@ -28526,7 +28034,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 548
+            "index": 512
         },
         "TRAINER JACKI 5": {
             "level": 43,
@@ -28544,7 +28052,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 567
+            "index": 531
         }
     },
     "Wobbuffet": {
@@ -28564,7 +28072,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 553
+            "index": 517
         },
         "TRAINER CEDRIC": {
             "level": 32,
@@ -28587,7 +28095,7 @@ var SETDEX_SV = {
                 "Counter",
                 "Mirror Coat"
             ],
-            "index": 974
+            "index": 938
         },
         "TRAINER NICHOLAS": {
             "level": 36,
@@ -28605,7 +28113,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1226
+            "index": 1190
         },
         "TRAINER EVERETT": {
             "level": 41,
@@ -28623,7 +28131,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1887
+            "index": 1851
         }
     },
     "Natu": {
@@ -28643,7 +28151,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 554
+            "index": 518
         },
         "TRAINER COLIN": {
             "level": 28,
@@ -28661,7 +28169,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 850
+            "index": 814
         },
         "TRAINER ROBERT 2": {
             "level": 32,
@@ -28679,7 +28187,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 857
+            "index": 821
         },
         "TRAINER ROBERT 3": {
             "level": 35,
@@ -28697,7 +28205,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 859
+            "index": 823
         },
         "TRAINER ROBERT 4": {
             "level": 38,
@@ -28715,7 +28223,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 861
+            "index": 825
         },
         "TRAINER ALEX": {
             "level": 33,
@@ -28733,7 +28241,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 865
+            "index": 829
         },
         "TRAINER MACEY": {
             "level": 36,
@@ -28751,7 +28259,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1233
+            "index": 1197
         }
     },
     "Golduck": {
@@ -28776,7 +28284,7 @@ var SETDEX_SV = {
                 "Confusion",
                 "Psych Up"
             ],
-            "index": 578
+            "index": 542
         }
     },
     "Crawdaunt": {
@@ -28801,7 +28309,7 @@ var SETDEX_SV = {
                 "Strength",
                 "Facade"
             ],
-            "index": 583
+            "index": 547
         },
         "TRAINER JUAN 1": {
             "level": 43,
@@ -28824,7 +28332,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Leer"
             ],
-            "index": 627
+            "index": 591
         },
         "TRAINER JUAN 2": {
             "level": 48,
@@ -28847,7 +28355,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Double Team"
             ],
-            "index": 1735
+            "index": 1699
         },
         "TRAINER JUAN 3": {
             "level": 53,
@@ -28870,7 +28378,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Double Team"
             ],
-            "index": 1740
+            "index": 1704
         },
         "TRAINER JUAN 4": {
             "level": 58,
@@ -28893,7 +28401,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Double Team"
             ],
-            "index": 1746
+            "index": 1710
         },
         "TRAINER JUAN 5": {
             "level": 63,
@@ -28916,7 +28424,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Double Team"
             ],
-            "index": 1752
+            "index": 1716
         }
     },
     "Absol": {
@@ -28941,7 +28449,7 @@ var SETDEX_SV = {
                 "Swords Dance",
                 "Slash"
             ],
-            "index": 584
+            "index": 548
         },
         "TRAINER JAZMYN": {
             "level": 27,
@@ -28959,7 +28467,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1035
+            "index": 999
         },
         "TRAINER HALLE": {
             "level": 43,
@@ -28977,7 +28485,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1150
+            "index": 1114
         }
     },
     "Dusclops": {
@@ -29002,7 +28510,7 @@ var SETDEX_SV = {
                 "Curse",
                 "Protect"
             ],
-            "index": 585
+            "index": 549
         },
         " TRAINER PHOEBE": {
             "level": 51,
@@ -29025,7 +28533,7 @@ var SETDEX_SV = {
                 "Rock Slide",
                 "Earthquake"
             ],
-            "index": 589
+            "index": 553
         },
         "TRAINER QUINCY": {
             "level": 43,
@@ -29048,7 +28556,7 @@ var SETDEX_SV = {
                 "Will O Wisp",
                 "Toxic"
             ],
-            "index": 711
+            "index": 675
         }
     },
     "Glalie": {
@@ -29073,7 +28581,7 @@ var SETDEX_SV = {
                 "Icy Wind",
                 "Ice Beam"
             ],
-            "index": 591
+            "index": 555
         },
         " TRAINER GLACIA": {
             "level": 52,
@@ -29096,7 +28604,7 @@ var SETDEX_SV = {
                 "Hail",
                 "Ice Beam"
             ],
-            "index": 593
+            "index": 557
         }
     },
     "Walrein": {
@@ -29121,7 +28629,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Sheer Cold"
             ],
-            "index": 594
+            "index": 558
         },
         "TRAINER JUAN 2": {
             "level": 48,
@@ -29144,7 +28652,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1734
+            "index": 1698
         },
         "TRAINER JUAN 3": {
             "level": 53,
@@ -29167,7 +28675,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1739
+            "index": 1703
         },
         "TRAINER JUAN 4": {
             "level": 58,
@@ -29190,7 +28698,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1745
+            "index": 1709
         },
         "TRAINER JUAN 5": {
             "level": 63,
@@ -29213,7 +28721,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Sheer Cold"
             ],
-            "index": 1751
+            "index": 1715
         }
     },
     "Shelgon": {
@@ -29238,7 +28746,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Double Edge"
             ],
-            "index": 595
+            "index": 559
         },
         " TRAINER NICOLAS 5": {
             "level": 49,
@@ -29256,7 +28764,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 835
+            "index": 799
         }
     },
     "Altaria": {
@@ -29281,7 +28789,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Aerial Ace"
             ],
-            "index": 596
+            "index": 560
         },
         "TRAINER WINONA 1": {
             "level": 33,
@@ -29304,7 +28812,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Aerial Ace"
             ],
-            "index": 619
+            "index": 583
         },
         "TRAINER NICOLAS 1": {
             "level": 37,
@@ -29322,7 +28830,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 824
+            "index": 788
         },
         " TRAINER NICOLAS 1": {
             "level": 37,
@@ -29340,7 +28848,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 825
+            "index": 789
         },
         "TRAINER NICOLAS 2": {
             "level": 41,
@@ -29358,7 +28866,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 826
+            "index": 790
         },
         " TRAINER NICOLAS 2": {
             "level": 41,
@@ -29376,7 +28884,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 827
+            "index": 791
         },
         "TRAINER NICOLAS 3": {
             "level": 44,
@@ -29394,7 +28902,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 828
+            "index": 792
         },
         " TRAINER NICOLAS 3": {
             "level": 44,
@@ -29412,7 +28920,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 829
+            "index": 793
         },
         "TRAINER NICOLAS 4": {
             "level": 46,
@@ -29430,7 +28938,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 831
+            "index": 795
         },
         " TRAINER NICOLAS 4": {
             "level": 46,
@@ -29448,7 +28956,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 832
+            "index": 796
         },
         "TRAINER NICOLAS 5": {
             "level": 49,
@@ -29466,7 +28974,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 833
+            "index": 797
         },
         " TRAINER NICOLAS 5": {
             "level": 49,
@@ -29484,7 +28992,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 834
+            "index": 798
         },
         "TRAINER ROBERT 3": {
             "level": 35,
@@ -29502,7 +29010,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 860
+            "index": 824
         },
         "TRAINER ROBERT 4": {
             "level": 38,
@@ -29520,7 +29028,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 862
+            "index": 826
         },
         "TRAINER ROBERT 5": {
             "level": 41,
@@ -29538,7 +29046,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 863
+            "index": 827
         },
         "TRAINER DIANA 5": {
             "level": 40,
@@ -29556,7 +29064,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 988
+            "index": 952
         },
         "TRAINER WALLY VR 1": {
             "level": 44,
@@ -29579,7 +29087,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Dragon Dance"
             ],
-            "index": 1063
+            "index": 1027
         },
         "TRAINER WALLY VR 2": {
             "level": 47,
@@ -29602,7 +29110,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Dragon Dance"
             ],
-            "index": 1360
+            "index": 1324
         },
         "TRAINER WALLY VR 3": {
             "level": 50,
@@ -29625,7 +29133,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Dragon Dance"
             ],
-            "index": 1365
+            "index": 1329
         },
         "TRAINER WALLY VR 4": {
             "level": 53,
@@ -29648,7 +29156,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Dragon Dance"
             ],
-            "index": 1370
+            "index": 1334
         },
         "TRAINER WALLY VR 5": {
             "level": 56,
@@ -29671,7 +29179,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Dragon Dance"
             ],
-            "index": 1375
+            "index": 1339
         },
         "TRAINER WINONA 2": {
             "level": 45,
@@ -29694,7 +29202,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Earthquake"
             ],
-            "index": 1690
+            "index": 1654
         },
         "TRAINER WINONA 3": {
             "level": 50,
@@ -29717,7 +29225,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Earthquake"
             ],
-            "index": 1696
+            "index": 1660
         },
         "TRAINER WINONA 4": {
             "level": 55,
@@ -29740,7 +29248,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Earthquake"
             ],
-            "index": 1702
+            "index": 1666
         },
         "TRAINER WINONA 5": {
             "level": 60,
@@ -29763,7 +29271,7 @@ var SETDEX_SV = {
                 "Dragon Dance",
                 "Earthquake"
             ],
-            "index": 1708
+            "index": 1672
         }
     },
     "Kingdra": {
@@ -29788,7 +29296,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Body Slam"
             ],
-            "index": 597
+            "index": 561
         },
         "TRAINER JUAN 1": {
             "level": 46,
@@ -29811,7 +29319,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Rest"
             ],
-            "index": 628
+            "index": 592
         },
         "TRAINER JUAN 2": {
             "level": 51,
@@ -29834,7 +29342,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Rest"
             ],
-            "index": 1736
+            "index": 1700
         },
         "TRAINER JUAN 3": {
             "level": 56,
@@ -29857,7 +29365,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Rest"
             ],
-            "index": 1741
+            "index": 1705
         },
         "TRAINER JUAN 4": {
             "level": 61,
@@ -29880,7 +29388,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Rest"
             ],
-            "index": 1747
+            "index": 1711
         },
         "TRAINER JUAN 5": {
             "level": 66,
@@ -29903,7 +29411,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Rest"
             ],
-            "index": 1753
+            "index": 1717
         },
         "TRAINER THALIA 5": {
             "level": 40,
@@ -29921,7 +29429,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1883
+            "index": 1847
         }
     },
     "Flygon": {
@@ -29946,7 +29454,7 @@ var SETDEX_SV = {
                 "Dragon Breath",
                 "Earthquake"
             ],
-            "index": 598
+            "index": 562
         }
     },
     "Salamence": {
@@ -29971,7 +29479,7 @@ var SETDEX_SV = {
                 "Rock Slide",
                 "Crunch"
             ],
-            "index": 599
+            "index": 563
         }
     },
     "Slaking": {
@@ -29996,7 +29504,7 @@ var SETDEX_SV = {
                 "Facade",
                 "Feint Attack"
             ],
-            "index": 614
+            "index": 578
         },
         "KATE & JOY": {
             "level": 32,
@@ -30019,7 +29527,7 @@ var SETDEX_SV = {
                 "Slack Off",
                 "Feint Attack"
             ],
-            "index": 653
+            "index": 617
         },
         "TRAINER QUINCY": {
             "level": 43,
@@ -30042,7 +29550,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Flamethrower"
             ],
-            "index": 710
+            "index": 674
         },
         "TRAINER KATELYNN": {
             "level": 43,
@@ -30065,7 +29573,7 @@ var SETDEX_SV = {
                 "Aerial Ace",
                 "Brick Break"
             ],
-            "index": 713
+            "index": 677
         },
         "TRAINER NORMAN 2": {
             "level": 42,
@@ -30088,7 +29596,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Fire Blast"
             ],
-            "index": 1667
+            "index": 1631
         },
         " TRAINER NORMAN 2": {
             "level": 45,
@@ -30111,7 +29619,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Shadow Ball"
             ],
-            "index": 1669
+            "index": 1633
         },
         "TRAINER NORMAN 3": {
             "level": 47,
@@ -30134,7 +29642,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Fire Blast"
             ],
-            "index": 1670
+            "index": 1634
         },
         " TRAINER NORMAN 3": {
             "level": 50,
@@ -30157,7 +29665,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Shadow Ball"
             ],
-            "index": 1674
+            "index": 1638
         },
         "TRAINER NORMAN 4": {
             "level": 52,
@@ -30180,7 +29688,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Fire Blast"
             ],
-            "index": 1675
+            "index": 1639
         },
         " TRAINER NORMAN 4": {
             "level": 55,
@@ -30203,7 +29711,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Shadow Ball"
             ],
-            "index": 1679
+            "index": 1643
         },
         "TRAINER NORMAN 5": {
             "level": 57,
@@ -30226,7 +29734,7 @@ var SETDEX_SV = {
                 "Double Edge",
                 "Fire Blast"
             ],
-            "index": 1680
+            "index": 1644
         },
         " TRAINER NORMAN 5": {
             "level": 60,
@@ -30249,7 +29757,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Shadow Ball"
             ],
-            "index": 1685
+            "index": 1649
         },
         "TRAINER CRISTIN 5": {
             "level": 41,
@@ -30267,7 +29775,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1825
+            "index": 1789
         }
     },
     "Swablu": {
@@ -30292,7 +29800,7 @@ var SETDEX_SV = {
                 "Safeguard",
                 "Aerial Ace"
             ],
-            "index": 615
+            "index": 579
         },
         "TRAINER ROBERT 1": {
             "level": 29,
@@ -30310,7 +29818,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 851
+            "index": 815
         },
         "TRAINER ROBERT 2": {
             "level": 32,
@@ -30328,7 +29836,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 858
+            "index": 822
         },
         "TRAINER MARTHA": {
             "level": 23,
@@ -30346,7 +29854,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 970
+            "index": 934
         },
         "TRAINER DIANA 1": {
             "level": 19,
@@ -30364,7 +29872,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 973
+            "index": 937
         },
         "TRAINER DIANA 2": {
             "level": 25,
@@ -30382,7 +29890,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 979
+            "index": 943
         },
         "TRAINER DIANA 3": {
             "level": 28,
@@ -30400,7 +29908,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 982
+            "index": 946
         },
         "TRAINER DIANA 4": {
             "level": 31,
@@ -30418,7 +29926,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 985
+            "index": 949
         },
         "TRAINER SOPHIA": {
             "level": 38,
@@ -30436,7 +29944,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1191
+            "index": 1155
         },
         "TRAINER ASHLEY": {
             "level": 27,
@@ -30454,7 +29962,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1356
+            "index": 1320
         },
         " TRAINER ASHLEY": {
             "level": 27,
@@ -30472,7 +29980,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1357
+            "index": 1321
         },
         "  TRAINER ASHLEY": {
             "level": 27,
@@ -30490,7 +29998,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1358
+            "index": 1322
         },
         "KIM & IRIS": {
             "level": 32,
@@ -30513,7 +30021,7 @@ var SETDEX_SV = {
                 "Safeguard",
                 "Aerial Ace"
             ],
-            "index": 1427
+            "index": 1391
         }
     },
     "Oddish": {
@@ -30533,7 +30041,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 631
+            "index": 595
         },
         "TRAINER DIANA 1": {
             "level": 19,
@@ -30551,7 +30059,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 972
+            "index": 936
         },
         "TRAINER SALLY": {
             "level": 16,
@@ -30569,7 +30077,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1271
+            "index": 1235
         }
     },
     "Plusle": {
@@ -30589,7 +30097,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 682
+            "index": 646
         },
         "TRAINER ISABEL 2": {
             "level": 26,
@@ -30607,7 +30115,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 684
+            "index": 648
         },
         "TRAINER ISABEL 3": {
             "level": 29,
@@ -30625,7 +30133,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 686
+            "index": 650
         },
         "TRAINER ISABEL 4": {
             "level": 32,
@@ -30643,7 +30151,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 688
+            "index": 652
         },
         "TRAINER ISABEL 5": {
             "level": 35,
@@ -30661,7 +30169,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 690
+            "index": 654
         },
         "AMY & LIV": {
             "level": 36,
@@ -30684,7 +30192,7 @@ var SETDEX_SV = {
                 "Fake Tears",
                 "Helping Hand"
             ],
-            "index": 1003
+            "index": 967
         },
         "TRAINER KALEB": {
             "level": 14,
@@ -30702,7 +30210,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1465
+            "index": 1429
         }
     },
     "Minun": {
@@ -30722,7 +30230,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 683
+            "index": 647
         },
         "TRAINER ISABEL 2": {
             "level": 26,
@@ -30740,7 +30248,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 685
+            "index": 649
         },
         "TRAINER ISABEL 3": {
             "level": 29,
@@ -30758,7 +30266,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 687
+            "index": 651
         },
         "TRAINER ISABEL 4": {
             "level": 32,
@@ -30776,7 +30284,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 689
+            "index": 653
         },
         "TRAINER ISABEL 5": {
             "level": 35,
@@ -30794,7 +30302,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 691
+            "index": 655
         },
         "AMY & LIV": {
             "level": 36,
@@ -30817,7 +30325,7 @@ var SETDEX_SV = {
                 "Charm",
                 "Helping Hand"
             ],
-            "index": 1004
+            "index": 968
         },
         "TRAINER KALEB": {
             "level": 14,
@@ -30835,7 +30343,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1464
+            "index": 1428
         }
     },
     "Gulpin": {
@@ -30860,7 +30368,7 @@ var SETDEX_SV = {
                 "Yawn",
                 "Pound"
             ],
-            "index": 709
+            "index": 673
         },
         "TRAINER JAIDEN": {
             "level": 26,
@@ -30878,7 +30386,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1545
+            "index": 1509
         },
         "TRAINER PAT": {
             "level": 25,
@@ -30896,7 +30404,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1579
+            "index": 1543
         }
     },
     "Gardevoir": {
@@ -30921,7 +30429,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Calm Mind"
             ],
-            "index": 712
+            "index": 676
         },
         "TRAINER WALLY VR 1": {
             "level": 45,
@@ -30944,7 +30452,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Future Sight"
             ],
-            "index": 1067
+            "index": 1031
         },
         "TRAINER WALLY VR 2": {
             "level": 48,
@@ -30967,7 +30475,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Future Sight"
             ],
-            "index": 1364
+            "index": 1328
         },
         "TRAINER WALLY VR 3": {
             "level": 51,
@@ -30990,7 +30498,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Future Sight"
             ],
-            "index": 1369
+            "index": 1333
         },
         "TRAINER WALLY VR 4": {
             "level": 54,
@@ -31013,7 +30521,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Future Sight"
             ],
-            "index": 1374
+            "index": 1338
         },
         "TRAINER WALLY VR 5": {
             "level": 57,
@@ -31036,7 +30544,7 @@ var SETDEX_SV = {
                 "Psychic",
                 "Future Sight"
             ],
-            "index": 1379
+            "index": 1343
         }
     },
     "Milotic": {
@@ -31061,7 +30569,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Toxic"
             ],
-            "index": 734
+            "index": 698
         }
     },
     "Barboach": {
@@ -31081,7 +30589,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 740
+            "index": 704
         },
         "TRAINER NOLAN": {
             "level": 19,
@@ -31099,7 +30607,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 745
+            "index": 709
         },
         "TRAINER KAI": {
             "level": 19,
@@ -31117,7 +30625,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1485
+            "index": 1449
         }
     },
     "Doduo": {
@@ -31137,7 +30645,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 790
+            "index": 754
         },
         "TRAINER DYLAN 2": {
             "level": 28,
@@ -31155,7 +30663,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 791
+            "index": 755
         },
         "TRAINER DYLAN 3": {
             "level": 31,
@@ -31173,7 +30681,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 792
+            "index": 756
         },
         "TRAINER MARIA 1": {
             "level": 17,
@@ -31191,7 +30699,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 795
+            "index": 759
         },
         "TRAINER MARIA 2": {
             "level": 28,
@@ -31209,7 +30717,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 796
+            "index": 760
         },
         "TRAINER MARIA 3": {
             "level": 31,
@@ -31227,7 +30735,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 797
+            "index": 761
         },
         "TRAINER JARED": {
             "level": 27,
@@ -31245,7 +30753,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 841
+            "index": 805
         },
         "TRAINER EDWARDO": {
             "level": 29,
@@ -31263,7 +30771,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 847
+            "index": 811
         },
         "TRAINER KYRA": {
             "level": 26,
@@ -31281,7 +30789,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1542
+            "index": 1506
         },
         "TRAINER MELINA": {
             "level": 17,
@@ -31299,7 +30807,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1554
+            "index": 1518
         }
     },
     "Bagon": {
@@ -31319,7 +30827,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 830
+            "index": 794
         },
         "TRAINER AARON": {
             "level": 34,
@@ -31342,7 +30850,7 @@ var SETDEX_SV = {
                 "Focus Energy",
                 "Ember"
             ],
-            "index": 836
+            "index": 800
         }
     },
     "Ninjask": {
@@ -31362,7 +30870,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 868
+            "index": 832
         },
         "TRAINER TAKASHI": {
             "level": 25,
@@ -31380,7 +30888,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 869
+            "index": 833
         },
         "TRAINER LUNG": {
             "level": 18,
@@ -31398,7 +30906,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 878
+            "index": 842
         },
         "TRAINER DOUG": {
             "level": 28,
@@ -31416,7 +30924,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1279
+            "index": 1243
         },
         "TRAINER KENT": {
             "level": 25,
@@ -31434,7 +30942,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1282
+            "index": 1246
         },
         "TRAINER JAMES 2": {
             "level": 27,
@@ -31452,7 +30960,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1283
+            "index": 1247
         },
         "TRAINER JAMES 3": {
             "level": 29,
@@ -31470,7 +30978,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1285
+            "index": 1249
         },
         "TRAINER JAMES 4": {
             "level": 31,
@@ -31488,7 +30996,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1288
+            "index": 1252
         },
         "TRAINER JAMES 5": {
             "level": 33,
@@ -31506,7 +31014,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1290
+            "index": 1254
         },
         " TRAINER JAMES 5": {
             "level": 33,
@@ -31524,7 +31032,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1292
+            "index": 1256
         },
         "TRAINER KEIGO": {
             "level": 28,
@@ -31547,7 +31055,7 @@ var SETDEX_SV = {
                 "Fury Cutter",
                 "Swords Dance"
             ],
-            "index": 1351
+            "index": 1315
         },
         "TRAINER JAIDEN": {
             "level": 26,
@@ -31565,7 +31073,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1544
+            "index": 1508
         }
     },
     "Koffing": {
@@ -31585,7 +31093,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 870
+            "index": 834
         },
         "TRAINER LAO 1": {
             "level": 17,
@@ -31608,7 +31116,7 @@ var SETDEX_SV = {
                 "Smog",
                 "Self Destruct"
             ],
-            "index": 874
+            "index": 838
         },
         " TRAINER LAO 1": {
             "level": 17,
@@ -31631,7 +31139,7 @@ var SETDEX_SV = {
                 "Smog",
                 "Self Destruct"
             ],
-            "index": 875
+            "index": 839
         },
         "  TRAINER LAO 1": {
             "level": 17,
@@ -31654,7 +31162,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 876
+            "index": 840
         },
         "TRAINER LUNG": {
             "level": 18,
@@ -31672,7 +31180,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 877
+            "index": 841
         },
         "TRAINER LAO 2": {
             "level": 24,
@@ -31695,7 +31203,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 879
+            "index": 843
         },
         " TRAINER LAO 2": {
             "level": 24,
@@ -31717,7 +31225,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 880
+            "index": 844
         },
         "  TRAINER LAO 2": {
             "level": 24,
@@ -31740,7 +31248,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 881
+            "index": 845
         },
         "   TRAINER LAO 2": {
             "level": 26,
@@ -31761,7 +31269,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 882
+            "index": 846
         },
         "TRAINER LAO 3": {
             "level": 27,
@@ -31784,7 +31292,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 883
+            "index": 847
         },
         " TRAINER LAO 3": {
             "level": 27,
@@ -31807,7 +31315,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 884
+            "index": 848
         },
         "  TRAINER LAO 3": {
             "level": 27,
@@ -31829,7 +31337,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 885
+            "index": 849
         },
         "   TRAINER LAO 3": {
             "level": 29,
@@ -31850,7 +31358,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 886
+            "index": 850
         },
         "TRAINER LAO 4": {
             "level": 30,
@@ -31872,7 +31380,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 887
+            "index": 851
         },
         " TRAINER LAO 4": {
             "level": 30,
@@ -31894,7 +31402,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 888
+            "index": 852
         },
         "  TRAINER LAO 4": {
             "level": 30,
@@ -31916,7 +31424,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 889
+            "index": 853
         },
         "   TRAINER LAO 4": {
             "level": 32,
@@ -31937,7 +31445,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 890
+            "index": 854
         },
         "TRAINER LAO 5": {
             "level": 33,
@@ -31959,7 +31467,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 891
+            "index": 855
         },
         " TRAINER LAO 5": {
             "level": 33,
@@ -31982,7 +31490,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 892
+            "index": 856
         },
         "  TRAINER LAO 5": {
             "level": 33,
@@ -32005,7 +31513,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Self Destruct"
             ],
-            "index": 893
+            "index": 857
         },
         "TRAINER JONAS": {
             "level": 31,
@@ -32028,7 +31536,7 @@ var SETDEX_SV = {
                 "Self Destruct",
                 "Sludge Bomb"
             ],
-            "index": 1036
+            "index": 1000
         },
         "TRAINER HIDEO": {
             "level": 25,
@@ -32051,7 +31559,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Smokescreen"
             ],
-            "index": 1348
+            "index": 1312
         },
         " TRAINER HIDEO": {
             "level": 25,
@@ -32074,7 +31582,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Smokescreen"
             ],
-            "index": 1349
+            "index": 1313
         },
         "TRAINER KEIGO": {
             "level": 28,
@@ -32097,7 +31605,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Smokescreen"
             ],
-            "index": 1350
+            "index": 1314
         },
         "TRAINER RILEY": {
             "level": 28,
@@ -32120,7 +31628,7 @@ var SETDEX_SV = {
                 "Sludge",
                 "Smokescreen"
             ],
-            "index": 1353
+            "index": 1317
         }
     },
     "Lanturn": {
@@ -32143,7 +31651,7 @@ var SETDEX_SV = {
                 "Thunderbolt",
                 "Earthquake"
             ],
-            "index": 872
+            "index": 836
         },
         "TRAINER KAYLEE": {
             "level": 34,
@@ -32161,7 +31669,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 949
+            "index": 913
         },
         "LILA & ROY": {
             "level": 51,
@@ -32179,7 +31687,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1453
+            "index": 1417
         }
     },
     "Weezing": {
@@ -32202,7 +31710,7 @@ var SETDEX_SV = {
                 "Tackle",
                 "Sludge"
             ],
-            "index": 894
+            "index": 858
         }
     },
     "Castform": {
@@ -32227,7 +31735,7 @@ var SETDEX_SV = {
                 "Thunder",
                 "Water Pulse"
             ],
-            "index": 912
+            "index": 876
         },
         "TRAINER KAYLEY": {
             "level": 31,
@@ -32250,7 +31758,7 @@ var SETDEX_SV = {
                 "Flamethrower",
                 "Solar Beam"
             ],
-            "index": 1037
+            "index": 1001
         }
     },
     "Seadra": {
@@ -32270,7 +31778,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 948
+            "index": 912
         },
         "TRAINER THALIA 3": {
             "level": 36,
@@ -32288,7 +31796,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1877
+            "index": 1841
         },
         "TRAINER THALIA 4": {
             "level": 38,
@@ -32306,7 +31814,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1880
+            "index": 1844
         }
     },
     "Vileplume": {
@@ -32326,7 +31834,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 987
+            "index": 951
         }
     },
     "Feebas": {
@@ -32351,7 +31859,7 @@ var SETDEX_SV = {
                 "Return",
                 "Attract"
             ],
-            "index": 1033
+            "index": 997
         },
         " TRAINER ANNIKA": {
             "level": 39,
@@ -32374,7 +31882,7 @@ var SETDEX_SV = {
                 "Return",
                 "Attract"
             ],
-            "index": 1034
+            "index": 998
         },
         "TRAINER CHRIS": {
             "level": 26,
@@ -32392,7 +31900,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1459
+            "index": 1423
         }
     },
     "Chinchou": {
@@ -32412,7 +31920,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1046
+            "index": 1010
         },
         "TRAINER TISHA": {
             "level": 34,
@@ -32430,7 +31938,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1424
+            "index": 1388
         },
         "LILA & ROY": {
             "level": 42,
@@ -32448,7 +31956,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1447
+            "index": 1411
         }
     },
     "Treecko": {
@@ -32468,7 +31976,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1068
+            "index": 1032
         },
         "TRAINER MAY ROUTE 103 MUDKIP": {
             "level": 5,
@@ -32486,7 +31994,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1089
+            "index": 1053
         },
         "TRAINER BRENDAN RUSTBORO MUDKIP": {
             "level": 15,
@@ -32504,7 +32012,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1237
+            "index": 1201
         },
         "TRAINER MAY RUSTBORO MUDKIP": {
             "level": 15,
@@ -32522,7 +32030,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1252
+            "index": 1216
         }
     },
     "Grovyle": {
@@ -32542,7 +32050,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1071
+            "index": 1035
         },
         "TRAINER BRENDAN ROUTE 119 MUDKIP": {
             "level": 31,
@@ -32560,7 +32068,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1074
+            "index": 1038
         },
         "TRAINER MAY ROUTE 110 MUDKIP": {
             "level": 20,
@@ -32578,7 +32086,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1092
+            "index": 1056
         },
         "TRAINER MAY ROUTE 119 MUDKIP": {
             "level": 31,
@@ -32596,7 +32104,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1095
+            "index": 1059
         },
         "TRAINER BRENDAN LILYCOVE MUDKIP": {
             "level": 34,
@@ -32614,7 +32122,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1383
+            "index": 1347
         },
         "TRAINER MAY LILYCOVE MUDKIP": {
             "level": 34,
@@ -32632,7 +32140,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1395
+            "index": 1359
         }
     },
     "Torchic": {
@@ -32652,7 +32160,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1075
+            "index": 1039
         },
         "TRAINER MAY ROUTE 103 TREECKO": {
             "level": 5,
@@ -32670,7 +32178,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1096
+            "index": 1060
         },
         "TRAINER BRENDAN RUSTBORO TREECKO": {
             "level": 15,
@@ -32688,7 +32196,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1235
+            "index": 1199
         },
         "TRAINER MAY RUSTBORO TREECKO": {
             "level": 15,
@@ -32706,7 +32214,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1583
+            "index": 1547
         }
     },
     "Mudkip": {
@@ -32726,7 +32234,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1082
+            "index": 1046
         },
         "TRAINER MAY ROUTE 103 TORCHIC": {
             "level": 5,
@@ -32744,7 +32252,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1103
+            "index": 1067
         },
         "TRAINER BRENDAN RUSTBORO TORCHIC": {
             "level": 15,
@@ -32762,7 +32270,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1250
+            "index": 1214
         },
         "TRAINER MAY RUSTBORO TORCHIC": {
             "level": 15,
@@ -32780,7 +32288,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1585
+            "index": 1549
         }
     },
     "Marshtomp": {
@@ -32800,7 +32308,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1085
+            "index": 1049
         },
         "TRAINER BRENDAN ROUTE 119 TORCHIC": {
             "level": 31,
@@ -32818,7 +32326,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1088
+            "index": 1052
         },
         "TRAINER MAY ROUTE 110 TORCHIC": {
             "level": 20,
@@ -32836,7 +32344,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1106
+            "index": 1070
         },
         "TRAINER MAY ROUTE 119 TORCHIC": {
             "level": 31,
@@ -32854,7 +32362,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1109
+            "index": 1073
         },
         "TRAINER BRENDAN LILYCOVE TORCHIC": {
             "level": 34,
@@ -32872,7 +32380,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1391
+            "index": 1355
         },
         "TRAINER MAY LILYCOVE TORCHIC": {
             "level": 34,
@@ -32890,7 +32398,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1403
+            "index": 1367
         }
     },
     "Pinsir": {
@@ -32910,7 +32418,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1116
+            "index": 1080
         }
     },
     "Bellossom": {
@@ -32930,7 +32438,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1199
+            "index": 1163
         }
     },
     "Nincada": {
@@ -32950,7 +32458,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1278
+            "index": 1242
         },
         "TRAINER RILEY": {
             "level": 28,
@@ -32973,7 +32481,7 @@ var SETDEX_SV = {
                 "Mind Reader",
                 "Dig"
             ],
-            "index": 1352
+            "index": 1316
         }
     },
     "Volbeat": {
@@ -32993,7 +32501,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1280
+            "index": 1244
         },
         "KIRA & DAN": {
             "level": 39,
@@ -33011,7 +32519,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1341
+            "index": 1305
         },
         "TRAINER ANGELO": {
             "level": 17,
@@ -33033,7 +32541,7 @@ var SETDEX_SV = {
                 "Quick Attack",
                 "Confuse Ray"
             ],
-            "index": 1755
+            "index": 1719
         }
     },
     "Illumise": {
@@ -33053,7 +32561,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1281
+            "index": 1245
         },
         "KIRA & DAN": {
             "level": 39,
@@ -33071,7 +32579,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1342
+            "index": 1306
         },
         "TRAINER ANGELO": {
             "level": 17,
@@ -33093,7 +32601,7 @@ var SETDEX_SV = {
                 "Quick Attack",
                 "Charm"
             ],
-            "index": 1754
+            "index": 1718
         }
     },
     "Nosepass": {
@@ -33113,7 +32621,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1303
+            "index": 1267
         },
         "TRAINER RUBEN": {
             "level": 34,
@@ -33131,7 +32639,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1415
+            "index": 1379
         },
         "TRAINER ROXANNE 2": {
             "level": 37,
@@ -33154,7 +32662,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Rock Slide"
             ],
-            "index": 1589
+            "index": 1553
         },
         "TRAINER ROXANNE 3": {
             "level": 42,
@@ -33177,7 +32685,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Rock Slide"
             ],
-            "index": 1594
+            "index": 1558
         },
         "TRAINER ROXANNE 4": {
             "level": 47,
@@ -33200,7 +32708,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Rock Slide"
             ],
-            "index": 1599
+            "index": 1563
         },
         "TRAINER ROXANNE 5": {
             "level": 52,
@@ -33223,7 +32731,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Rock Slide"
             ],
-            "index": 1605
+            "index": 1569
         },
         "TRAINER ANDRES 3": {
             "level": 33,
@@ -33241,7 +32749,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1772
+            "index": 1736
         },
         "TRAINER ANDRES 4": {
             "level": 35,
@@ -33259,7 +32767,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1775
+            "index": 1739
         },
         "TRAINER ANDRES 5": {
             "level": 37,
@@ -33277,7 +32785,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1778
+            "index": 1742
         }
     },
     "Golem": {
@@ -33297,7 +32805,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1328
+            "index": 1292
         },
         "TRAINER ROXANNE 2": {
             "level": 32,
@@ -33320,7 +32828,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Explosion"
             ],
-            "index": 1586
+            "index": 1550
         },
         "TRAINER ROXANNE 3": {
             "level": 37,
@@ -33343,7 +32851,7 @@ var SETDEX_SV = {
                 "Magnitude",
                 "Explosion"
             ],
-            "index": 1591
+            "index": 1555
         },
         "TRAINER ROXANNE 4": {
             "level": 42,
@@ -33366,7 +32874,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Explosion"
             ],
-            "index": 1596
+            "index": 1560
         },
         "TRAINER ROXANNE 5": {
             "level": 47,
@@ -33389,7 +32897,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Explosion"
             ],
-            "index": 1601
+            "index": 1565
         },
         "TRAINER SAWYER 5": {
             "level": 33,
@@ -33407,7 +32915,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1848
+            "index": 1812
         }
     },
     "Kabuto": {
@@ -33432,7 +32940,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Rock Slide"
             ],
-            "index": 1587
+            "index": 1551
         }
     },
     "Onix": {
@@ -33457,7 +32965,7 @@ var SETDEX_SV = {
                 "Roar",
                 "Rock Slide"
             ],
-            "index": 1588
+            "index": 1552
         },
         "TRAINER ROXANNE 3": {
             "level": 40,
@@ -33480,7 +32988,7 @@ var SETDEX_SV = {
                 "Roar",
                 "Rock Slide"
             ],
-            "index": 1593
+            "index": 1557
         },
         "TRAINER ROXANNE 4": {
             "level": 45,
@@ -33503,7 +33011,7 @@ var SETDEX_SV = {
                 "Roar",
                 "Rock Slide"
             ],
-            "index": 1598
+            "index": 1562
         }
     },
     "Omanyte": {
@@ -33528,7 +33036,7 @@ var SETDEX_SV = {
                 "Rock Slide",
                 "Surf"
             ],
-            "index": 1590
+            "index": 1554
         }
     },
     "Kabutops": {
@@ -33553,7 +33061,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Rock Slide"
             ],
-            "index": 1592
+            "index": 1556
         },
         "TRAINER ROXANNE 4": {
             "level": 45,
@@ -33576,7 +33084,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Rock Slide"
             ],
-            "index": 1597
+            "index": 1561
         },
         "TRAINER ROXANNE 5": {
             "level": 50,
@@ -33599,7 +33107,7 @@ var SETDEX_SV = {
                 "Surf",
                 "Rock Slide"
             ],
-            "index": 1603
+            "index": 1567
         }
     },
     "Omastar": {
@@ -33624,7 +33132,7 @@ var SETDEX_SV = {
                 "Rock Slide",
                 "Surf"
             ],
-            "index": 1595
+            "index": 1559
         },
         "TRAINER ROXANNE 5": {
             "level": 47,
@@ -33647,7 +33155,7 @@ var SETDEX_SV = {
                 "Rock Slide",
                 "Surf"
             ],
-            "index": 1602
+            "index": 1566
         }
     },
     "Aerodactyl": {
@@ -33672,7 +33180,7 @@ var SETDEX_SV = {
                 "Supersonic",
                 "Protect"
             ],
-            "index": 1600
+            "index": 1564
         }
     },
     "Steelix": {
@@ -33697,7 +33205,7 @@ var SETDEX_SV = {
                 "Roar",
                 "Rock Slide"
             ],
-            "index": 1604
+            "index": 1568
         }
     },
     "Hitmontop": {
@@ -33722,7 +33230,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Triple Kick"
             ],
-            "index": 1608
+            "index": 1572
         },
         "TRAINER BRAWLY 3": {
             "level": 40,
@@ -33745,7 +33253,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Triple Kick"
             ],
-            "index": 1612
+            "index": 1576
         },
         "TRAINER BRAWLY 4": {
             "level": 45,
@@ -33768,7 +33276,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Triple Kick"
             ],
-            "index": 1617
+            "index": 1581
         },
         "TRAINER BRAWLY 5": {
             "level": 50,
@@ -33791,7 +33299,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Triple Kick"
             ],
-            "index": 1623
+            "index": 1587
         }
     },
     "Hitmonchan": {
@@ -33816,7 +33324,7 @@ var SETDEX_SV = {
                 "Fire Punch",
                 "Ice Punch"
             ],
-            "index": 1614
+            "index": 1578
         },
         "TRAINER BRAWLY 5": {
             "level": 46,
@@ -33839,7 +33347,7 @@ var SETDEX_SV = {
                 "Fire Punch",
                 "Ice Punch"
             ],
-            "index": 1620
+            "index": 1584
         }
     },
     "Hitmonlee": {
@@ -33864,7 +33372,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Bulk Up"
             ],
-            "index": 1619
+            "index": 1583
         }
     },
     "Raichu": {
@@ -33889,7 +33397,7 @@ var SETDEX_SV = {
                 "Rain Dance",
                 "Protect"
             ],
-            "index": 1634
+            "index": 1598
         },
         "TRAINER WATTSON 5": {
             "level": 51,
@@ -33912,7 +33420,7 @@ var SETDEX_SV = {
                 "Rain Dance",
                 "Protect"
             ],
-            "index": 1640
+            "index": 1604
         }
     },
     "Ampharos": {
@@ -33937,7 +33445,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Light Screen"
             ],
-            "index": 1635
+            "index": 1599
         },
         "TRAINER WATTSON 5": {
             "level": 51,
@@ -33960,7 +33468,7 @@ var SETDEX_SV = {
                 "Thunder Wave",
                 "Light Screen"
             ],
-            "index": 1641
+            "index": 1605
         }
     },
     "Electabuzz": {
@@ -33985,7 +33493,7 @@ var SETDEX_SV = {
                 "Thunder Punch",
                 "Light Screen"
             ],
-            "index": 1639
+            "index": 1603
         }
     },
     "Ponyta": {
@@ -34010,7 +33518,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Bounce"
             ],
-            "index": 1646
+            "index": 1610
         },
         "TRAINER FLANNERY 3": {
             "level": 41,
@@ -34033,7 +33541,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Bounce"
             ],
-            "index": 1651
+            "index": 1615
         }
     },
     "Houndour": {
@@ -34058,7 +33566,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Sunny Day"
             ],
-            "index": 1654
+            "index": 1618
         }
     },
     "Rapidash": {
@@ -34083,7 +33591,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Bounce"
             ],
-            "index": 1657
+            "index": 1621
         },
         "TRAINER FLANNERY 5": {
             "level": 51,
@@ -34106,7 +33614,7 @@ var SETDEX_SV = {
                 "Solar Beam",
                 "Bounce"
             ],
-            "index": 1663
+            "index": 1627
         }
     },
     "Arcanine": {
@@ -34131,7 +33639,7 @@ var SETDEX_SV = {
                 "Sunny Day",
                 "Roar"
             ],
-            "index": 1660
+            "index": 1624
         }
     },
     "Houndoom": {
@@ -34156,7 +33664,7 @@ var SETDEX_SV = {
                 "Taunt",
                 "Sunny Day"
             ],
-            "index": 1662
+            "index": 1626
         }
     },
     "Chansey": {
@@ -34181,7 +33689,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Focus Punch"
             ],
-            "index": 1666
+            "index": 1630
         },
         "TRAINER NORMAN 3": {
             "level": 47,
@@ -34204,7 +33712,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Focus Punch"
             ],
-            "index": 1671
+            "index": 1635
         }
     },
     "Kangaskhan": {
@@ -34229,7 +33737,7 @@ var SETDEX_SV = {
                 "Endure",
                 "Reversal"
             ],
-            "index": 1672
+            "index": 1636
         },
         "TRAINER NORMAN 4": {
             "level": 50,
@@ -34252,7 +33760,7 @@ var SETDEX_SV = {
                 "Endure",
                 "Reversal"
             ],
-            "index": 1677
+            "index": 1641
         },
         "TRAINER NORMAN 5": {
             "level": 55,
@@ -34275,7 +33783,7 @@ var SETDEX_SV = {
                 "Endure",
                 "Reversal"
             ],
-            "index": 1682
+            "index": 1646
         }
     },
     "Blissey": {
@@ -34300,7 +33808,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Focus Punch"
             ],
-            "index": 1676
+            "index": 1640
         },
         "TRAINER NORMAN 5": {
             "level": 57,
@@ -34323,7 +33831,7 @@ var SETDEX_SV = {
                 "Skill Swap",
                 "Focus Punch"
             ],
-            "index": 1681
+            "index": 1645
         }
     },
     "Tauros": {
@@ -34348,7 +33856,7 @@ var SETDEX_SV = {
                 "Fire Blast",
                 "Earthquake"
             ],
-            "index": 1683
+            "index": 1647
         }
     },
     "Dratini": {
@@ -34373,7 +33881,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1686
+            "index": 1650
         }
     },
     "Hoothoot": {
@@ -34398,7 +33906,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Dream Eater"
             ],
-            "index": 1691
+            "index": 1655
         }
     },
     "Dragonair": {
@@ -34423,7 +33931,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1693
+            "index": 1657
         },
         "TRAINER WINONA 4": {
             "level": 50,
@@ -34446,7 +33954,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Ice Beam"
             ],
-            "index": 1699
+            "index": 1663
         }
     },
     "Noctowl": {
@@ -34471,7 +33979,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Dream Eater"
             ],
-            "index": 1697
+            "index": 1661
         },
         "TRAINER WINONA 5": {
             "level": 53,
@@ -34494,7 +34002,7 @@ var SETDEX_SV = {
                 "Reflect",
                 "Dream Eater"
             ],
-            "index": 1703
+            "index": 1667
         }
     },
     "Dragonite": {
@@ -34519,7 +34027,7 @@ var SETDEX_SV = {
                 "Earthquake",
                 "Ice Beam"
             ],
-            "index": 1706
+            "index": 1670
         }
     },
     "Slowpoke": {
@@ -34544,7 +34052,7 @@ var SETDEX_SV = {
                 "Calm Mind",
                 "Protect"
             ],
-            "index": 1722
+            "index": 1686
         }
     },
     "Hypno": {
@@ -34569,7 +34077,7 @@ var SETDEX_SV = {
                 "Headbutt",
                 "Protect"
             ],
-            "index": 1726
+            "index": 1690
         }
     },
     "Slowking": {
@@ -34594,7 +34102,7 @@ var SETDEX_SV = {
                 "Calm Mind",
                 "Protect"
             ],
-            "index": 1728
+            "index": 1692
         }
     },
     "Poliwag": {
@@ -34619,7 +34127,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Hydro Pump"
             ],
-            "index": 1732
+            "index": 1696
         }
     },
     "Poliwhirl": {
@@ -34644,7 +34152,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Hydro Pump"
             ],
-            "index": 1737
+            "index": 1701
         },
         "TRAINER JUAN 4": {
             "level": 56,
@@ -34667,7 +34175,7 @@ var SETDEX_SV = {
                 "Protect",
                 "Hydro Pump"
             ],
-            "index": 1744
+            "index": 1708
         }
     },
     "Lapras": {
@@ -34692,7 +34200,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Confuse Ray"
             ],
-            "index": 1742
+            "index": 1706
         },
         "TRAINER JUAN 5": {
             "level": 61,
@@ -34715,7 +34223,7 @@ var SETDEX_SV = {
                 "Ice Beam",
                 "Confuse Ray"
             ],
-            "index": 1748
+            "index": 1712
         }
     },
     "Politoed": {
@@ -34740,7 +34248,7 @@ var SETDEX_SV = {
                 "Hydro Pump",
                 "Perish Song"
             ],
-            "index": 1750
+            "index": 1714
         }
     },
     "Cradily": {
@@ -34765,7 +34273,7 @@ var SETDEX_SV = {
                 "Ingrain",
                 "Confuse Ray"
             ],
-            "index": 1760
+            "index": 1724
         }
     },
     "Armaldo": {
@@ -34790,7 +34298,7 @@ var SETDEX_SV = {
                 "Aerial Ace",
                 "Slash"
             ],
-            "index": 1761
+            "index": 1725
         }
     },
     "Metagross": {
@@ -34815,7 +34323,7 @@ var SETDEX_SV = {
                 "Meteor Mash",
                 "Shadow Ball"
             ],
-            "index": 1762
+            "index": 1726
         }
     },
     "Beldum": {
@@ -34835,7 +34343,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1763
+            "index": 1727
         },
         "TRAINER TUCKER": {
             "level": 5,
@@ -34853,7 +34361,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1764
+            "index": 1728
         },
         "TRAINER SPENSER": {
             "level": 5,
@@ -34871,7 +34379,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1765
+            "index": 1729
         },
         "TRAINER GRETA": {
             "level": 5,
@@ -34889,7 +34397,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1766
+            "index": 1730
         },
         "TRAINER NOLAND": {
             "level": 5,
@@ -34907,7 +34415,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1767
+            "index": 1731
         },
         "TRAINER LUCY": {
             "level": 5,
@@ -34925,7 +34433,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1768
+            "index": 1732
         },
         "TRAINER BRANDON": {
             "level": 5,
@@ -34943,7 +34451,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1769
+            "index": 1733
         }
     },
     "Chimecho": {
@@ -34963,7 +34471,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1884
+            "index": 1848
         }
     },
     "Charmander": {
@@ -34983,7 +34491,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1888
+            "index": 1852
         }
     },
     "Bulbasaur": {
@@ -35003,7 +34511,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1889
+            "index": 1853
         }
     },
     "Groudon": {
@@ -35023,7 +34531,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1890
+            "index": 1854
         }
     },
     "Kyogre": {
@@ -35043,7 +34551,7 @@ var SETDEX_SV = {
             "teraType": null,
             "status": "Healthy",
             "moves": [],
-            "index": 1891
+            "index": 1855
         }
     }
 };
